@@ -52,10 +52,6 @@ function sendTextMessage(sender, text) {
     })
 }
 
-//send a test message back as two cards
-//note: max of four cards, and three buttons per card!!!!
-
-//check this!!
 function sendMajorScale(sender) {
     let messageData = {
         "attachment": {
@@ -65,54 +61,38 @@ function sendMajorScale(sender) {
                 "elements": [{
                     "title": "C Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
                     "title": "C#/Db Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%23-Db%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%23-Db%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "D Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/D%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/D%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "Eb Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Eb%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Eb%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -144,54 +124,38 @@ function sendMajorScale2(sender) {
                 "elements": [{
                     "title": "E Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/E%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/E%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
                     "title": "F Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "F#/Gb Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%23-Gb%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%23-Gb%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "G Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/G%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/G%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -223,54 +187,38 @@ function sendMajorScale3(sender) {
                 "elements": [{
                     "title": "Ab Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Ab%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Ab%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
                     "title": "A Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/A%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/A%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "Bb Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Bb%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Bb%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "B Major Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/B%20Major.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/B%20Major.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -293,7 +241,6 @@ function sendMajorScale3(sender) {
     })
 }
 
-//minor scale functions
 function sendMinorScale(sender) {
     let messageData = {
         "attachment": {
@@ -303,54 +250,38 @@ function sendMinorScale(sender) {
                 "elements": [{
                     "title": "C Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
                     "title": "C#/Db Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%23-Db%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%23-Db%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "D Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/D%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/D%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "Eb Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Eb%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Eb%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -382,54 +313,38 @@ function sendMinorScale2(sender) {
                 "elements": [{
                     "title": "E Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/E%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/E%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
                     "title": "F Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "F#/Gb Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%23-Gb%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%23-Gb%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "G Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/G%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/G%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -461,54 +376,38 @@ function sendMinorScale3(sender) {
                 "elements": [{
                     "title": "Ab Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Ab%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Ab%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
                     "title": "A Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/A%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/A%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "Bb Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Bb%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Bb%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
                     "title": "B Minor Scale",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/B%20minor%20scale.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/B%20minor%20scale.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -531,64 +430,47 @@ function sendMinorScale3(sender) {
     })
 }
 
-//major pentatonic scale functions
-function sendMajorPentatonicScale(sender) {
+function sendPentatonicMajorScale(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "C Pentatonic Scale",
+                    "title": "C Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
-                    "title": "C#/Db Pentatonic Scale",
+                    "title": "C#/Db Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%23-Db%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%23-Db%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
-                    "title": "D Pentatonic Scale",
+                    "title": "D Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/D%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/D%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
-                    "title": "Eb Pentatonic Scale",
+                    "title": "Eb Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Eb%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Eb%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -611,63 +493,47 @@ function sendMajorPentatonicScale(sender) {
     })
 }
 
-function sendMajorPentatonicScale2(sender) {
+function sendPentatonicMajorScale2(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "E Pentatonic Scale",
+                    "title": "E Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/E%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/E%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
-                    "title": "F Pentatonic Scale",
+                    "title": "F Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
-                    "title": "F#/Gb Pentatonic Scale",
+                    "title": "F#/Gb Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%23-Gb%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%23-Gb%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
-                    "title": "G Pentatonic Scale",
+                    "title": "G Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/G%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/G%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -690,63 +556,47 @@ function sendMajorPentatonicScale2(sender) {
     })
 }
 
-function sendMajorPentatonicScale3(sender) {
+function sendPentatonicMajorScale3(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Ab Pentatonic Scale",
+                    "title": "Ab Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Ab%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Ab%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }, {
-                    "title": "A Pentatonic Scale",
+                    "title": "A Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/A%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "hhttps://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/A%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
-                    "title": "Bb Pentatonic Scale",
+                    "title": "Bb Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Bb%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Bb%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 },{
-                    "title": "B Pentatonic Scale",
+                    "title": "B Pentatonic Major",
                     "subtitle": "View the scale below:",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/B%20Major%20Pentatonic.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/B%20Major%20Pentatonic.png?raw=true",
                         "title": "On Keyboard"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://github.com/anthonyc1/MyFiles/blob/master/C%20Major.png?raw=true",
-                        "title": "On Sheet Music",
                     }],
                 }]
             }
@@ -769,7 +619,195 @@ function sendMajorPentatonicScale3(sender) {
     })
 }
 
-//this works!
+function sendPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }, {
+                    "title": "C#/Db Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%23-Db%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%23-Db%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                },{
+                    "title": "D Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/D%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/D%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                },{
+                    "title": "Eb Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Eb%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Eb%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendPentatonicMinorScale2(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "E Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/E%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/E%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }, {
+                    "title": "F Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                },{
+                    "title": "F#/Gb Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%23-Gb%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%23-Gb%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                },{
+                    "title": "G Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/G%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/G%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendPentatonicMinorScale3(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Ab Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Ab%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Ab%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }, {
+                    "title": "A Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/A%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "hhttps://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/A%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                },{
+                    "title": "Bb Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Bb%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Bb%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                },{
+                    "title": "B Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/B%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/B%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 function sendMainMenu(sender) {
     let messageData = {
         "attachment":{
@@ -788,11 +826,6 @@ function sendMainMenu(sender) {
             "type":"postback",
             "title":"View Pentatonic Scales",
             "payload":"pentatonicscales"
-          },
-          {
-            "type":"postback",
-            "title":"Find Intervals",
-            "payload":"intervals"
           }
         ]
       }
@@ -985,7 +1018,7 @@ function chooseMinorScale(sender) {
     })
 }
 
-function chooseMajorPentatonicScale(sender) {
+function choosePentatonicMajorScale(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -1030,7 +1063,7 @@ function chooseMajorPentatonicScale(sender) {
     })
 }
 
-function chooseMinorPentatonicScale(sender) {
+function choosePentatonicMinorScale(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -1075,47 +1108,7 @@ function chooseMinorPentatonicScale(sender) {
     })
 }
 
-//fixed but don't use yet.
-function selectScale(sender) {
-    let messageData = {
-    "text":"Pick a color:",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Major Scale",
-        "payload":"major",
-      },
-      {
-        "content_type":"text",
-        "title":"Minor Scale",
-        "payload":"minor",
-      },{
-        "content_type":"text",
-        "title":"Pentatonic Scale",
-        "payload":"pentatonic",
-      }
-    ]
-  }
-    request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: {access_token:token},
-        method: 'POST',
-        json: {
-            recipient: {id:sender},
-            message: messageData,
-        }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
-}
 
-
-//webhook API to process messages, look for special messages
-//to trigger the cards, and send postback message
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging
     for (let i = 0; i < messaging_events.length; i++) {
@@ -1125,26 +1118,18 @@ app.post('/webhook/', function (req, res) {
         let text = event.message.text
         if (text.toLowerCase() === "hi"){
           sendTextMessage(sender, "Hi there!");
-          sendTextMessage(sender, "Welcome to Music Mentor Bot!");
-          sendTextMessage(sender, "Check out our main menu.");
+          sendTextMessage(sender, "Welcome to Music Mentor Bot! Check out our main menu.");
           sendMainMenu(sender);
           continue;
         }
         if (text.toLowerCase() === "hey"){
-          sendTextMessage(sender, "Heyy there big shot!");
-          sendTextMessage(sender, "Welcome to Music Mentor Bot!");
-          sendTextMessage(sender, "Check out our main menu.");
-          sendMainMenu(sender);
-          continue;
-        }
-        if (text.toLowerCase() === "major2"){
-          sendTextMessage(sender, "Major!");
+          sendTextMessage(sender, "Hey there big shot!");
+          sendTextMessage(sender, "Welcome to Music Mentor Bot! Check out our main menu.");
           sendMainMenu(sender);
           continue;
         }
         else {
-          sendTextMessage(sender, "Welcome to Music Mentor Bot!");
-          sendTextMessage(sender, "Check out our main menu.");
+          sendTextMessage(sender, "Welcome to Music Mentor Bot! Check out our main menu.");
           sendMainMenu(sender);
           continue
         }
@@ -1205,29 +1190,29 @@ app.post('/webhook/', function (req, res) {
           case 'rangeminor3':
             sendMinorScale3(sender);
             continue;
-          //options for chooseMajorPentatonic function
+          //options for choosePentatonicMajor function
           case 'rangepentatonic1':
-            sendMajorPentatonicScale(sender);
+            sendPentatonicMajorScale(sender);
             continue;
 
           case 'rangepentatonic2':
-            sendMajorPentatonicScale2(sender);
+            sendPentatonicMajorScale2(sender);
             continue;
 
           case 'rangepentatonic3':
-            sendMajorPentatonicScale3(sender);
+            sendPentatonicMajorScale3(sender);
             continue;
-          //options for chooseMinorPentatonic function
-          case 'rangepentatonic1':
-            sendMinorPentatonicScale(sender);
-            continue;
-
-          case 'rangepentatonic2':
-            sendMinorPentatonicScale2(sender);
+          //options for choosePentatonicMinor function
+          case 'rangepentatonic4':
+            sendPentatonicMinorScale(sender);
             continue;
 
-          case 'rangepentatonic3':
-            sendMinorPentatonicScale3(sender);
+          case 'rangepentatonic5':
+            sendPentatonicMinorScale2(sender);
+            continue;
+
+          case 'rangepentatonic6':
+            sendPentatonicMinorScale3(sender);
             continue;
         }
       sendTextMessage(sender, "Postback received: "+text.substring(0, 200), token)

@@ -1,13 +1,13 @@
 {
   "name": "musicMentorBot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Application on Facebook Messenger platform that helps users learn music theory. ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [bot,music,scales,messenger,facebook],
+  "author": "Anthony Chan",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
