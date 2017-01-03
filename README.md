@@ -11,6 +11,6 @@ The code for the application is hosted on Heroku.
 To allow Heroku to interact with the Facebook application:   
 * I set up the webhook by subscribing my Facebook page for my application to the URL of the Heroku server.
 * Next, I send a POST request from Terminal to allow the Facebook app to send messages.    
-''''
+```
 curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<PAGE_ACCESS_TOKEN>"
-''''
+```
