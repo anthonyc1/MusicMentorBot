@@ -3,7 +3,7 @@
 A Facebook Messenger chatbot that interacts with users to help them learn the different scales in music theory. The scales supported in this app so far include major, minor, major pentatonic, and minor pentatonic scales.
 
 ## Say hi to Music Mentor!
-Drop by to our Facebook page at https://www.facebook.com/Music-Mentor-237936159963445/    
+Drop by to our Facebook page <a href="https://www.facebook.com/Music-Mentor-237936159963445/" target="_blank">here</a>.    
 Feel free to like or follow our page if you enjoyed chatting with our chatbot!
 
 ##Screenshot of Conversation
