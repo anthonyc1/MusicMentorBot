@@ -7,7 +7,7 @@ Drop by to our Facebook page at https://www.facebook.com/Music-Mentor-2379361599
 Feel free to like or follow our page if you enjoyed chatting with our chatbot!
 
 ##Screenshot of Conversation
-<img src="https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/music-mentor-bot-convo.jpg?raw=true" width = 250px height = 500px>
+<img src="https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/music-mentor-bot-convo.jpg?raw=true" width = 270px height = 500px>
 
 ## How I built it
 The program is built entirely in Javascript and Node.js. This application also has several package dependencies: body-parser, express, and request. The code for the application is hosted on Heroku.    
