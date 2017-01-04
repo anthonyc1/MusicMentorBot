@@ -4,7 +4,8 @@ A Facebook Messenger chatbot that interacts with users to help them learn the di
 
 ## Say hi to Music Mentor!
 Drop by to our Facebook page <a href="https://www.facebook.com/Music-Mentor-237936159963445/" target="_blank">here</a>.    
-Feel free to like or follow our page if you enjoyed chatting with our chatbot!
+Feel free to like or follow our page if you enjoyed chatting with our chatbot!    
+(Please note, the app hasn't been submitted for approval by Facebook yet. But if you would like to test out the bot, feel free to send a message to our page saying so!)
 
 ##Screenshot of Conversation
 <img src="https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/music-mentor-bot-convo.jpg?raw=true" width = 270px height = 500px>
