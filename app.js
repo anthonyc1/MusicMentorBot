@@ -1211,14 +1211,14 @@ function choosePentatonicMinorScale(sender) {
 function help(sender) {
     let messageData = {
     "text":"I'm here to help! Here's a quick summary of what you can do:"
-    + " 1)Check out our main menu to view different music scales."
-    + " 2)Chat with the bot! Maybe you'll learn something!"
+    + " 1) Check out our main menu to view different music scales."
+    + " 2) Chat with the bot! Maybe you'll learn something!"
     + " Was that helpful?",
     "quick_replies":[
       {
         "content_type":"text",
         "title":"yes",
-        "payload":"yess"
+        "payload":"yes"
       },
       {
         "content_type":"text",
@@ -1282,6 +1282,33 @@ function startchatting(sender) {
     })
 }
 
+function showSadGif(sender) {
+    let messageData = { 
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/music-sad.gif?raw=true"
+         }
+        } 
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging
     for (let i = 0; i < messaging_events.length; i++) {
@@ -1316,6 +1343,7 @@ app.post('/webhook/', function (req, res) {
 
             case 'no':
               sendTextMessage(sender, "Oh no. Cue the minor music!");
+              showSadGif(sender);
               continue;
 
             default:
