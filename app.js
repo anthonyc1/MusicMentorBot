@@ -53,6 +53,32 @@ function sendTextMessage(sender, text) {
     })
 }
 
+function getStarted(sender){
+ request({
+    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
+    qs: { access_token: token },
+    method: 'POST',
+    json:{
+        recipient : {id:sender},
+        setting_type : "call_to_actions",
+        thread_state : "new_thread",
+        call_to_actions:[
+            {
+              payload:"hi"
+            }
+          ]
+    }
+
+}, function(error, response, body) {
+    console.log(response)
+    if (error) {
+        console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+        console.log('Error: ', response.body.error)
+    }
+})
+}
+
 function addPersistentMenu(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
@@ -65,13 +91,8 @@ function addPersistentMenu(sender){
         call_to_actions:[
             {
               type:"postback",
-              title:"View Major/Minor Scales",
-              payload:"scales"
-            },
-            {
-              type:"postback",
-              title:"View Pentatonic Scales",
-              payload:"pentatonicscales"
+              title:"Main Menu",
+              payload:"mainmenu"
             },
             {
               type:"postback",
@@ -89,7 +110,6 @@ function addPersistentMenu(sender){
         console.log('Error: ', response.body.error)
     }
 })
-
 }
 
 function sendMajorScale(sender) {
@@ -1162,12 +1182,12 @@ function help(sender) {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"music",
+        "title":"What is music?",
         "payload":"music"
       },
       {
         "content_type":"text",
-        "title":"scale",
+        "title":"What is a scale?",
         "payload":"scale"
       }
     ]
@@ -1226,6 +1246,17 @@ app.post('/webhook/', function (req, res) {
         let text = JSON.stringify(event.postback)
       switch (text.slice(12,-2).toLowerCase()){
           //payloads for sendMainMenu function
+          case 'hi':
+            sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
+            addPersistentMenu(sender);
+            sendMainMenu(sender);
+            continue;
+
+          case 'mainmenu':
+            sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+            sendMainMenu(sender);
+            continue;
+
           case 'scales':
             chooseScale(sender);
             continue;
