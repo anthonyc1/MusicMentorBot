@@ -37,12 +37,13 @@ function sendTextMessage(sender, text) {
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
+        sender_action:"typing_on",
         method: 'POST',
         json: {
             recipient: {id:sender},
             message: messageData,
         },
-        "sender_action":"typing_on"
+        
     }, function(error, response, body) {
         if (error) {
             console.log('Error sending messages: ', error)
@@ -52,6 +53,7 @@ function sendTextMessage(sender, text) {
     })
 }
 
+//Persistent Menu function under construction...
 function addPersistentMenu(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
@@ -860,7 +862,12 @@ function sendMainMenu(sender) {
             "type":"postback",
             "title":"View Pentatonic Scales",
             "payload":"pentatonicscales"
-          }
+          },
+          {
+            "type":"text",
+            "title":"Start Chatting",
+            "payload":"Start by saying something!"
+          },
         ]
       }
     }
@@ -1155,18 +1162,23 @@ app.post('/webhook/', function (req, res) {
               sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
               addPersistentMenu(sender);
               sendMainMenu(sender);
-              
               continue;
 
             case 'help':
               sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
               sendMainMenu(sender);
-              addPersistentMenu(sender);
+              continue;
+
+            case 'help':
+              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
+              continue;
+
+            case 'help':
+              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
               continue;
 
             default:
               sendTextMessage(sender, "I don't know what that means. Sorry.");
-              addPersistentMenu(sender);
               continue;
         }
       sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
