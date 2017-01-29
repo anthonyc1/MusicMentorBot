@@ -1244,7 +1244,11 @@ app.post('/webhook/', function (req, res) {
         let text = JSON.stringify(event.postback)
       switch (text.slice(12,-2).toLowerCase()){
           //payloads for sendMainMenu function
-          
+          case 'mainmenu':
+            sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+            addPersistentMenu(sender);
+            sendMainMenu(sender);
+            continue;
 
           case 'scales':
             chooseScale(sender);
