@@ -958,13 +958,13 @@ function chooseScale(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"Major Scales",
+            "title":"Major",
             "payload":"major"
             
           },
           {
             "type":"postback",
-            "title":"Natural Minor Scales",
+            "title":"Natural Minor",
             "payload":"minor"
           }
         ]
@@ -998,13 +998,13 @@ function choosePentatonicScale(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"Pentatonic Major Scales",
+            "title":"Pentatonic Major",
             "payload":"pentamajor"
             
           },
           {
             "type":"postback",
-            "title":"Pentatonic Minor Scales",
+            "title":"Pentatonic Minor",
             "payload":"pentaminor"
           }
         ]
