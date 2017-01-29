@@ -1181,12 +1181,12 @@ function help(sender) {
     + " 2) Chat with the bot! Maybe you'll learn something! For starters, choose of the options below.",
     "quick_replies":[
       {
-        "content_type":"payload",
+        "content_type":"postback",
         "title":"What is music?",
         "payload":"music"
       },
       {
-        "content_type":"payload",
+        "content_type":"postback",
         "title":"What is a scale?",
         "payload":"scale"
       }
