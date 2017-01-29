@@ -1287,6 +1287,55 @@ function startChatting(sender) {
     })
 }
 
+function startChattingAgain(sender) {
+    let messageData = {
+    "text":"Want to try another one?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"music",
+        "payload":"music"
+      },
+      {
+        "content_type":"text",
+        "title":"scale",
+        "payload":"scale"
+      },
+      {
+        "content_type":"text",
+        "title":"joke",
+        "payload":"joke"
+      },
+      {
+        "content_type":"text",
+        "title":"story",
+        "payload":"story"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
+      }
+
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 function storyMenu(sender) {
     let messageData = {
     "text":"Yes, I love storytime. What kind of story would you like to hear?",
@@ -1305,6 +1354,49 @@ function storyMenu(sender) {
         "content_type":"text",
         "title":"sad",
         "payload":"sad"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function storyMenuAgain(sender) {
+    let messageData = {
+    "text":"Want to hear more?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"embarrassing",
+        "payload":"embarrassing"
+      },
+      {
+        "content_type":"text",
+        "title":"funny",
+        "payload":"funny"
+      },
+      {
+        "content_type":"text",
+        "title":"sad",
+        "payload":"sad"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
       }
     ]
     }
@@ -1448,6 +1540,7 @@ app.post('/webhook/', function (req, res) {
 
             case 'joke':
               sendTextMessage(sender, "What's Beethoven's favorite fruit?\nBA-NA-NA-NAAAAA!");
+              startChattingAgain(sender);
               continue;  
 
             case 'help':
@@ -1456,10 +1549,12 @@ app.post('/webhook/', function (req, res) {
 
             case 'music':
               sendTextMessage(sender, "Music is the presence and absence of sound over a span of time. Yeah, it gets pretty deep.");
+              startChattingAgain(sender);
               continue;
 
             case 'scale':
               sendTextMessage(sender, "A scale is a series of musical notes grouped together in an octave.");
+              startChattingAgain(sender);
               continue;
 
             case 'story':
@@ -1472,12 +1567,14 @@ app.post('/webhook/', function (req, res) {
                 + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
                 + " My buried my head under my pillow once I got home.");
               showFailGif(sender);
+              storyMenuAgain(sender);
               continue;
 
             case 'funny':
               sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
                 + " \nJUST KIDDING! I'm only programmed to say what my snarky creator wants!");
               showFunnyGif(sender);
+              storyMenuAgain(sender);
               continue;
 
             case 'sad':
@@ -1485,6 +1582,7 @@ app.post('/webhook/', function (req, res) {
                 + " It's not easy being a chatbot living all alone on a server."
                 + " Please interact with me more, kind hooman!");
               showSadStoryGif(sender);
+              storyMenuAgain(sender);
               continue;
 
             case 'yes':
