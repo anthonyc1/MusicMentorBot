@@ -864,7 +864,7 @@ function sendMainMenu(sender) {
             "payload":"pentatonicscales"
           },
           {
-            "type":"text",
+            "type":"postback",
             "title":"Start Chatting",
             "payload":"Start by saying something!"
           },
