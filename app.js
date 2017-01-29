@@ -1536,6 +1536,7 @@ app.post('/webhook/', function (req, res) {
         switch (text.toLowerCase()){
             case 'hi':
               sendTextMessage(sender, "Hi there, music lover! How are you doing?");
+              addPersistentMenu(sender);
               continue;
 
             case 'joke':
