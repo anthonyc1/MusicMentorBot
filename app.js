@@ -878,14 +878,8 @@ function sendMainMenu(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"View Major/Minor Scales",
-            "payload":"scales"
-            
-          },
-          {
-            "type":"postback",
-            "title":"View Pentatonic Scales",
-            "payload":"pentatonicscales"
+            "title":"View Scales",
+            "payload":"mainmenuscales"
           },
           {
             "type":"postback",
@@ -900,6 +894,46 @@ function sendMainMenu(sender) {
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
         sender_action:"typing_on",
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function mainMenuScales(sender) {
+    let messageData = {
+        "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Choose a type of scale to view:",
+        "buttons":[
+          {
+            "type":"postback",
+            "title":"Major/Minor Scales",
+            "payload":"scales"
+            
+          },
+          {
+            "type":"postback",
+            "title":"Pentatonic Scales",
+            "payload":"pentatonicscales"
+          }
+        ]
+      }
+    }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
         method: 'POST',
         json: {
             recipient: {id:sender},
@@ -1261,6 +1295,10 @@ app.post('/webhook/', function (req, res) {
           case 'mainmenu':
             sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
             sendMainMenu(sender);
+            continue;
+
+          case 'mainmenuscales':
+            mainMenuScales(sender);
             continue;
 
           case 'scales':
