@@ -53,32 +53,7 @@ function sendTextMessage(sender, text) {
     })
 }
 
-//under construction...
-function getStarted(sender){
- request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: token },
-    method: 'POST',
-    json:{
-        recipient : {id:sender},
-        setting_type : "call_to_actions",
-        thread_state : "new_thread",
-        call_to_actions:[
-            {
-              payload:"hi"
-            }
-          ]
-    }
 
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
-    }
-})
-}
 
 function addPersistentMenu(sender){
  request({
