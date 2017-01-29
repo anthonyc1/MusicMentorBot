@@ -1,36 +1,36 @@
 'use strict'
 
-const express = require('express')
-const bodyParser = require('body-parser')
-const request = require('request')
-const app = express()
+const 
+    bodyParser = require('body-parser'), 
+    express = require('express'),
+    request = require('request');
+
+const app = express();
 
 app.set('port', (process.env.PORT || 5000))
-
 app.use(bodyParser.urlencoded({extended: false}))
-
 app.use(bodyParser.json())
 
 app.get('/', function (req, res) {
-    res.send('Hello world, I am a chat bot')
-})
+    res.send('This is a chatbot.')
+});
 
 app.get('/webhook/', function (req, res) {
     if (req.query['hub.verify_token'] === VALIDATION_TOKEN) {
         console.log("Validating webhook");
         res.status(200).send(req.query['hub.challenge']);
     } else {
-    res.send('Error, wrong token');
+    res.send('Failed validation, wrong token.');
     res.sendStatus(403);
   }
-})
+});
 
 app.listen(app.get('port'), function() {
-    console.log('running on port', app.get('port'));
-})
+    console.log('Running on port', app.get('port'));
+});
 
-const token = process.env.FB_PAGE_ACCESS_TOKEN
-const VALIDATION_TOKEN = process.env.FB_VALIDATION_TOKEN
+const token = process.env.FB_PAGE_ACCESS_TOKEN;
+const VALIDATION_TOKEN = process.env.FB_VALIDATION_TOKEN;
 
 function sendTextMessage(sender, text) {
     let messageData = { text:text }
@@ -50,6 +50,39 @@ function sendTextMessage(sender, text) {
             console.log('Error: ', response.body.error)
         }
     })
+}
+
+function addPersistentMenu(){
+ request({
+    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
+    qs: { access_token: token },
+    method: 'POST',
+    json:{
+        setting_type : "call_to_actions",
+        thread_state : "existing_thread",
+        call_to_actions:[
+            {
+              type:"postback",
+              title:"Choose Major/Minor",
+              payload:"scales"
+            },
+            {
+              type:"postback",
+              title:"Choose Pentatonic",
+              payload:"pentatonicscales"
+            }
+          ]
+    }
+
+}, function(error, response, body) {
+    console.log(response)
+    if (error) {
+        console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+        console.log('Error: ', response.body.error)
+    }
+})
+
 }
 
 function sendMajorScale(sender) {
@@ -938,18 +971,18 @@ function chooseMajorScale(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"C,C#/Db,D,Eb",
+            "title":"C to Eb",
             "payload":"range1"
             
           },
           {
             "type":"postback",
-            "title":"E,F,F#/Gb,G",
+            "title":"E to G",
             "payload":"range2"
           },
           {
             "type":"postback",
-            "title":"Ab,A,Bb,B",
+            "title":"Ab to B",
             "payload":"range3"
           }
         ]
@@ -983,18 +1016,18 @@ function chooseMinorScale(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"C,C#/Db,D,Eb",
+            "title":"C to Eb",
             "payload":"rangeminor1"
             
           },
           {
             "type":"postback",
-            "title":"E,F,F#/Gb,G",
+            "title":"E to G",
             "payload":"rangeminor2"
           },
           {
             "type":"postback",
-            "title":"Ab,A,Bb,B",
+            "title":"Ab to B",
             "payload":"rangeminor3"
           }
         ]
@@ -1028,18 +1061,18 @@ function choosePentatonicMajorScale(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"C,C#/Db,D,Eb",
+            "title":"C to Eb",
             "payload":"rangepentatonic1"
             
           },
           {
             "type":"postback",
-            "title":"E,F,F#/Gb,G",
+            "title":"E to G",
             "payload":"rangepentatonic2"
           },
           {
             "type":"postback",
-            "title":"Ab,A,Bb,B",
+            "title":"Ab to B",
             "payload":"rangepentatonic3"
           }
         ]
@@ -1073,18 +1106,18 @@ function choosePentatonicMinorScale(sender) {
         "buttons":[
           {
             "type":"postback",
-            "title":"C,C#/Db,D,Eb",
+            "title":"C to Eb",
             "payload":"rangepentatonic4"
             
           },
           {
             "type":"postback",
-            "title":"E,F,F#/Gb,G",
+            "title":"E to G",
             "payload":"rangepentatonic5"
           },
           {
             "type":"postback",
-            "title":"Ab,A,Bb,B",
+            "title":"Ab to B",
             "payload":"rangepentatonic6"
           }
         ]
@@ -1117,20 +1150,14 @@ app.post('/webhook/', function (req, res) {
       if (event.message && event.message.text) {
         let text = event.message.text
         if (text.toLowerCase() === "hi"){
-          sendTextMessage(sender, "Hi there!");
-          sendTextMessage(sender, "Welcome to Music Mentor Bot! Check out our main menu.");
+          sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
           sendMainMenu(sender);
-          continue;
-        }
-        if (text.toLowerCase() === "hey"){
-          sendTextMessage(sender, "Hey there big shot!");
-          sendTextMessage(sender, "Welcome to Music Mentor Bot! Check out our main menu.");
-          sendMainMenu(sender);
+          addPersistentMenu();
           continue;
         }
         else {
-          sendTextMessage(sender, "Welcome to Music Mentor Bot! Check out our main menu.");
-          sendMainMenu(sender);
+          sendTextMessage(sender, "I don't know what that means. Sorry.");
+          addPersistentMenu();
           continue
         }
       sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
