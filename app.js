@@ -1262,6 +1262,11 @@ function startChatting(sender) {
         "content_type":"text",
         "title":"joke",
         "payload":"joke"
+      },
+      {
+        "content_type":"text",
+        "title":"story",
+        "payload":"story"
       }
     ]
     }
@@ -1282,12 +1287,132 @@ function startChatting(sender) {
     })
 }
 
+function storyMenu(sender) {
+    let messageData = {
+    "text":"Yes, I love storytime. What kind of story would you like to hear?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"embarrassing",
+        "payload":"embarrassing"
+      },
+      {
+        "content_type":"text",
+        "title":"funny",
+        "payload":"funny"
+      },
+      {
+        "content_type":"text",
+        "title":"sad",
+        "payload":"sad"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//gif functions
 function showSadGif(sender) {
     let messageData = { 
         "attachment":{
       "type":"image",
       "payload":{
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/music-sad.gif?raw=true"
+         }
+        } 
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function showFailGif(sender) {
+    let messageData = { 
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/fail.gif?raw=true"
+         }
+        } 
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function showFunnyGif(sender) {
+    let messageData = { 
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/funny.gif?raw=true"
+         }
+        } 
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function showSadStoryGif(sender) {
+    let messageData = { 
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/sad.gif?raw=true"
          }
         } 
     }
@@ -1335,6 +1460,31 @@ app.post('/webhook/', function (req, res) {
 
             case 'scale':
               sendTextMessage(sender, "A scale is a series of musical notes grouped together in an octave.");
+              continue;
+
+            case 'story':
+              storyMenu(sender);
+              continue;
+
+            case 'embarrassing':
+              sendTextMessage(sender, "One time, when I was about to play Beethoven's Fur Elise on the piano, my teacher"
+                + " asked me what key it was in. I answered \"C Major\" because there was no sharps or flats in the key."
+                + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
+                + " My buried my head under my pillow once I got home.");
+              showFailGif(sender);
+              continue;
+
+            case 'funny':
+              sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
+                + " \nJUST KIDDING! I'm only programmed to say what my snarky creator wants!");
+              showFunnyGif(sender);
+              continue;
+
+            case 'sad':
+              sendTextMessage(sender, "On the bad days, I would sit idly waiting for someone to talk to me."
+                + " It's not easy being a chatbot living all alone on a server."
+                + " Please interact with me more, kind hooman!");
+              showSadStoryGif(sender);
               continue;
 
             case 'yes':
