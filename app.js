@@ -1210,10 +1210,10 @@ function choosePentatonicMinorScale(sender) {
 
 function help(sender) {
     let messageData = {
-    "text":"I'm here to help! Here's a quick summary of what you can do:"
-    + " 1) Check out our main menu to view different music scales."
-    + " 2) Chat with the bot! Maybe you'll learn something!"
-    + " Was that helpful?",
+    "text":"I'm here to help! Here's what you can do on this app:"
+    + " 1) View the different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
+    + " 2) Chat with the bot! Maybe you'll learn something. Or you'll find it entertaining."
+    + " Just check out our main menu option! Was that helpful?",
     "quick_replies":[
       {
         "content_type":"text",
