@@ -1189,6 +1189,11 @@ function help(sender) {
         "content_type":"text",
         "title":"scale",
         "payload":"scale"
+      },
+      {
+        "content_type":"text",
+        "title":"joke",
+        "payload":"joke"
       }
     ]
     }
@@ -1227,8 +1232,7 @@ app.post('/webhook/', function (req, res) {
               continue;  
 
             case 'help':
-              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
-              sendMainMenu(sender);
+              sendTextMessage(sender, "Hi, I'll be glad to help. Check the menu below for what you can do next!");
               continue;
 
             case 'music':
