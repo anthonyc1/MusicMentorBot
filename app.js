@@ -1426,37 +1426,6 @@ function showSadGif(sender) {
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/music-sad.gif?raw=true"
          }
         } 
-    },
-    let messageData2 = {
-    "text":"Want to try another one?",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"music",
-        "payload":"music"
-      },
-      {
-        "content_type":"text",
-        "title":"scale",
-        "payload":"scale"
-      },
-      {
-        "content_type":"text",
-        "title":"joke",
-        "payload":"joke"
-      },
-      {
-        "content_type":"text",
-        "title":"story",
-        "payload":"story"
-      },
-      {
-        "content_type":"text",
-        "title":"no",
-        "payload":"no"
-      }
-
-    ]
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1464,7 +1433,7 @@ function showSadGif(sender) {
         method: 'POST',
         json: {
             recipient: {id:sender},
-            message: messageData + messageData2,
+            message: messageData,
         },
         
     }, function(error, response, body) {
