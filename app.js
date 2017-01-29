@@ -58,6 +58,7 @@ function addPersistentMenu(sender){
     qs: { access_token: token },
     method: 'POST',
     json:{
+        recipient : {id:sender},
         setting_type : "call_to_actions",
         thread_state : "existing_thread",
         call_to_actions:[
