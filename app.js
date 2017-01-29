@@ -1244,6 +1244,39 @@ function help(sender) {
     })
 }
 
+function start(sender) {
+    let messageData = {
+    "text":"Hi there music lover! Let's get started, shall we? Pick one:",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"main menu",
+        "payload":"main menu"
+      },
+      {
+        "content_type":"text",
+        "title":"start chatting",
+        "payload":"start chatting"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 function startChatting(sender) {
     let messageData = {
     "text":"Start by saying something! Here are a few things you can talk about for instance.",
@@ -1535,9 +1568,18 @@ app.post('/webhook/', function (req, res) {
         let text = event.message.text
         switch (text.toLowerCase()){
             case 'hi':
-              sendTextMessage(sender, "Hi there, music lover! How are you doing?");
               addPersistentMenu(sender);
+              start(sender);
               continue;
+
+            case 'main menu':
+              sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+              sendMainMenu(sender);
+              continue;
+
+            case 'start chatting':
+              startChatting(sender);
+              continue;  
 
             case 'joke':
               sendTextMessage(sender, "What's Beethoven's favorite fruit?\nBA-NA-NA-NAAAAA!");
