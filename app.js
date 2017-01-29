@@ -1169,12 +1169,12 @@ app.post('/webhook/', function (req, res) {
               sendMainMenu(sender);
               continue;
 
-            case 'help':
-              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
+            case 'music':
+              sendTextMessage(sender, "Music is the presence and absence of sound over a span of time. Yeah, it gets pretty deep.");
               continue;
 
-            case 'help':
-              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
+            case 'scale':
+              sendTextMessage(sender, "Okay, a scale is a series of musical notes grouped together in an octave.");
               continue;
 
             default:
