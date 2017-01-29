@@ -53,31 +53,6 @@ function sendTextMessage(sender, text) {
     })
 }
 
-function getStarted(sender){
- request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: token },
-    method: 'POST',
-    json:{
-        recipient : {id:sender},
-        setting_type : "call_to_actions",
-        thread_state : "new_thread",
-        call_to_actions:[
-            {
-              payload:"hi"
-          ]
-    }
-
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
-    }
-})
-}
-
 function addPersistentMenu(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
@@ -114,6 +89,7 @@ function addPersistentMenu(sender){
         console.log('Error: ', response.body.error)
     }
 })
+
 }
 
 function sendMajorScale(sender) {
@@ -1186,12 +1162,12 @@ Maybe you'll learn something! For starters, choose of the options below.",
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"What is music?",
+        "title":"music",
         "payload":"music"
       },
       {
         "content_type":"text",
-        "title":"What is a scale?",
+        "title":"scale",
         "payload":"scale"
       }
     ]
