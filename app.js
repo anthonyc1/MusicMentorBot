@@ -1227,8 +1227,7 @@ app.post('/webhook/', function (req, res) {
               continue;
 
             case 'joke':
-              sendTextMessage(sender, "What's Beethoven's favorite fruit?");
-              sendTextMessage(sender, "BA-NA-NA-NAAAAA!");
+              sendTextMessage(sender, "What's Beethoven's favorite fruit?\nBA-NA-NA-NAAAAA!");
               continue;  
 
             case 'help':
