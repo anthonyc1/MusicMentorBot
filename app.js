@@ -1149,23 +1149,30 @@ app.post('/webhook/', function (req, res) {
       let sender = event.sender.id
       if (event.message && event.message.text) {
         let text = event.message.text
-        if (text.toLowerCase() === "hi"){
-          sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-          sendMainMenu(sender);
-          addPersistentMenu();
-          continue;
-        }
-        else {
-          sendTextMessage(sender, "I don't know what that means. Sorry.");
-          addPersistentMenu();
-          continue
+        switch (text.toLowerCase()){
+            case 'hi':
+              sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
+              sendMainMenu(sender);
+              addPersistentMenu();
+              continue;
+
+            case 'help':
+              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
+              sendMainMenu(sender);
+              addPersistentMenu();
+              continue;
+
+            default:
+              sendTextMessage(sender, "I don't know what that means. Sorry.");
+              addPersistentMenu();
+              continue;
         }
       sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
       }
       if (event.postback) {
         let text = JSON.stringify(event.postback)
       switch (text.slice(12,-2).toLowerCase()){
-          //options for sendMainMenu function
+          //payloads for sendMainMenu function
           case 'scales':
             chooseScale(sender);
             continue;
@@ -1177,7 +1184,7 @@ app.post('/webhook/', function (req, res) {
           case 'intervals':
             sendMajorScale(sender);
             continue;
-          //options for chooseScale function
+          //payloads for chooseScale function
           case 'major':
             chooseMajorScale(sender);
             continue;
@@ -1185,7 +1192,7 @@ app.post('/webhook/', function (req, res) {
           case 'minor':
             chooseMinorScale(sender);
             continue;
-          //options for choosePentatonicScale function
+          //payloads for choosePentatonicScale function
           case 'pentamajor':
             choosePentatonicMajorScale(sender);
             continue;
@@ -1193,7 +1200,7 @@ app.post('/webhook/', function (req, res) {
           case 'pentaminor':
             choosePentatonicMinorScale(sender);
             continue;
-          //options for chooseMajorScale function
+          //payloads for chooseMajorScale function
           case 'range1':
             sendMajorScale(sender);
             continue;
@@ -1205,7 +1212,7 @@ app.post('/webhook/', function (req, res) {
           case 'range3':
             sendMajorScale3(sender);
             continue;
-          //options for chooseMinorScale function
+          //payloads for chooseMinorScale function
           case 'rangeminor1':
             sendMinorScale(sender);
             continue;
@@ -1217,7 +1224,7 @@ app.post('/webhook/', function (req, res) {
           case 'rangeminor3':
             sendMinorScale3(sender);
             continue;
-          //options for choosePentatonicMajor function
+          //payloads for choosePentatonicMajor function
           case 'rangepentatonic1':
             sendPentatonicMajorScale(sender);
             continue;
@@ -1229,7 +1236,7 @@ app.post('/webhook/', function (req, res) {
           case 'rangepentatonic3':
             sendPentatonicMajorScale3(sender);
             continue;
-          //options for choosePentatonicMinor function
+          //payloads for choosePentatonicMinor function
           case 'rangepentatonic4':
             sendPentatonicMinorScale(sender);
             continue;
