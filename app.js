@@ -884,7 +884,7 @@ function sendMainMenu(sender) {
           {
             "type":"postback",
             "title":"Start Chatting",
-            "payload":"Start by saying something!"
+            "payload":"startchatting"
           },
         ]
       }
@@ -1211,8 +1211,42 @@ function choosePentatonicMinorScale(sender) {
 function help(sender) {
     let messageData = {
     "text":"I'm here to help! Here's a quick summary of what you can do:"
-    + " 1) Search our menu to view different music scales. Refer to our main menu!,"
-    + " 2) Chat with the bot! Maybe you'll learn something! For starters, choose of the options below.",
+    + " 1)Check out our main menu to view different music scales."
+    + " 2)Chat with the bot! Maybe you'll learn something!"
+    + " Was that helpful?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"yes",
+        "payload":"yess"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function startchatting(sender) {
+    let messageData = {
+    "text":"Start by saying something! Here are a few things you can talk about for instance.",
     "quick_replies":[
       {
         "content_type":"text",
@@ -1276,11 +1310,19 @@ app.post('/webhook/', function (req, res) {
               sendTextMessage(sender, "Okay, a scale is a series of musical notes grouped together in an octave.");
               continue;
 
+            case 'yes':
+              sendTextMessage(sender, "Oh, fabulous!");
+              continue;
+
+            case 'no':
+              sendTextMessage(sender, "Oh no. Cue the minor music!");
+              continue;
+
             default:
               sendTextMessage(sender, "I don't know what that means. Sorry.");
               continue;
         }
-      sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+      sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
       }
       if (event.postback) {
         let text = JSON.stringify(event.postback)
