@@ -1156,9 +1156,9 @@ function choosePentatonicMinorScale(sender) {
 
 function help(sender) {
     let messageData = {
-    "text":"I'm here to help! Here's a quick summary of what you can do:\ 
-    1) Search our menu to view different music scales. Refer to our main menu!, 2) Chat with the bot!\ 
-Maybe you'll learn something! For starters, choose of the options below.",
+    "text":"I'm here to help! Here's a quick summary of what you can do:"
+    + " 1) Search our menu to view different music scales. Refer to our main menu!,"
+    + " 2) Chat with the bot! Maybe you'll learn something! For starters, choose of the options below.",
     "quick_replies":[
       {
         "content_type":"text",
