@@ -53,7 +53,6 @@ function sendTextMessage(sender, text) {
     })
 }
 
-//Persistent Menu function under construction...
 function addPersistentMenu(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
@@ -66,13 +65,18 @@ function addPersistentMenu(sender){
         call_to_actions:[
             {
               type:"postback",
-              title:"Choose Major/Minor",
+              title:"View Major/Minor Scales",
               payload:"scales"
             },
             {
               type:"postback",
-              title:"Choose Pentatonic",
+              title:"View Pentatonic Scales",
               payload:"pentatonicscales"
+            },
+            {
+              type:"postback",
+              title:"Help",
+              payload:"help"
             }
           ]
     }
@@ -875,6 +879,7 @@ function sendMainMenu(sender) {
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
+        sender_action:"typing_on",
         method: 'POST',
         json: {
             recipient: {id:sender},
@@ -1149,6 +1154,40 @@ function choosePentatonicMinorScale(sender) {
     })
 }
 
+function help(sender) {
+    let messageData = {
+    "text":"I'm here to help! Here's a quick summary of what you can do: 
+    1) Search our menu to view different music scales. Refer to our main menu!, 2) Chat with the bot! 
+    Maybe you'll learn something! To start, choose of the options below.",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"music",
+        "payload":"music"
+      },
+      {
+        "content_type":"text",
+        "title":"scale",
+        "payload":"scale"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
 
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging
@@ -1261,6 +1300,9 @@ app.post('/webhook/', function (req, res) {
 
           case 'rangepentatonic6':
             sendPentatonicMinorScale3(sender);
+            continue;
+          case 'help':
+            help(sender);
             continue;
         }
       sendTextMessage(sender, text.slice(12,-2), token)
