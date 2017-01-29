@@ -1152,8 +1152,9 @@ app.post('/webhook/', function (req, res) {
         switch (text.toLowerCase()){
             case 'hi':
               sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-              sendMainMenu(sender);
               addPersistentMenu();
+              sendMainMenu(sender);
+              
               continue;
 
             case 'help':
