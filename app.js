@@ -1263,7 +1263,7 @@ app.post('/webhook/', function (req, res) {
             sendPentatonicMinorScale3(sender);
             continue;
         }
-      sendTextMessage(sender, "Postback received: "+text.substring(0, 200), token)
+      sendTextMessage(sender, text.slice(12,-2), token)
       }
     }
     res.sendStatus(200)
