@@ -1223,7 +1223,7 @@ app.post('/webhook/', function (req, res) {
         let text = event.message.text
         switch (text.toLowerCase()){
             case 'hi':
-              sendTextMessage(sender, "Hi!! How's it going?"
+              sendTextMessage(sender, "Hi!! How's it going?");
               continue;
 
             case 'help':
