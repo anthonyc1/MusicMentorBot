@@ -1244,7 +1244,7 @@ function help(sender) {
     })
 }
 
-function startchatting(sender) {
+function startChatting(sender) {
     let messageData = {
     "text":"Start by saying something! Here are a few things you can talk about for instance.",
     "quick_replies":[
@@ -1334,7 +1334,7 @@ app.post('/webhook/', function (req, res) {
               continue;
 
             case 'scale':
-              sendTextMessage(sender, "Okay, a scale is a series of musical notes grouped together in an octave.");
+              sendTextMessage(sender, "A scale is a series of musical notes grouped together in an octave.");
               continue;
 
             case 'yes':
@@ -1355,7 +1355,6 @@ app.post('/webhook/', function (req, res) {
       if (event.postback) {
         let text = JSON.stringify(event.postback)
       switch (text.slice(12,-2).toLowerCase()){
-          //payloads for sendMainMenu function
           case 'hi':
             sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
             addPersistentMenu(sender);
@@ -1367,10 +1366,18 @@ app.post('/webhook/', function (req, res) {
             sendMainMenu(sender);
             continue;
 
+          case 'help':
+            help(sender);
+            continue;
+
+          case 'startchatting':
+            startChatting(sender);
+            continue;
+
           case 'mainmenuscales':
             mainMenuScales(sender);
             continue;
-
+          //payloads for mainMenuScales function
           case 'scales':
             chooseScale(sender);
             continue;
@@ -1379,9 +1386,6 @@ app.post('/webhook/', function (req, res) {
             choosePentatonicScale(sender);
             continue;
 
-          case 'intervals':
-            sendMajorScale(sender);
-            continue;
           //payloads for chooseScale function
           case 'major':
             chooseMajorScale(sender);
@@ -1446,9 +1450,7 @@ app.post('/webhook/', function (req, res) {
           case 'rangepentatonic6':
             sendPentatonicMinorScale3(sender);
             continue;
-          case 'help':
-            help(sender);
-            continue;
+
         }
       sendTextMessage(sender, text.slice(12,-2), token)
       }
