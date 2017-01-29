@@ -1181,12 +1181,12 @@ function help(sender) {
     + " 2) Chat with the bot! Maybe you'll learn something! For starters, choose of the options below.",
     "quick_replies":[
       {
-        "content_type":"text",
+        "content_type":"payload",
         "title":"What is music?",
         "payload":"music"
       },
       {
-        "content_type":"text",
+        "content_type":"payload",
         "title":"What is a scale?",
         "payload":"scale"
       }
@@ -1218,10 +1218,13 @@ app.post('/webhook/', function (req, res) {
         let text = event.message.text
         switch (text.toLowerCase()){
             case 'hi':
-              sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-              addPersistentMenu(sender);
-              sendMainMenu(sender);
+              sendTextMessage(sender, "Hi there, music lover! How are you doing?");
               continue;
+
+            case 'joke':
+              sendTextMessage(sender, "What's Beethoven's favorite fruit?");
+              sendTextMessage(sender, "BA-NA-NA-NAAAAA!");
+              continue;  
 
             case 'help':
               sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
