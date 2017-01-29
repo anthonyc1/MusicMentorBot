@@ -52,7 +52,7 @@ function sendTextMessage(sender, text) {
     })
 }
 
-function addPersistentMenu(){
+function addPersistentMenu(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
     qs: { access_token: token },
@@ -1152,7 +1152,7 @@ app.post('/webhook/', function (req, res) {
         switch (text.toLowerCase()){
             case 'hi':
               sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-              addPersistentMenu();
+              addPersistentMenu(sender);
               sendMainMenu(sender);
               
               continue;
@@ -1160,12 +1160,12 @@ app.post('/webhook/', function (req, res) {
             case 'help':
               sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
               sendMainMenu(sender);
-              addPersistentMenu();
+              addPersistentMenu(sender);
               continue;
 
             default:
               sendTextMessage(sender, "I don't know what that means. Sorry.");
-              addPersistentMenu();
+              addPersistentMenu(sender);
               continue;
         }
       sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
