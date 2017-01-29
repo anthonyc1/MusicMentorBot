@@ -53,6 +53,7 @@ function sendTextMessage(sender, text) {
     })
 }
 
+//under construction...
 function getStarted(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
@@ -91,13 +92,8 @@ function addPersistentMenu(sender){
         call_to_actions:[
             {
               type:"postback",
-              title:"View Major/Minor Scales",
-              payload:"scales"
-            },
-            {
-              type:"postback",
-              title:"View Pentatonic Scales",
-              payload:"pentatonicscales"
+              title:"Main Menu",
+              payload:"mainmenu"
             },
             {
               type:"postback",
@@ -1248,11 +1244,7 @@ app.post('/webhook/', function (req, res) {
         let text = JSON.stringify(event.postback)
       switch (text.slice(12,-2).toLowerCase()){
           //payloads for sendMainMenu function
-          case 'hi':
-            sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-            addPersistentMenu(sender);
-            sendMainMenu(sender);
-            continue;
+          
 
           case 'scales':
             chooseScale(sender);
