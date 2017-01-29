@@ -53,7 +53,6 @@ function sendTextMessage(sender, text) {
     })
 }
 
-//under construction...
 function getStarted(sender){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
@@ -66,7 +65,6 @@ function getStarted(sender){
         call_to_actions:[
             {
               payload:"hi"
-            }
           ]
     }
 
@@ -92,8 +90,13 @@ function addPersistentMenu(sender){
         call_to_actions:[
             {
               type:"postback",
-              title:"Main Menu",
-              payload:"mainmenu"
+              title:"View Major/Minor Scales",
+              payload:"scales"
+            },
+            {
+              type:"postback",
+              title:"View Pentatonic Scales",
+              payload:"pentatonicscales"
             },
             {
               type:"postback",
@@ -1183,12 +1186,12 @@ Maybe you'll learn something! For starters, choose of the options below.",
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"Music",
+        "title":"What is music?",
         "payload":"music"
       },
       {
         "content_type":"text",
-        "title":"Scale",
+        "title":"What is a scale?",
         "payload":"scale"
       }
     ]
@@ -1219,11 +1222,14 @@ app.post('/webhook/', function (req, res) {
         let text = event.message.text
         switch (text.toLowerCase()){
             case 'hi':
-              sendTextMessage(sender, "Hi!! How's it going?");
+              sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
+              addPersistentMenu(sender);
+              sendMainMenu(sender);
               continue;
 
             case 'help':
-              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check our main menu!");
+              sendTextMessage(sender, "Hi, I'll be glad to help. This bot serves to help you learn musical scales. Check the menu below!");
+              sendMainMenu(sender);
               continue;
 
             case 'music':
@@ -1244,12 +1250,6 @@ app.post('/webhook/', function (req, res) {
         let text = JSON.stringify(event.postback)
       switch (text.slice(12,-2).toLowerCase()){
           //payloads for sendMainMenu function
-          case 'mainmenu':
-            sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-            addPersistentMenu(sender);
-            sendMainMenu(sender);
-            continue;
-
           case 'scales':
             chooseScale(sender);
             continue;
