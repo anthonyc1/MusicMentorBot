@@ -1538,8 +1538,7 @@ function showSadStoryGif(sender) {
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/sad.gif?raw=true"
          }
         } 
-    },
-    let 
+    }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
