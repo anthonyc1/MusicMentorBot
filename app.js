@@ -1567,14 +1567,14 @@ app.post('/webhook/', function (req, res) {
                 + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
                 + " My buried my head under my pillow once I got home.");
               showFailGif(sender);
-              setTimeout(storyMenuAgain(sender),2000);
+              storyMenuAgain(sender);
               continue;
 
             case 'funny':
               sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
                 + " \nJUST KIDDING! I'm only programmed to say what my snarky creator wants!");
               showFunnyGif(sender);
-              setTimeout(storyMenuAgain(sender),2000);
+              storyMenuAgain(sender);
               continue;
 
             case 'sad':
@@ -1582,7 +1582,7 @@ app.post('/webhook/', function (req, res) {
                 + " It's not easy being a chatbot living all alone on a server."
                 + " Please interact with me more, kind hooman!");
               showSadStoryGif(sender);
-              setTimeout(storyMenuAgain(sender),2000);
+              storyMenuAgain(sender);
               continue;
 
             case 'yes':
