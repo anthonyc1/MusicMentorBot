@@ -64,7 +64,7 @@ function getStarted(sender){
         thread_state : "new_thread",
         call_to_actions:[
             {
-              "payload":"hi"
+              payload:"hi"
             }
           ]
     }
