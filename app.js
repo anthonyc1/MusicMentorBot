@@ -1479,13 +1479,36 @@ function showSadGif(sender) {
 }
 
 function showFailGif(sender) {
-    let messageData = { 
+    let messageData = {
         "attachment":{
       "type":"image",
       "payload":{
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/fail.gif?raw=true"
          }
-        } 
+        },
+    "text":"Want to hear more?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"embarrassing",
+        "payload":"embarrassing"
+      },
+      {
+        "content_type":"text",
+        "title":"funny",
+        "payload":"funny"
+      },
+      {
+        "content_type":"text",
+        "title":"sad",
+        "payload":"sad"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
+      }
+    ]
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1608,9 +1631,8 @@ app.post('/webhook/', function (req, res) {
               sendTextMessage(sender, "One time, when I was about to play Beethoven's Fur Elise on the piano, my teacher"
                 + " asked me what key it was in. I answered \"C Major\" because there was no sharps or flats in the key."
                 + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
-                + " My buried my head under my pillow once I got home.");
+                + " I buried my head under my pillow once I got home.");
               showFailGif(sender);
-              storyMenuAgain(sender);
               continue;
 
             case 'funny':
