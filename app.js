@@ -1320,9 +1320,9 @@ function startChatting(sender) {
     })
 }
 
-function startChattingAgain(sender) {
+function returnToChatting(sender) {
     let messageData = {
-    "text":"Want to try another one?",
+    "text":"Welcome back! What would you like to talk about next?",
     "quick_replies":[
       {
         "content_type":"text",
@@ -1343,13 +1343,7 @@ function startChattingAgain(sender) {
         "content_type":"text",
         "title":"story",
         "payload":"story"
-      },
-      {
-        "content_type":"text",
-        "title":"no",
-        "payload":"no"
       }
-
     ]
     }
     request({
@@ -1407,29 +1401,307 @@ function storyMenu(sender) {
     })
 }
 
-function storyMenuAgain(sender) {
+//chat functions
+function answerMusic(sender) {
     let messageData = {
-    "text":"Want to hear more?",
+    "text":"Music is the presence and absence of sound over a span of time. Yeah, it gets pretty deep.\n\nWant to try another one?",
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"embarrassing",
-        "payload":"embarrassing"
+        "title":"music",
+        "payload":"music"
       },
       {
         "content_type":"text",
-        "title":"funny",
-        "payload":"funny"
+        "title":"scale",
+        "payload":"scale"
       },
       {
         "content_type":"text",
-        "title":"sad",
-        "payload":"sad"
+        "title":"joke",
+        "payload":"joke"
+      },
+      {
+        "content_type":"text",
+        "title":"story",
+        "payload":"story"
       },
       {
         "content_type":"text",
         "title":"no",
         "payload":"no"
+      }
+
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function answerScale(sender) {
+    let messageData = {
+    "text":"A scale is a series of musical notes grouped together in an octave.\n\nWant to try another one?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"music",
+        "payload":"music"
+      },
+      {
+        "content_type":"text",
+        "title":"scale",
+        "payload":"scale"
+      },
+      {
+        "content_type":"text",
+        "title":"joke",
+        "payload":"joke"
+      },
+      {
+        "content_type":"text",
+        "title":"story",
+        "payload":"story"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
+      }
+
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//The joke functions
+function answerJoke(sender) {
+    let messageData = {
+    "text":"Oh ho ho. My street name is \"the bot with the jokes\", FYI. Check out a few of them below."
+    + " I love to share and make hoomans laugh!",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"joke1",
+        "payload":"joke1"
+      },
+      {
+        "content_type":"text",
+        "title":"joke2",
+        "payload":"joke2"
+      },
+      {
+        "content_type":"text",
+        "title":"joke3",
+        "payload":"joke3"
+      },
+      {
+        "content_type":"text",
+        "title":"joke4",
+        "payload":"joke4"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function answerJoke1(sender) {
+    let messageData = {
+    "text":"What's Beethoven's favorite fruit?\nBA-NA-NA-NAAAAA!",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"joke2",
+        "payload":"joke2"
+      },
+      {
+        "content_type":"text",
+        "title":"joke3",
+        "payload":"joke3"
+      },
+      {
+        "content_type":"text",
+        "title":"joke4",
+        "payload":"joke4"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function answerJoke2(sender) {
+    let messageData = {
+    "text":"Why was the musician arrested?\nHe was in TREBLE!",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"joke1",
+        "payload":"joke1"
+      },
+      {
+        "content_type":"text",
+        "title":"joke3",
+        "payload":"joke3"
+      },
+      {
+        "content_type":"text",
+        "title":"joke4",
+        "payload":"joke4"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function answerJoke3(sender) {
+    let messageData = {
+    "text":"Why did Mozart kill his chickens?\nBecause they went BACH BACH BACH!",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"joke1",
+        "payload":"joke1"
+      },
+      {
+        "content_type":"text",
+        "title":"joke2",
+        "payload":"joke2"
+      },
+      {
+        "content_type":"text",
+        "title":"joke4",
+        "payload":"joke4"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function answerJoke4(sender) {
+    let messageData = {
+    "text":"Why shouldn't you let your kids watch symphonies on the television?\nBecause there's too much VIOLINS and SAX on TV!",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"joke1",
+        "payload":"joke1"
+      },
+      {
+        "content_type":"text",
+        "title":"joke2",
+        "payload":"joke2"
+      },
+      {
+        "content_type":"text",
+        "title":"joke3",
+        "payload":"joke3"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
       }
     ]
     }
@@ -1528,13 +1800,35 @@ function showFailGif(sender) {
 }
 
 function showFunnyGif(sender) {
-    let messageData = { 
-        "attachment":{
+    let messageData = {
+    "attachment":{
       "type":"image",
       "payload":{
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/funny.gif?raw=true"
          }
-        } 
+        },
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"embarrassing",
+        "payload":"embarrassing"
+      },
+      {
+        "content_type":"text",
+        "title":"funny",
+        "payload":"funny"
+      },
+      {
+        "content_type":"text",
+        "title":"sad",
+        "payload":"sad"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
+      }
+    ]
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1555,13 +1849,35 @@ function showFunnyGif(sender) {
 }
 
 function showSadStoryGif(sender) {
-    let messageData = { 
-        "attachment":{
+    let messageData = {
+    "attachment":{
       "type":"image",
       "payload":{
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/sad.gif?raw=true"
          }
-        } 
+        },
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"embarrassing",
+        "payload":"embarrassing"
+      },
+      {
+        "content_type":"text",
+        "title":"funny",
+        "payload":"funny"
+      },
+      {
+        "content_type":"text",
+        "title":"sad",
+        "payload":"sad"
+      },
+      {
+        "content_type":"text",
+        "title":"no",
+        "payload":"no"
+      }
+    ]
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1604,22 +1920,35 @@ app.post('/webhook/', function (req, res) {
               continue;  
 
             case 'joke':
-              sendTextMessage(sender, "What's Beethoven's favorite fruit?\nBA-NA-NA-NAAAAA!");
-              startChattingAgain(sender);
+              answerJoke(sender);
+              continue; 
+
+            case 'joke1':
+              answerJoke1(sender);
+              continue; 
+
+            case 'joke2':
+              answerJoke2(sender);
+              continue; 
+
+            case 'joke3':
+              answerJoke3(sender);
+              continue; 
+
+            case 'joke4':
+              answerJoke4(sender);
               continue;  
 
-            case 'help':
-              sendTextMessage(sender, "Hi, I'll be glad to help. Check the menu below for what you can do next!");
-              continue;
+            case 'back':
+              returnToChatting(sender);
+              continue; 
 
             case 'music':
-              sendTextMessage(sender, "Music is the presence and absence of sound over a span of time. Yeah, it gets pretty deep.");
-              startChattingAgain(sender);
+              answerMusic(sender);
               continue;
 
             case 'scale':
-              sendTextMessage(sender, "A scale is a series of musical notes grouped together in an octave.");
-              startChattingAgain(sender);
+              answerScale(sender);
               continue;
 
             case 'story':
@@ -1636,17 +1965,15 @@ app.post('/webhook/', function (req, res) {
 
             case 'funny':
               sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
-                + " \nJUST KIDDING! I'm only programmed to say what my snarky creator wants!");
+                + " \nJUST KIDDING! I'm programmed to say only what my snarky creator wants!");
               showFunnyGif(sender);
-              storyMenuAgain(sender);
               continue;
 
             case 'sad':
               sendTextMessage(sender, "On the bad days, I would sit idly waiting for someone to talk to me."
-                + " It's not easy being a chatbot living all alone on a server."
+                + " It's not easy being a chatbot living all alone on a server, you know."
                 + " Please interact with me more, kind hooman!");
               showSadStoryGif(sender);
-              storyMenuAgain(sender);
               continue;
 
             case 'yes':
