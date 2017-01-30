@@ -1486,7 +1486,6 @@ function showFailGif(sender) {
         "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/fail.gif?raw=true"
          }
         },
-    "text":"Want to hear more?",
     "quick_replies":[
       {
         "content_type":"text",
