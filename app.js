@@ -1428,8 +1428,8 @@ function answerMusic(sender) {
       },
       {
         "content_type":"text",
-        "title":"no",
-        "payload":"no"
+        "title":"main menu",
+        "payload":"main menu"
       }
 
     ]
@@ -1477,8 +1477,8 @@ function answerScale(sender) {
       },
       {
         "content_type":"text",
-        "title":"no",
-        "payload":"no"
+        "title":"main menu",
+        "payload":"main menu"
       }
 
     ]
