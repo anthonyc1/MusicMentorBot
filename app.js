@@ -96,6 +96,11 @@ function addPersistentMenu(sender){
             },
             {
               type:"postback",
+              title:"View Web App",
+              payload:"webapp"
+            },
+            {
+              type:"postback",
               title:"Help",
               payload:"help"
             }
@@ -1208,12 +1213,49 @@ function choosePentatonicMinorScale(sender) {
     })
 }
 
+function webapp(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Welcome to Music Mentor",
+                    "subtitle": "Visit our companion web app for more interactive learning.",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/MusicMentorIcon.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://musicmentorapp.herokuapp.com/",
+                        "title": "View Web App"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 function help(sender) {
     let messageData = {
-    "text":"I'm here to help! Here's what you can do on this app:"
-    + " \n1) View the different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
-    + " \n2) Chat with the bot! Maybe you'll learn something. Or you'll find it entertaining."
-    + " \nJust check out our main menu option! Was that helpful?",
+    "text":"Hi, there. I'm here to help! Here's what you can do:"
+    + " \n\n"+:musical_keyboard:+"View different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
+    + " \n\n"+:speech_balloon:+" Chat with the bot! Maybe you'll learn something, or perhaps find it entertaining."
+    + " \n\n"+:iphone:+"Visit our companion web application, Music Mentor, for more interactive learning and fun!"
+    + " \n\nTo do any or all of that, check out our main menu! Was that helpful?",
     "quick_replies":[
       {
         "content_type":"text",
@@ -2007,6 +2049,10 @@ app.post('/webhook/', function (req, res) {
 
           case 'help':
             help(sender);
+            continue;
+
+          case 'webapp':
+            webapp(sender);
             continue;
 
           case 'startchatting':
