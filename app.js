@@ -891,6 +891,11 @@ function sendMainMenu(sender) {
             "title":"Start Chatting",
             "payload":"startchatting"
           },
+          {
+            "type":"postback",
+            "title":"View Web App",
+            "payload":"webapp"
+          },
         ]
       }
     }
@@ -1221,7 +1226,7 @@ function webapp(sender) {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Welcome to Music Mentor",
-                    "subtitle": "Visit our companion web app for more interactive learning.",
+                    "subtitle": "Visit our companion web app for more interactive learning and fun! Happy music learning!",
                     "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/MusicMentorIcon.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
@@ -1252,9 +1257,9 @@ function webapp(sender) {
 function help(sender) {
     let messageData = {
     "text":"Hi, there. I'm here to help! Here's what you can do:"
-    + " \n\n:musical_keyboard: View different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
-    + " \n\n:speech_balloon: Bored? Chat with the bot! Maybe you'll learn something, or perhaps find it entertaining."
-    + " \n\n:iphone: Want more? Visit our companion web application, Music Mentor, for more interactive learning and fun!"
+    + " \n\nView different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
+    + " \n\nBored??? Say no more. Chat with the bot! Maybe you'll learn something, or perhaps find it entertaining."
+    + " \n\nWant more? Visit our companion web application, Music Mentor, for more interactive learning and fun!!"
     + " \n\nTo do any or all of that, check out our main menu! Was that helpful? I'd love your feedback! :)",
     "quick_replies":[
       {
