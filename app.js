@@ -1226,7 +1226,7 @@ function webapp(sender) {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Welcome to Music Mentor",
-                    "subtitle": "Visit our companion web app for more interactive learning and fun! Happy music learning!",
+                    "subtitle": "Visit our companion web app for more interactive learning and fun!",
                     "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/MusicMentorIcon.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
@@ -1304,6 +1304,11 @@ function start(sender) {
         "content_type":"text",
         "title":"start chatting",
         "payload":"start chatting"
+      },
+      {
+        "content_type":"text",
+        "title":"view web app",
+        "payload":"view web app"
       }
     ]
     }
@@ -1823,8 +1828,8 @@ function showFailGif(sender) {
       },
       {
         "content_type":"text",
-        "title":"no",
-        "payload":"no"
+        "title":"back",
+        "payload":"back"
       }
     ]
     }
@@ -1872,8 +1877,8 @@ function showFunnyGif(sender) {
       },
       {
         "content_type":"text",
-        "title":"no",
-        "payload":"no"
+        "title":"back",
+        "payload":"back"
       }
     ]
     }
@@ -1921,8 +1926,8 @@ function showSadStoryGif(sender) {
       },
       {
         "content_type":"text",
-        "title":"no",
-        "payload":"no"
+        "title":"back",
+        "payload":"back"
       }
     ]
     }
@@ -1965,6 +1970,10 @@ app.post('/webhook/', function (req, res) {
             case 'start chatting':
               startChatting(sender);
               continue;  
+
+            case 'view web app':
+              webapp(sender);
+              continue;
 
             case 'joke':
               answerJoke(sender);
