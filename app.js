@@ -1252,10 +1252,10 @@ function webapp(sender) {
 function help(sender) {
     let messageData = {
     "text":"Hi, there. I'm here to help! Here's what you can do:"
-    + " \n\n"+:musical_keyboard:+"View different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
-    + " \n\n"+:speech_balloon:+" Chat with the bot! Maybe you'll learn something, or perhaps find it entertaining."
-    + " \n\n"+:iphone:+"Visit our companion web application, Music Mentor, for more interactive learning and fun!"
-    + " \n\nTo do any or all of that, check out our main menu! Was that helpful?",
+    + " \n\n:musical_keyboard: View different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
+    + " \n\n:speech_balloon: Bored? Chat with the bot! Maybe you'll learn something, or perhaps find it entertaining."
+    + " \n\n:iphone: Want more? Visit our companion web application, Music Mentor, for more interactive learning and fun!"
+    + " \n\nTo do any or all of that, check out our main menu! Was that helpful? I'd love your feedback! :)",
     "quick_replies":[
       {
         "content_type":"text",
