@@ -15,10 +15,10 @@ Or visit the web application itself: <a href="https://musicmentorapp.herokuapp.c
 - [x] Generic Templates
 - [x] Quick Replies
 - [ ] Implementation of Wit.ai
-- [ ] Web scraping
+- [ ] Incorporate web scraping
 - [x] Incorporation of rich media into chat
 - [x] A companion website
-- [ ] App submission to Facebook for approval
+- [x] App submission to Facebook for approval
 
 ## Say hi to Music Mentor!
 Say hi to Music Mentor bot: <a href="https://m.me/musicmentorbot">https://m.me/musicmentorbot</a>    
@@ -27,10 +27,13 @@ If you enjoyed our services, please leave a like! Any support goes a long way.
 (NOTE: the app hasn't been submitted for approval by Facebook yet. But if you would like to test out the bot, feel free to send a message to our page saying so!)
 
 ##Screenshot of Conversation
-<img src="https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/music-mentor-bot-convo.jpg?raw=true" width = 290px height = 500px>    
 Check out the graphical display of music scales!    
+<img src="https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/music-mentor-bot-convo.jpg?raw=true" width = 290px height = 500px>       
+<br>
+<br>
+This bot can tell jokes!    
 <img src="https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/music-mentor-bot-convo2.jpg?raw=true" width = 290px height = 500px>    
-Hear some of the bot's jokes!
+
 
 ## How I built it
 This application is built entirely in Javascript and Node.js, with several package dependencies including body-parser, express, and request. The backend code for the application is deployed on Heroku.    
