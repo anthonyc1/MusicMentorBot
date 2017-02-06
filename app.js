@@ -1297,8 +1297,8 @@ function start(sender) {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"main menu",
-        "payload":"main menu"
+        "title":"view scales",
+        "payload":"view scales"
       },
       {
         "content_type":"text",
@@ -1966,6 +1966,10 @@ app.post('/webhook/', function (req, res) {
               sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
               sendMainMenu(sender);
               continue;
+
+            case 'view scales':
+              mainMenuScales(sender);
+              continue; 
 
             case 'start chatting':
               startChatting(sender);
