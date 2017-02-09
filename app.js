@@ -2178,28 +2178,28 @@ app.post('/webhook/', function (req, res) {
 
             case 'scale conversion':
               sendTextMessage(sender, "There are two relationships you need to know for scales: relative and parallel."
-    + "\nScales that are relative share the same key signature. Scales that are parallel share the same root note."
-    + "\nFor instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
-    + "\n\nINTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
-    + "\n\nBut first, want to try another one?");
+                 + "\nScales that are relative share the same key signature. Scales that are parallel share the same root note."
+                + "\nFor instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
+                + "\n\nINTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
+                 + "\n\nBut first, want to try another one?");
               showScaleConversionGif(sender);
               continue;
 
             case 'chord':
               sendTextMessage(sender, "In simple terms, a chord is three or more musical notes played at the same time."
-    + "\nIn fact, playing chords in very popular in guitar and piano!"
-    + "\nThere's a unique formula to create chords for any scale."
-    + "\n\nWant to find out how?? Check out our web app for a tutorial and a cool chord building tool!"
-    + "\n\nBut first, want to try another one?");
+                 + "\nIn fact, playing chords in very popular in guitar and piano!"
+                 + "\nThere's a unique formula to create chords for any scale."
+                 + "\n\nWant to find out how?? Check out our web app for a tutorial and a cool chord building tool!"
+                 + "\n\nBut first, want to try another one?");
               showChordGif(sender);
               continue;
 
             case 'interval':
               sendTextMessage(sender, "An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
-    + "\nThey are interval names! You can also find the interval for any note by specifying the quality and distance."
-    + "\nFor example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
-    + "\n\nPretty cool, isn't it? Check out our web app for a tutorial and a cool interval finding tool!"
-    + "\n\nBut first, want to try another one?");
+                 + "\nThey are interval names! You can also find the interval for any note by specifying the quality and distance."
+                 + "\nFor example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
+                 + "\n\nPretty cool, isn't it? Check out our web app for a tutorial and a cool interval finding tool!"
+                 + "\n\nBut first, want to try another one?");
               showIntervalGif(sender);
               continue;
 
