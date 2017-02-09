@@ -2182,7 +2182,7 @@ app.post('/webhook/', function (req, res) {
                 + " For instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
                 + "\n\nINTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
                  + "\n\nBut first, want to try another one?");
-              showScaleConversionGif(sender);
+              showScalesConversionGif(sender);
               continue;
 
             case 'chord':
