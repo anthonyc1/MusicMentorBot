@@ -2168,18 +2168,18 @@ app.post('/webhook/', function (req, res) {
 
             case 'scale':
               sendTextMessage(sender, "A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
-                 + "\nNote that scales often end with the root note to form an octave, or a group of 8 notes like the C major: CDEFGABC."
-                 + "\nSee how the scale begins and ends in the C note but has 7 different notes, which makes major scales heptatonic actually."
+                 + " Note that scales often end with the root note to form an octave, or a group of 8 notes like the C major: CDEFGABC."
+                 + " See how the scale begins and ends in the C note but has 7 different notes, which makes major scales heptatonic actually."
                  + "\n\nYou can view some of those scales by choosing \"view scales\" in our main menu."
-                 + "\nI also suggest you check out our web app, Music Mentor, to learn more if you're even slightly curious! I promise, it's quite neat."
+                 + " I also suggest you check out our web app, Music Mentor, to learn more if you're even slightly curious! I promise, it's quite neat."
                  + "\n\nBut first, want to try another one?");
               showScaleGif(sender);
               continue;
 
             case 'scale conversion':
               sendTextMessage(sender, "There are two relationships you need to know for scales: relative and parallel."
-                 + "\nScales that are relative share the same key signature. Scales that are parallel share the same root note."
-                + "\nFor instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
+                 + " Scales that are relative share the same key signature. Scales that are parallel share the same root note."
+                + " For instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
                 + "\n\nINTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
                  + "\n\nBut first, want to try another one?");
               showScaleConversionGif(sender);
@@ -2187,8 +2187,8 @@ app.post('/webhook/', function (req, res) {
 
             case 'chord':
               sendTextMessage(sender, "In simple terms, a chord is three or more musical notes played at the same time."
-                 + "\nIn fact, playing chords in very popular in guitar and piano!"
-                 + "\nThere's a unique formula to create chords for any scale."
+                 + " In fact, playing chords in very popular in guitar and piano!"
+                 + " There's a unique formula to create chords for any scale."
                  + "\n\nWant to find out how?? Check out our web app for a tutorial and a cool chord building tool!"
                  + "\n\nBut first, want to try another one?");
               showChordGif(sender);
@@ -2196,8 +2196,8 @@ app.post('/webhook/', function (req, res) {
 
             case 'interval':
               sendTextMessage(sender, "An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
-                 + "\nThey are interval names! You can also find the interval for any note by specifying the quality and distance."
-                 + "\nFor example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
+                 + " They are interval names! You can also find the interval for any note by specifying the quality and distance."
+                 + " For example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
                  + "\n\nPretty cool, isn't it? Check out our web app for a tutorial and a cool interval finding tool!"
                  + "\n\nBut first, want to try another one?");
               showIntervalGif(sender);
