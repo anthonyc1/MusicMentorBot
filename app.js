@@ -1447,7 +1447,7 @@ function storyMenu(sender) {
 function answerMusic(sender) {
     let messageData = {
     "text":"Music is the presence and absence of sound over a span of time. Deep, isn't it?"
-    + "\n Let's learn more, shall we? Choose any below!",
+    + "\n\nLet's learn more, shall we? Choose any below!",
     "quick_replies":[
       {
         "content_type":"text",
@@ -1497,38 +1497,11 @@ function answerMusic(sender) {
 function answerScale(sender) {
     let messageData = {
     "text":"A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
-    + "\n Note that scales often end with the root note to form an octave, or a group of 8 notes like the C major: CDEFGABC."
-    + "\n See how the scale begins and ends in the C note but has 7 different notes, which makes major scales heptatonic actually."
-    + "\n\n You can view some of those scales by choosing \"view scales\" in our main menu."
-    + "\n I also suggest you check out our web app, Music Mentor, to learn more if you're even slightly curious! I promise, it's quite neat."
-    + "\n But first, want to try another one?",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"scale conversion",
-        "payload":"scale conversion"
-      },
-      {
-        "content_type":"text",
-        "title":"chord",
-        "payload":"chord"
-      },
-      {
-        "content_type":"text",
-        "title":"interval",
-        "payload":"interval"
-      },
-      {
-        "content_type":"text",
-        "title":"view web app",
-        "payload":"view web app"
-      },
-      {
-        "content_type":"text",
-        "title":"back",
-        "payload":"back"
-      }
-    ]
+    + "\nNote that scales often end with the root note to form an octave, or a group of 8 notes like the C major: CDEFGABC."
+    + "\nSee how the scale begins and ends in the C note but has 7 different notes, which makes major scales heptatonic actually."
+    + "\n\nYou can view some of those scales by choosing \"view scales\" in our main menu."
+    + "\nI also suggest you check out our web app, Music Mentor, to learn more if you're even slightly curious! I promise, it's quite neat."
+    + "\n\nBut first, want to try another one?"
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1549,39 +1522,11 @@ function answerScale(sender) {
 
 function answerScaleConversion(sender) {
     let messageData = {
-    "text":"Did you know that you can convert between scales? Major to minor? Pentatonic minor to pentatonic major!? YES."
-    + "\n There are two relationships you need to know for scales: relative and parallel."
-    + "\n Scales that are relative share the same key signature. Scales that are parallel share the same root note."
-    + "\n For instance, the C major scale and the A minor scale share the same key signature, which is no accidentals (another word for sharps(#) and flats(b)."
-    + "\n\n INTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
-    + "\n But first, want to try another one?",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"scale",
-        "payload":"scale"
-      },
-      {
-        "content_type":"text",
-        "title":"chord",
-        "payload":"chord"
-      },
-      {
-        "content_type":"text",
-        "title":"interval",
-        "payload":"interval"
-      },
-      {
-        "content_type":"text",
-        "title":"view web app",
-        "payload":"view web app"
-      },
-      {
-        "content_type":"text",
-        "title":"back",
-        "payload":"back"
-      }
-    ]
+    "text":"\nThere are two relationships you need to know for scales: relative and parallel."
+    + "\nScales that are relative share the same key signature. Scales that are parallel share the same root note."
+    + "\nFor instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
+    + "\n\nINTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
+    + "\n\nBut first, want to try another one?"
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1603,37 +1548,10 @@ function answerScaleConversion(sender) {
 function answerChord(sender) {
     let messageData = {
     "text":"In simple terms, a chord is three or more musical notes played at the same time."
-    + "\n In fact, playing chords in very popular in guitar and piano!"
-    + "\n There's a unique formula to create chords for any scale."
-    + "\n\n Want to find out how?? Check out our web app for a tutorial and a cool chord building tool!"
-    + "\n But first, want to try another one?",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"scale",
-        "payload":"scale"
-      },
-      {
-        "content_type":"text",
-        "title":"scale conversion",
-        "payload":"scale conversion"
-      },
-      {
-        "content_type":"text",
-        "title":"interval",
-        "payload":"interval"
-      },
-      {
-        "content_type":"text",
-        "title":"view web app",
-        "payload":"view web app"
-      },
-      {
-        "content_type":"text",
-        "title":"back",
-        "payload":"back"
-      }
-    ]
+    + "\nIn fact, playing chords in very popular in guitar and piano!"
+    + "\nThere's a unique formula to create chords for any scale."
+    + "\n\nWant to find out how?? Check out our web app for a tutorial and a cool chord building tool!"
+    + "\n\nBut first, want to try another one?"
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1655,37 +1573,10 @@ function answerChord(sender) {
 function answerInterval(sender) {
     let messageData = {
     "text":"An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
-    + "\n They are interval names! You can also find the interval for any note by specifying the quality and distance."
-    + "\n For example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
-    + "\n\n Pretty cool, isn't it? Check out our web app for a tutorial and a cool interval finding tool!"
-    + "\n But first, want to try another one?",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"scale",
-        "payload":"scale"
-      },
-      {
-        "content_type":"text",
-        "title":"scale conversion",
-        "payload":"scale conversion"
-      },
-      {
-        "content_type":"text",
-        "title":"chord",
-        "payload":"chord"
-      },
-      {
-        "content_type":"text",
-        "title":"view web app",
-        "payload":"view web app"
-      },
-      {
-        "content_type":"text",
-        "title":"back",
-        "payload":"back"
-      }
-    ]
+    + "\nThey are interval names! You can also find the interval for any note by specifying the quality and distance."
+    + "\nFor example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
+    + "\n\nPretty cool, isn't it? Check out our web app for a tutorial and a cool interval finding tool!"
+    + "\n\nBut first, want to try another one?"
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -1917,6 +1808,223 @@ function answerJoke4(sender) {
             recipient: {id:sender},
             message: messageData,
         }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//gif for music functions
+function showScaleGif(sender) {
+    let messageData = {
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/scaleskeyboard.gif?raw=true"
+         }
+        },
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"scale conversion",
+        "payload":"scale conversion"
+      },
+      {
+        "content_type":"text",
+        "title":"chord",
+        "payload":"chord"
+      },
+      {
+        "content_type":"text",
+        "title":"interval",
+        "payload":"interval"
+      },
+      {
+        "content_type":"text",
+        "title":"view web app",
+        "payload":"view web app"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function showScalesConversionGif(sender) {
+    let messageData = {
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/musicgaryoldman.gif?raw=true"
+         }
+        },
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"scale",
+        "payload":"scale"
+      },
+      {
+        "content_type":"text",
+        "title":"chord",
+        "payload":"chord"
+      },
+      {
+        "content_type":"text",
+        "title":"interval",
+        "payload":"interval"
+      },
+      {
+        "content_type":"text",
+        "title":"view web app",
+        "payload":"view web app"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function showChordGif(sender) {
+    let messageData = {
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/chordbeatles.gif?raw=true"
+         }
+        },
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"scale",
+        "payload":"scale"
+      },
+      {
+        "content_type":"text",
+        "title":"scale conversion",
+        "payload":"scale conversion"
+      },
+      {
+        "content_type":"text",
+        "title":"interval",
+        "payload":"interval"
+      },
+      {
+        "content_type":"text",
+        "title":"view web app",
+        "payload":"view web app"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function showIntervalGif(sender) {
+    let messageData = {
+        "attachment":{
+      "type":"image",
+      "payload":{
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/pianomonkey.gif?raw=true"
+         }
+        },
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"scale",
+        "payload":"scale"
+      },
+      {
+        "content_type":"text",
+        "title":"scale conversion",
+        "payload":"scale conversion"
+      },
+      {
+        "content_type":"text",
+        "title":"chord",
+        "payload":"chord"
+      },
+      {
+        "content_type":"text",
+        "title":"view web app",
+        "payload":"view web app"
+      },
+      {
+        "content_type":"text",
+        "title":"back",
+        "payload":"back"
+      }
+    ]
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        },
+        
     }, function(error, response, body) {
         if (error) {
             console.log('Error sending messages: ', error)
@@ -2161,18 +2269,22 @@ app.post('/webhook/', function (req, res) {
 
             case 'scale':
               answerScale(sender);
+              showScaleGif(sender);
               continue;
 
             case 'scale conversion':
               answerScaleConversion(sender);
+              showScaleConversionGif(sender);
               continue;
 
             case 'chord':
               answerChord(sender);
+              showChordGif(sender);
               continue;
 
             case 'interval':
               answerInterval(sender);
+              showIntervalGif(sender);
               continue;
 
             case 'story':
