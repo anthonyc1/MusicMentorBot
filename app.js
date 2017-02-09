@@ -2064,7 +2064,7 @@ function showSadStoryGif(sender) {
     "attachment":{
       "type":"image",
       "payload":{
-        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/sad.gif?raw=true"
+        "url":"https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/gifs/lonely.gif?raw=true"
          }
         },
     "quick_replies":[
