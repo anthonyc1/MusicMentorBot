@@ -929,7 +929,8 @@ function mainMenuScales(sender) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Choose a type of scale to view:",
+        "text":"CHOOSE a type of scale to view:"
+        + "\n\nOr TYPE the scale name below. Example: type \"C major\" or type \"A pentatonic minor\".",
         "buttons":[
           {
             "type":"postback",
@@ -2247,6 +2248,106 @@ app.post('/webhook/', function (req, res) {
             case 'bye':
               sendTextMessage(sender, "See you later, music lover!");
               continue;
+
+            //cases for choosing major scales
+            case 'c major':
+            case 'c# major':
+            case 'db major':
+            case 'd major':
+            case 'eb major':
+                sendMajorScale(sender);
+                continue;
+
+            case 'e major':
+            case 'f major':
+            case 'f# major':
+            case 'gb major':
+            case 'g major':
+                sendMajorScale2(sender);
+                continue;
+
+            case 'ab major':
+            case 'a major':
+            case 'bb major':
+            case 'b major':
+            case 'eb major':
+                sendMajorScale3(sender);
+                continue;
+
+            //cases for choosing minor scales
+            case 'c minor':
+            case 'c# minor':
+            case 'db minor':
+            case 'd minor':
+            case 'eb minor':
+                sendMinorScale(sender);
+                continue;
+
+            case 'e minor':
+            case 'f minor':
+            case 'f# minor':
+            case 'gb minor':
+            case 'g minor':
+                sendMinorScale2(sender);
+                continue;
+
+            case 'ab minor':
+            case 'a minor':
+            case 'bb minor':
+            case 'b minor':
+            case 'eb minor':
+                sendMinorScale3(sender);
+                continue;
+
+            //cases for choosing pentatonic major scales
+            case 'c pentatonic major':
+            case 'c# pentatonic major':
+            case 'db pentatonic major':
+            case 'd pentatonic major':
+            case 'eb pentatonic major':
+                sendPentatonicMajorScale(sender);
+                continue;
+
+            case 'e pentatonic major':
+            case 'f pentatonic major':
+            case 'f# pentatonic major':
+            case 'gb pentatonic major':
+            case 'g pentatonic major':
+                sendPentatonicMajorScale2(sender);
+                continue;
+
+            case 'ab pentatonic major':
+            case 'a pentatonic major':
+            case 'bb pentatonic major':
+            case 'b pentatonic major':
+            case 'eb pentatonic major':
+                sendPentatonicMajorScale3(sender);
+                continue;
+
+            //cases for choosing pentatonic minor scales
+            case 'c pentatonic minor':
+            case 'c# pentatonic minor':
+            case 'db pentatonic minor':
+            case 'd pentatonic minor':
+            case 'eb pentatonic minor':
+                sendPentatonicMinorScale(sender);
+                continue;
+
+            case 'e pentatonic minor':
+            case 'f pentatonic minor':
+            case 'f# pentatonic minor':
+            case 'gb pentatonic minor':
+            case 'g pentatonic minor':
+                sendPentatonicMinorScale2(sender);
+                continue;
+
+            case 'ab pentatonic minor':
+            case 'a pentatonic minor':
+            case 'bb pentatonic minor':
+            case 'b pentatonic minor':
+            case 'eb pentatonic minor':
+                sendPentatonicMinorScale3(sender);
+                continue;
 
             default:
               sendTextMessage(sender, "I don't know what that means. Sorry.");
