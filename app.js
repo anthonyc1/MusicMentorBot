@@ -1510,8 +1510,23 @@ function answerJoke(sender) {
     "quick_replies":[
       {
         "content_type":"text",
-        "title":"another joke",
-        "payload":"another joke"
+        "title":"joke1",
+        "payload":"joke1"
+      },
+      {
+        "content_type":"text",
+        "title":"joke2",
+        "payload":"joke2"
+      },
+      {
+        "content_type":"text",
+        "title":"joke3",
+        "payload":"joke3"
+      },
+      {
+        "content_type":"text",
+        "title":"joke4",
+        "payload":"joke4"
       },
       {
         "content_type":"text",
@@ -2134,18 +2149,6 @@ app.post('/webhook/', function (req, res) {
             case 'joke':
               answerJoke(sender);
               continue; 
-
-            case 'another joke':
-              var jokes = {
-                1:answerJoke1(sender),
-                2:answerJoke2(sender),
-                3:answerJoke3(sender)
-                4:answerJoke4(sender)};
-              var keylist = Object.keys(jokes);
-              var randomKey = keylist[Math.floor(Math.random()*keylist.length)];
-              var result = jokes[randomKey];
-              result;
-              continue;
 
             case 'joke1':
               answerJoke1(sender);
