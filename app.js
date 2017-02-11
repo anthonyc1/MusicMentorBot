@@ -91,8 +91,13 @@ function addPersistentMenu(sender){
         call_to_actions:[
             {
               type:"postback",
-              title:"Main Menu",
-              payload:"mainmenu"
+              title:"View Scales",
+              payload:"mainmenuscales"
+            },
+            {
+              type:"postback",
+              title:"Start Chatting",
+              payload:"startchatting"
             },
             {
               type:"postback",
