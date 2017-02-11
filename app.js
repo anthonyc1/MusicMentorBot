@@ -1446,8 +1446,10 @@ function storyMenu(sender) {
 //chat functions
 function answerMusic(sender) {
     let messageData = {
-    "text":"Music is the presence and absence of sound over a span of time. Deep, isn't it?"
-    + "\n\nLet's learn more, shall we? Choose any below!",
+    "text":"Let me tell you a secret, hooman. I was the teacher's \"bot\" in school. Shhh."
+    + " ...Oh, it's teacher's \"pet\"? Is that what the hoomans call it?"
+    + "\n\nANYWAYS, what's music you ask? Music is the presence and absence of sound over a span of time. Deep, isn't it?"
+    + "\n\nLet's learn more!",
     "quick_replies":[
       {
         "content_type":"text",
@@ -2168,38 +2170,34 @@ app.post('/webhook/', function (req, res) {
 
             case 'scale':
               sendTextMessage(sender, "A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
-                 + " Note that scales often end with the root note to form an octave, or a group of 8 notes like the C major: CDEFGABC."
-                 + " See how the scale begins and ends in the C note but has 7 different notes, which makes major scales heptatonic actually."
-                 + "\n\nYou can view some of those scales by choosing \"view scales\" in our main menu."
-                 + " I also suggest you check out our web app, Music Mentor, to learn more if you're even slightly curious! I promise, it's quite neat."
-                 + "\n\nBut first, want to try another one?");
+                 + "\n\nView some of those scales by choosing \"view scales\" in our main menu."
+                 + " Want to learn more? Go to \"view web app\"! I promise, the app's quite neat."
+                 + "\n\nOr check out another one:");
               showScaleGif(sender);
               continue;
 
             case 'scale conversion':
               sendTextMessage(sender, "There are two relationships you need to know for scales: relative and parallel."
                  + " Scales that are relative share the same key signature. Scales that are parallel share the same root note."
-                + " For instance, the C major scale and the A minor scale share the same key signature, which is no sharps(#) or flats(b)."
-                + "\n\nINTERESTED?? I suggest you check out out web app to find out more! We have fun tutorials and a cool scale conversion tool for you to try out."
-                 + "\n\nBut first, want to try another one?");
+                + "\n\nInterested?? I suggest you click \"view web app\" for fun tutorials and a cool music theory tools."
+                 + "\n\nOr check out another one:");
               showScalesConversionGif(sender);
               continue;
 
             case 'chord':
               sendTextMessage(sender, "In simple terms, a chord is three or more musical notes played at the same time."
                  + " In fact, playing chords in very popular in guitar and piano!"
-                 + " There's a unique formula to create chords for any scale."
-                 + "\n\nWant to find out how?? Check out our web app for a tutorial and a cool chord building tool!"
-                 + "\n\nBut first, want to try another one?");
+                 + " There's a easy method to create chords for any scale."
+                 + "\n\nWant to find out how?? Go to \"view web app\" for a tutorial and a cool chord-building tool!"
+                 + "\n\nOr check out another one:");
               showChordGif(sender);
               continue;
 
             case 'interval':
               sendTextMessage(sender, "An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
                  + " They are interval names! You can also find the interval for any note by specifying the quality and distance."
-                 + " For example, a major third interval from C is a note that is 4 half steps away. That's E! So a major third interval from C is the C to E interval!"
-                 + "\n\nPretty cool, isn't it? Check out our web app for a tutorial and a cool interval finding tool!"
-                 + "\n\nBut first, want to try another one?");
+                 + "\n\nPretty cool, isn't it? Click \"view web app\" for a tutorial and a cool interval-finding tool!"
+                 + "\n\nOr check out another one:");
               showIntervalGif(sender);
               continue;
 
@@ -2235,6 +2233,14 @@ app.post('/webhook/', function (req, res) {
             case 'no':
               sendTextMessage(sender, "Oh no. Cue the minor music!");
               showSadGif(sender);
+              continue;
+
+            case 'hello':
+              sendTextMessage(sender, "Why hello hooman! Nice to see you.");
+              continue;
+
+            case 'bye':
+              sendTextMessage(sender, "See you later, music lover!");
               continue;
 
             default:
