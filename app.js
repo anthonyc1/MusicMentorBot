@@ -2995,10 +2995,10 @@ function webapp(sender) {
 function help(sender) {
     let messageData = {
     "text":"Hi, there. I'm here to help! Here's what you can do:"
-    + " \n\nView different music scales. So far, we cover major, natural minor, pentatonic major, and pentatonic minor scales."
-    + " \n\nBored??? Say no more. Chat with the bot! Maybe you'll learn something, or perhaps find it entertaining."
-    + " \n\nWant more? Visit our companion web application, Music Mentor, for more interactive learning and fun!!"
-    + " \n\nTo do any or all of that, check out our main menu! Was that helpful? I'd love your feedback! :)",
+    + " \n\nView music scales using our \"view scales\" menu system OR type any scale name such as \"E major\" to view it."
+    + " \n\nChoose the \"start chatting\" to chat with our bot. Maybe you'll get a laugh. Maybe you'll learn something. Try it!"
+    + " \n\nCheck out \"view web app\" to see what our companion web application has to offer. I promise it's quite neat!"
+    + " \n\nTo start, check out our menu or just say \"hi\" to our bot! Was that helpful? I'd love your feedback! :)",
     "quick_replies":[
       {
         "content_type":"text",
