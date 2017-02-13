@@ -878,6 +878,1738 @@ function sendPentatonicMinorScale3(sender) {
     })
 }
 
+//major scales
+function sendCMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDbMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C#/Db Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%23-Db%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/C%23-Db%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "D Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/D%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/D%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEbMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Eb Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Eb%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Eb%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "E Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/E%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/E%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendFMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGbMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F#/Gb Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%23-Gb%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/F%23-Gb%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "G Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/G%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/G%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAbMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Ab Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Ab%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Ab%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "A Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/A%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/A%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBbMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Bb Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Bb%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/Bb%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "B Major Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/B%20Major.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Major%20Scales/B%20Major.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//minor scales
+function sendCMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDbMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C#/Db Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%23-Db%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/C%23-Db%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "D Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/D%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/D%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEbMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Eb Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Eb%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Eb%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "E Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/E%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/E%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendFMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGbMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F#/Gb Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%23-Gb%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/F%23-Gb%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "G Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/G%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/G%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAbMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Ab Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Ab%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Ab%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "A Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/A%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/A%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBbMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Bb Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Bb%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/Bb%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "B Minor Scale",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/B%20minor%20scale.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Minor%20Scales/B%20minor%20scale.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//pentatonic major scales
+function sendCPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDbPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C#/Db Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%23-Db%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/C%23-Db%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "D Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/D%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/D%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEbPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Eb Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Eb%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Eb%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "E Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/E%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/E%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendFPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGbPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F#/Gb Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%23-Gb%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/F%23-Gb%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "G Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/G%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/G%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAbPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Ab Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Ab%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Ab%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "A Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/A%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/A%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBbPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Bb Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Bb%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/Bb%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBPentatonicMajorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "B Pentatonic Major",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/B%20Major%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Major%20Scales/B%20Major%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//pentationic minor scales
+function sendCPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDbPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "C#/Db Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%23-Db%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/C%23-Db%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendDPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "D Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/D%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/D%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEbPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Eb Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Eb%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Eb%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendEPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "E Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/E%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/E%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendFPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGbPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "F#/Gb Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%23-Gb%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/F%23-Gb%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendGPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "G Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/G%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/G%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAbPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Ab Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Ab%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Ab%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendAPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "A Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/A%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/A%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBbPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Bb Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Bb%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/Bb%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+function sendBPentatonicMinorScale(sender) {
+    let messageData = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "B Pentatonic Minor",
+                    "subtitle": "View the scale below:",
+                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/B%20Minor%20Pentatonic.png?raw=true",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/keyboardScales/Pentatonic%20Minor%20Scales/B%20Minor%20Pentatonic.png?raw=true",
+                        "title": "On Keyboard"
+                    }],
+                }]
+            }
+        }
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
 function sendMainMenu(sender) {
     let messageData = {
         "attachment":{
@@ -2251,102 +3983,182 @@ app.post('/webhook/', function (req, res) {
 
             //cases for choosing major scales
             case 'c major':
+                sendCMajorScale(sender);
+            continue;
             case 'c# major':
             case 'db major':
+                sendDbMajorScale(sender);
+            continue;
             case 'd major':
+                sendDMajorScale(sender);
+            continue;
+            case 'd# major':
             case 'eb major':
-                sendMajorScale(sender);
+                sendEbMajorScale(sender);
                 continue;
 
             case 'e major':
+                sendEbMajorScale(sender);
+                continue;
             case 'f major':
+                sendFMajorScale(sender);
+                continue;
             case 'f# major':
             case 'gb major':
+                sendGbMajorScale(sender);
+                continue;
             case 'g major':
-                sendMajorScale2(sender);
+                sendGMajorScale(sender);
                 continue;
 
+            case 'g# major':
             case 'ab major':
+                sendAbMajorScale(sender);
+                continue;
             case 'a major':
+                sendAMajorScale(sender);
+                continue;
+            case 'a# major':
             case 'bb major':
+                sendBbMajorScale(sender);
+                continue;
             case 'b major':
-            case 'eb major':
-                sendMajorScale3(sender);
+                sendBMajorScale(sender);
                 continue;
 
             //cases for choosing minor scales
             case 'c minor':
+                sendCMinorScale(sender);
+                continue;
             case 'c# minor':
             case 'db minor':
+                sendDbMinorScale(sender);
+                continue;
             case 'd minor':
+                sendDMinorScale(sender);
+                continue;
+            case 'd# minor':
             case 'eb minor':
-                sendMinorScale(sender);
+                sendEbMinorScale(sender);
                 continue;
 
             case 'e minor':
+                sendEMinorScale(sender);
+                continue;
             case 'f minor':
+                sendFMinorScale(sender);
+                continue;
             case 'f# minor':
             case 'gb minor':
+                sendGbMinorScale(sender);
+                continue;
             case 'g minor':
-                sendMinorScale2(sender);
+                sendGMinorScale(sender);
                 continue;
 
+            case 'g# minor':
             case 'ab minor':
+                sendAbMinorScale(sender);
+                continue;
             case 'a minor':
+                sendAMinorScale(sender);
+                continue;
+            case 'a# minor':
             case 'bb minor':
+                sendBbMinorScale(sender);
+                continue;
             case 'b minor':
-            case 'eb minor':
-                sendMinorScale3(sender);
+                sendBMinorScale(sender);
                 continue;
 
             //cases for choosing pentatonic major scales
             case 'c pentatonic major':
+                sendCPentatonicMajorScale(sender);
+                continue;
             case 'c# pentatonic major':
             case 'db pentatonic major':
+                sendDbPentatonicMajorScale(sender);
+                continue;
             case 'd pentatonic major':
+                sendDPentatonicMajorScale(sender);
+                continue;
+            case 'd# pentatonic major':
             case 'eb pentatonic major':
-                sendPentatonicMajorScale(sender);
+                sendEbPentatonicMajorScale(sender);
                 continue;
 
             case 'e pentatonic major':
+                sendEPentatonicMajorScale(sender);
+                continue;
             case 'f pentatonic major':
+                sendFPentatonicMajorScale(sender);
+                continue;
             case 'f# pentatonic major':
             case 'gb pentatonic major':
+                sendGbPentatonicMajorScale(sender);
+                continue;
             case 'g pentatonic major':
-                sendPentatonicMajorScale2(sender);
+                sendGPentatonicMajorScale(sender);
                 continue;
 
+            case 'g# pentatonic major':
             case 'ab pentatonic major':
+                sendAbPentatonicMajorScale(sender);
+                continue;
             case 'a pentatonic major':
+                sendAPentatonicMajorScale(sender);
+                continue;
+            case 'a# pentatonic major':
             case 'bb pentatonic major':
+                sendBbPentatonicMajorScale(sender);
+                continue;
             case 'b pentatonic major':
-            case 'eb pentatonic major':
-                sendPentatonicMajorScale3(sender);
+                sendBPentatonicMajorScale(sender);
                 continue;
 
             //cases for choosing pentatonic minor scales
             case 'c pentatonic minor':
+                sendCPentatonicMinorScale(sender);
+                continue;
             case 'c# pentatonic minor':
             case 'db pentatonic minor':
+                sendDbPentatonicMinorScale(sender);
+                continue;
             case 'd pentatonic minor':
+                sendDPentatonicMinorScale(sender);
+                continue;
+            case 'd# pentatonic minor':
             case 'eb pentatonic minor':
-                sendPentatonicMinorScale(sender);
+                sendEbPentatonicMinorScale(sender);
                 continue;
 
             case 'e pentatonic minor':
+                sendEPentatonicMinorScale(sender);
+                continue;
             case 'f pentatonic minor':
+                sendFPentatonicMinorScale(sender);
+                continue;
             case 'f# pentatonic minor':
             case 'gb pentatonic minor':
+                sendGbPentatonicMinorScale(sender);
+                continue;
             case 'g pentatonic minor':
-                sendPentatonicMinorScale2(sender);
+                sendGPentatonicMinorScale(sender);
                 continue;
 
+            case 'g# pentatonic minor':
             case 'ab pentatonic minor':
+                sendAbPentatonicMinorScale(sender);
+                continue;
             case 'a pentatonic minor':
+                sendAPentatonicMinorScale(sender);
+                continue;
+            case 'a# pentatonic minor':
             case 'bb pentatonic minor':
+                sendBbPentatonicMinorScale(sender);
+                continue;
             case 'b pentatonic minor':
-            case 'eb pentatonic minor':
-                sendPentatonicMinorScale3(sender);
+                sendBPentatonicMinorScale(sender);
                 continue;
 
             default:
