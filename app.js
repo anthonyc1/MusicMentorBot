@@ -2661,8 +2661,8 @@ function mainMenuScales(sender) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"CHOOSE a type of scale to view:"
-        + "\n\nOr TYPE the scale name below. Example: type \"C major\" or type \"A pentatonic minor\".",
+        "text":"NAVIGATE through out menu system by choosing a type of scale to view below:"
+        + "\n\nOr TYPE the scale name below instead! Example: type \"C# major\" or type \"Ab pentatonic minor\".",
         "buttons":[
           {
             "type":"postback",
@@ -3856,6 +3856,7 @@ app.post('/webhook/', function (req, res) {
       if (event.message && event.message.text) {
         let text = event.message.text
         switch (text.toLowerCase()){
+            case 'hi!':
             case 'hi':
               addPersistentMenu(sender);
               start(sender);
@@ -3908,17 +3909,16 @@ app.post('/webhook/', function (req, res) {
 
             case 'scale':
               sendTextMessage(sender, "A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
-                 + "\n\nView some of those scales by choosing \"view scales\" in our main menu."
-                 + " Want to learn more? Go to \"view web app\"! I promise, the app's quite neat."
-                 + "\n\nOr check out another one:");
+                 + "\n\nCheck out \"view scales\" and \"view web app\" for more! I promise, the app's quite neat."
+                 + "\n\nOr try another one:");
               showScaleGif(sender);
               continue;
 
             case 'scale conversion':
               sendTextMessage(sender, "There are two relationships you need to know for scales: relative and parallel."
                  + " Scales that are relative share the same key signature. Scales that are parallel share the same root note."
-                + "\n\nInterested?? I suggest you click \"view web app\" for fun tutorials and a cool music theory tools."
-                 + "\n\nOr check out another one:");
+                 + "\n\nCheck out \"view web app\" for more!"
+                 + "\n\nOr try another one:");
               showScalesConversionGif(sender);
               continue;
 
@@ -3926,16 +3926,16 @@ app.post('/webhook/', function (req, res) {
               sendTextMessage(sender, "In simple terms, a chord is three or more musical notes played at the same time."
                  + " In fact, playing chords in very popular in guitar and piano!"
                  + " There's a easy method to create chords for any scale."
-                 + "\n\nWant to find out how?? Go to \"view web app\" for a tutorial and a cool chord-building tool!"
-                 + "\n\nOr check out another one:");
+                 + "\n\nCheck out \"view web app\" for more!"
+                 + "\n\nOr try another one:");
               showChordGif(sender);
               continue;
 
             case 'interval':
               sendTextMessage(sender, "An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
                  + " They are interval names! You can also find the interval for any note by specifying the quality and distance."
-                 + "\n\nPretty cool, isn't it? Click \"view web app\" for a tutorial and a cool interval-finding tool!"
-                 + "\n\nOr check out another one:");
+                 + "\n\nCheck out \"view web app\" for more!"
+                 + "\n\nOr try another one:");
               showIntervalGif(sender);
               continue;
 
@@ -3973,10 +3973,12 @@ app.post('/webhook/', function (req, res) {
               showSadGif(sender);
               continue;
 
+            case 'hello!':
             case 'hello':
               sendTextMessage(sender, "Why hello hooman! Nice to see you.");
               continue;
 
+            case 'bye!':
             case 'bye':
               sendTextMessage(sender, "See you later, music lover!");
               continue;
@@ -4162,7 +4164,7 @@ app.post('/webhook/', function (req, res) {
                 continue;
 
             default:
-              sendTextMessage(sender, "I don't know what that means. Sorry.");
+              sendTextMessage(sender, "Oops, didn't catch that. Try out something like \"C# pentatonic major\" to view that scale or do other things by navigating through our menu options!");
               continue;
         }
       sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
