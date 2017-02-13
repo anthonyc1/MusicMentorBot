@@ -4164,7 +4164,7 @@ app.post('/webhook/', function (req, res) {
                 continue;
 
             default:
-              sendTextMessage(sender, "Oops, didn't catch that. Try out something like \"C# pentatonic major\" to view that scale or do other things by navigating through our menu options!");
+              sendTextMessage(sender, "Oops, didn't catch that. Type something like \"C# pentatonic major\" to view that music scale OR you can do other things by navigating through our menu options!");
               continue;
         }
       sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
