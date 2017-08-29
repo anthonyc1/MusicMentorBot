@@ -2655,15 +2655,19 @@ function sendMainMenu(sender) {
     })
 }
 
-function mainMenuScales(sender) {
-    let messageData = {
-        "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"NAVIGATE through out menu system by choosing a type of scale to view below:"
+  function mainMenuScales(recipientId) {
+    var messageData = {
+      recipient: {
+        id: recipientId
+      }, 
+      message: {
+        attachment:{
+        type:"template",
+        payload:{
+         template_type:"button",
+        text:"NAVIGATE through out menu system by choosing a type of scale to view below:"
         + "\n\nOr TYPE the scale name below instead! Example: type \"C# major\" or type \"Ab pentatonic minor\".",
-        "buttons":[
+        buttons:[
           {
             "type":"postback",
             "title":"Major/Minor Scales",
@@ -2679,21 +2683,9 @@ function mainMenuScales(sender) {
       }
     }
     }
-    request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: {access_token:token},
-        method: 'POST',
-        json: {
-            recipient: {id:sender},
-            message: messageData,
-        }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+  };
+  callSendAPI(messageData);
+
 }
 
 function chooseScale(sender) {

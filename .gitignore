@@ -1,3 +1,4 @@
 node_modules
 config_vars.txt
 scales.js
+package-lock.json
