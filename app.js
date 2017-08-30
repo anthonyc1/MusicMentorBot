@@ -41,16 +41,14 @@ app.listen(app.get('port'), function() {
     console.log('Running on port', app.get('port'));
 });
 
-const token = process.env.FB_PAGE_ACCESS_TOKEN;
+const PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN;
 const VALIDATION_TOKEN = process.env.FB_VALIDATION_TOKEN;
-
-
 
 function sendTextMessage(sender, text) {
     let messageData = { text:text }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: {access_token:token},
+        qs: {access_token:PAGE_ACCESS_TOKEN},
         sender_action:"typing_on",
         method: 'POST',
         json: {
@@ -492,7 +490,7 @@ app.post('/webhook/', function (req, res) {
             continue;
 
         }
-      sendTextMessage(sender, text.slice(12,-2), token)
+      sendTextMessage(sender, text.slice(12,-2), PAGE_ACCESS_TOKEN)
       }
     }
     res.sendStatus(200)
