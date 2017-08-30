@@ -77,60 +77,60 @@ app.post('/webhook/', function (req, res) {
         switch (text.toLowerCase()){
             case 'hi!':
             case 'hi':
-              addPersistentMenu(sender);
-              start(sender);
+              Setup.data.addPersistentMenu(sender);
+              Navigation.data.start(sender);
               continue;
 
             case 'main menu':
               sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-              sendMainMenu(sender);
+              Navigation.data.sendMainMenu(sender);
               continue;
 
             case 'view scales':
-              mainMenuScales(sender);
+              Navigation.data.mainMenuScales(sender);
               continue; 
 
             case 'start chatting':
-              startChatting(sender);
+              Navigation.data.startChatting(sender);
               continue;  
 
             case 'view web app':
-              webapp(sender);
+              Navigation.data.webapp(sender);
               continue;
 
             case 'joke':
-              answerJoke(sender);
+              Jokes.data.answerJoke(sender);
               continue; 
 
             case 'joke1':
-              answerJoke1(sender);
+              Jokes.data.answerJoke1(sender);
               continue; 
 
             case 'joke2':
-              answerJoke2(sender);
+              Jokes.data.answerJoke2(sender);
               continue; 
 
             case 'joke3':
-              answerJoke3(sender);
+              Jokes.data.answerJoke3(sender);
               continue; 
 
             case 'joke4':
-              answerJoke4(sender);
+              Jokes.data.answerJoke4(sender);
               continue;  
 
             case 'back':
-              returnToChatting(sender);
+              Navigation.data.returnToChatting(sender);
               continue; 
 
             case 'music':
-              answerMusic(sender);
+              Navigation.data.answerMusic(sender);
               continue;
 
             case 'scale':
               sendTextMessage(sender, "A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
                  + "\n\nCheck out \"view scales\" and \"view web app\" for more! I promise, the app's quite neat."
                  + "\n\nOr try another one:");
-              showScaleGif(sender);
+              Gifs.data.showScaleGif(sender);
               continue;
 
             case 'scale conversion':
@@ -138,7 +138,7 @@ app.post('/webhook/', function (req, res) {
                  + " Scales that are relative share the same key signature. Scales that are parallel share the same root note."
                  + "\n\nCheck out \"view web app\" for more!"
                  + "\n\nOr try another one:");
-              showScalesConversionGif(sender);
+              Gifs.data.showScalesConversionGif(sender);
               continue;
 
             case 'chord':
@@ -147,7 +147,7 @@ app.post('/webhook/', function (req, res) {
                  + " There's a easy method to create chords for any scale."
                  + "\n\nCheck out \"view web app\" for more!"
                  + "\n\nOr try another one:");
-              showChordGif(sender);
+              Gifs.data.showChordGif(sender);
               continue;
 
             case 'interval':
@@ -155,11 +155,11 @@ app.post('/webhook/', function (req, res) {
                  + " They are interval names! You can also find the interval for any note by specifying the quality and distance."
                  + "\n\nCheck out \"view web app\" for more!"
                  + "\n\nOr try another one:");
-              showIntervalGif(sender);
+              Gifs.data.showIntervalGif(sender);
               continue;
 
             case 'story':
-              storyMenu(sender);
+              Navigation.data.storyMenu(sender);
               continue;
 
             case 'embarrassing':
@@ -167,20 +167,20 @@ app.post('/webhook/', function (req, res) {
                 + " asked me what key it was in. I answered \"C Major\" because there was no sharps or flats in the key."
                 + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
                 + " I buried my head under my pillow once I got home.");
-              showFailGif(sender);
+              Gifs.data.showFailGif(sender);
               continue;
 
             case 'funny':
               sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
                 + " \nJUST KIDDING! I'm programmed to say only what my snarky creator wants!");
-              showFunnyGif(sender);
+              Gifs.data.showFunnyGif(sender);
               continue;
 
             case 'sad':
               sendTextMessage(sender, "On the bad days, I would sit idly waiting for someone to talk to me."
                 + " It's not easy being a chatbot living all alone on a server, you know."
                 + " Please interact with me more, kind hooman!");
-              showSadStoryGif(sender);
+              Gifs.data.showSadStoryGif(sender);
               continue;
 
             case 'yes':
@@ -189,7 +189,7 @@ app.post('/webhook/', function (req, res) {
 
             case 'no':
               sendTextMessage(sender, "Oh no. Cue the minor music!");
-              showSadGif(sender);
+              Gifs.data.showSadGif(sender);
               continue;
 
             case 'hello!':
@@ -204,182 +204,182 @@ app.post('/webhook/', function (req, res) {
 
             //cases for choosing major scales
             case 'c major':
-                sendCMajorScale(sender);
+                MajorScales.data.sendCMajorScale(sender);
             continue;
             case 'c# major':
             case 'db major':
-                sendDbMajorScale(sender);
+                MajorScales.data.sendDbMajorScale(sender);
             continue;
             case 'd major':
-                sendDMajorScale(sender);
+                MajorScales.data.sendDMajorScale(sender);
             continue;
             case 'd# major':
             case 'eb major':
-                sendEbMajorScale(sender);
+                MajorScales.data.sendEbMajorScale(sender);
                 continue;
 
             case 'e major':
-                sendEbMajorScale(sender);
+                MajorScales.data.sendEbMajorScale(sender);
                 continue;
             case 'f major':
-                sendFMajorScale(sender);
+                MajorScales.data.sendFMajorScale(sender);
                 continue;
             case 'f# major':
             case 'gb major':
-                sendGbMajorScale(sender);
+                MajorScales.data.sendGbMajorScale(sender);
                 continue;
             case 'g major':
-                sendGMajorScale(sender);
+                MajorScales.data.sendGMajorScale(sender);
                 continue;
 
             case 'g# major':
             case 'ab major':
-                sendAbMajorScale(sender);
+                MajorScales.data.sendAbMajorScale(sender);
                 continue;
             case 'a major':
-                sendAMajorScale(sender);
+                MajorScales.data.sendAMajorScale(sender);
                 continue;
             case 'a# major':
             case 'bb major':
-                sendBbMajorScale(sender);
+                MajorScales.data.sendBbMajorScale(sender);
                 continue;
             case 'b major':
-                sendBMajorScale(sender);
+                MajorScales.data.sendBMajorScale(sender);
                 continue;
 
             //cases for choosing minor scales
             case 'c minor':
-                sendCMinorScale(sender);
+                MinorScales.data.sendCMinorScale(sender);
                 continue;
             case 'c# minor':
             case 'db minor':
-                sendDbMinorScale(sender);
+                MinorScales.data.sendDbMinorScale(sender);
                 continue;
             case 'd minor':
-                sendDMinorScale(sender);
+                MinorScales.data.sendDMinorScale(sender);
                 continue;
             case 'd# minor':
             case 'eb minor':
-                sendEbMinorScale(sender);
+                MinorScales.data.sendEbMinorScale(sender);
                 continue;
 
             case 'e minor':
-                sendEMinorScale(sender);
+                MinorScales.data.sendEMinorScale(sender);
                 continue;
             case 'f minor':
-                sendFMinorScale(sender);
+                MinorScales.data.sendFMinorScale(sender);
                 continue;
             case 'f# minor':
             case 'gb minor':
-                sendGbMinorScale(sender);
+                MinorScales.data.sendGbMinorScale(sender);
                 continue;
             case 'g minor':
-                sendGMinorScale(sender);
+                MinorScales.data.sendGMinorScale(sender);
                 continue;
 
             case 'g# minor':
             case 'ab minor':
-                sendAbMinorScale(sender);
+                MinorScales.data.sendAbMinorScale(sender);
                 continue;
             case 'a minor':
-                sendAMinorScale(sender);
+                MinorScales.data.sendAMinorScale(sender);
                 continue;
             case 'a# minor':
             case 'bb minor':
-                sendBbMinorScale(sender);
+                MinorScales.data.sendBbMinorScale(sender);
                 continue;
             case 'b minor':
-                sendBMinorScale(sender);
+                MinorScales.data.sendBMinorScale(sender);
                 continue;
 
             //cases for choosing pentatonic major scales
             case 'c pentatonic major':
-                sendCPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendCPentatonicMajorScale(sender);
                 continue;
             case 'c# pentatonic major':
             case 'db pentatonic major':
-                sendDbPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendDbPentatonicMajorScale(sender);
                 continue;
             case 'd pentatonic major':
-                sendDPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendDPentatonicMajorScale(sender);
                 continue;
             case 'd# pentatonic major':
             case 'eb pentatonic major':
-                sendEbPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendEbPentatonicMajorScale(sender);
                 continue;
 
             case 'e pentatonic major':
-                sendEPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendEPentatonicMajorScale(sender);
                 continue;
             case 'f pentatonic major':
-                sendFPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendFPentatonicMajorScale(sender);
                 continue;
             case 'f# pentatonic major':
             case 'gb pentatonic major':
-                sendGbPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendGbPentatonicMajorScale(sender);
                 continue;
             case 'g pentatonic major':
-                sendGPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendGPentatonicMajorScale(sender);
                 continue;
 
             case 'g# pentatonic major':
             case 'ab pentatonic major':
-                sendAbPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendAbPentatonicMajorScale(sender);
                 continue;
             case 'a pentatonic major':
-                sendAPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendAPentatonicMajorScale(sender);
                 continue;
             case 'a# pentatonic major':
             case 'bb pentatonic major':
-                sendBbPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendBbPentatonicMajorScale(sender);
                 continue;
             case 'b pentatonic major':
-                sendBPentatonicMajorScale(sender);
+                PentatonicMajorScales.data.sendBPentatonicMajorScale(sender);
                 continue;
 
             //cases for choosing pentatonic minor scales
             case 'c pentatonic minor':
-                sendCPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendCPentatonicMinorScale(sender);
                 continue;
             case 'c# pentatonic minor':
             case 'db pentatonic minor':
-                sendDbPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendDbPentatonicMinorScale(sender);
                 continue;
             case 'd pentatonic minor':
-                sendDPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendDPentatonicMinorScale(sender);
                 continue;
             case 'd# pentatonic minor':
             case 'eb pentatonic minor':
-                sendEbPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendEbPentatonicMinorScale(sender);
                 continue;
 
             case 'e pentatonic minor':
-                sendEPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendEPentatonicMinorScale(sender);
                 continue;
             case 'f pentatonic minor':
-                sendFPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendFPentatonicMinorScale(sender);
                 continue;
             case 'f# pentatonic minor':
             case 'gb pentatonic minor':
-                sendGbPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendGbPentatonicMinorScale(sender);
                 continue;
             case 'g pentatonic minor':
-                sendGPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendGPentatonicMinorScale(sender);
                 continue;
 
             case 'g# pentatonic minor':
             case 'ab pentatonic minor':
-                sendAbPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendAbPentatonicMinorScale(sender);
                 continue;
             case 'a pentatonic minor':
-                sendAPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendAPentatonicMinorScale(sender);
                 continue;
             case 'a# pentatonic minor':
             case 'bb pentatonic minor':
-                sendBbPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendBbPentatonicMinorScale(sender);
                 continue;
             case 'b pentatonic minor':
-                sendBPentatonicMinorScale(sender);
+                PentatonicMinorScales.data.sendBPentatonicMinorScale(sender);
                 continue;
 
             default:
@@ -393,102 +393,102 @@ app.post('/webhook/', function (req, res) {
       switch (text.slice(12,-2).toLowerCase()){
           case 'hi':
             sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-            addPersistentMenu(sender);
-            sendMainMenu(sender);
+            Setup.data.addPersistentMenu(sender);
+            Navigation.data.sendMainMenu(sender);
             continue;
 
           case 'mainmenu':
             sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-            sendMainMenu(sender);
+            Navigation.data.sendMainMenu(sender);
             continue;
 
           case 'help':
-            help(sender);
+            Navigation.data.help(sender);
             continue;
 
           case 'webapp':
-            webapp(sender);
+            Navigation.data.webapp(sender);
             continue;
 
           case 'startchatting':
-            startChatting(sender);
+            Navigation.data.startChatting(sender);
             continue;
 
           case 'mainmenuscales':
-            mainMenuScales(sender);
+            Navigation.data.mainMenuScales(sender);
             continue;
           //payloads for mainMenuScales function
           case 'scales':
-            chooseScale(sender);
+            Navigation.data.chooseScale(sender);
             continue;
 
           case 'pentatonicscales':
-            choosePentatonicScale(sender);
+            Navigation.data.choosePentatonicScale(sender);
             continue;
 
           //payloads for chooseScale function
           case 'major':
-            chooseMajorScale(sender);
+            Navigation.data.chooseMajorScale(sender);
             continue;
 
           case 'minor':
-            chooseMinorScale(sender);
+            Navigation.data.chooseMinorScale(sender);
             continue;
           //payloads for choosePentatonicScale function
           case 'pentamajor':
-            choosePentatonicMajorScale(sender);
+            Navigation.data.choosePentatonicMajorScale(sender);
             continue;
 
           case 'pentaminor':
-            choosePentatonicMinorScale(sender);
+            Navigation.data.choosePentatonicMinorScale(sender);
             continue;
           //payloads for chooseMajorScale function
           case 'range1':
-            sendMajorScale(sender);
+            ScaleMenus.data.sendMajorScale(sender);
             continue;
 
           case 'range2':
-            sendMajorScale2(sender);
+            ScaleMenus.data.sendMajorScale2(sender);
             continue;
 
           case 'range3':
-            sendMajorScale3(sender);
+            ScaleMenus.data.sendMajorScale3(sender);
             continue;
           //payloads for chooseMinorScale function
           case 'rangeminor1':
-            sendMinorScale(sender);
+            ScaleMenus.data.sendMinorScale(sender);
             continue;
 
           case 'rangeminor2':
-            sendMinorScale2(sender);
+            ScaleMenus.data.sendMinorScale2(sender);
             continue;
 
           case 'rangeminor3':
-            sendMinorScale3(sender);
+            ScaleMenus.data.sendMinorScale3(sender);
             continue;
           //payloads for choosePentatonicMajor function
           case 'rangepentatonic1':
-            sendPentatonicMajorScale(sender);
+            ScaleMenus.data.sendPentatonicMajorScale(sender);
             continue;
 
           case 'rangepentatonic2':
-            sendPentatonicMajorScale2(sender);
+            ScaleMenus.data.sendPentatonicMajorScale2(sender);
             continue;
 
           case 'rangepentatonic3':
-            sendPentatonicMajorScale3(sender);
+            ScaleMenus.data.ScaleMenus.data.sendPentatonicMajorScale3(sender);
             continue;
           //payloads for choosePentatonicMinor function
           case 'rangepentatonic4':
-            sendPentatonicMinorScale(sender);
+            ScaleMenus.data.sendPentatonicMinorScale(sender);
             continue;
 
           case 'rangepentatonic5':
-            sendPentatonicMinorScale2(sender);
+            ScaleMenus.data.sendPentatonicMinorScale2(sender);
             continue;
 
           case 'rangepentatonic6':
-            sendPentatonicMinorScale3(sender);
+            ScaleMenus.data.sendPentatonicMinorScale3(sender);
             continue;
 
         }
