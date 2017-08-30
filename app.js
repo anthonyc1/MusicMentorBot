@@ -413,7 +413,7 @@ app.post('/webhook/', function (req, res) {
             continue;
 
           case 'mainmenuscales':
-            Navigation.data.mainMenuScales(sender);
+            mainMenuScales(sender);
             continue;
           //payloads for mainMenuScales function
           case 'scales':
