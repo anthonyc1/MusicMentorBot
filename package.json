@@ -1,7 +1,7 @@
 {
   "name": "musicMentorBot",
   "version": "1.0.0",
-  "description": "Application on Facebook Messenger platform that helps users learn music theory. ",
+  "description": "Facebook Messenger chat bot that helps users learn music theory. ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
