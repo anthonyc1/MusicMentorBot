@@ -27,7 +27,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 app.get('/', function (req, res) {
-    res.send('This is a chatbot.')
+    // res.send('This is a chatbot.')
+    res.send(PAGE_ACCESS_TOKEN)
 });
 
 app.get('/webhook/', function (req, res) {
