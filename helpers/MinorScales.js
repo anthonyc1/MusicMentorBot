@@ -20,7 +20,7 @@ minorScales.sendCMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -56,7 +56,7 @@ minorScales.sendDbMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -92,7 +92,7 @@ minorScales.sendDMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -128,7 +128,7 @@ minorScales.sendEbMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -164,7 +164,7 @@ minorScales.sendEMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -200,7 +200,7 @@ minorScales.sendFMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -236,7 +236,7 @@ minorScales.sendGbMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -272,7 +272,7 @@ minorScales.sendGMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -308,7 +308,7 @@ minorScales.sendAbMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -344,7 +344,7 @@ minorScales.sendAMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -380,7 +380,7 @@ minorScales.sendBbMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -416,7 +416,7 @@ minorScales.sendBMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {

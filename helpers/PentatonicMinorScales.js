@@ -20,7 +20,7 @@ pentatonicMinorScales.sendCPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -56,7 +56,7 @@ pentatonicMinorScales.sendDbPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -92,7 +92,7 @@ pentatonicMinorScales.sendDPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -128,7 +128,7 @@ pentatonicMinorScales.sendEbPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -164,7 +164,7 @@ pentatonicMinorScales.sendEPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -200,7 +200,7 @@ pentatonicMinorScales.sendFPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -236,7 +236,7 @@ pentatonicMinorScales.sendGbPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -272,7 +272,7 @@ pentatonicMinorScales.sendGPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -308,7 +308,7 @@ pentatonicMinorScales.sendAbPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -344,7 +344,7 @@ pentatonicMinorScales.sendAPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -380,7 +380,7 @@ pentatonicMinorScales.sendBbPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -416,7 +416,7 @@ pentatonicMinorScales.sendBPentatonicMinorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:token},
         method: 'POST',
         json: {

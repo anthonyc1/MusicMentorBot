@@ -2,7 +2,7 @@ var setup = {};
 
 setup.getStarted = function(sender){
  request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
+    url: 'https://graph.facebook.com/v2.8/me/thread_settings',
     qs: { access_token: token },
     method: 'POST',
     json:{
@@ -28,7 +28,7 @@ setup.getStarted = function(sender){
 
 setup.addPersistentMenu = function(sender){
  request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
+    url: 'https://graph.facebook.com/v2.8/me/thread_settings',
     qs: { access_token: token },
     method: 'POST',
     json:{

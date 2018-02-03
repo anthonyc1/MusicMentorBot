@@ -27,8 +27,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 app.get('/', function (req, res) {
-    // res.send('This is a chatbot.')
-    res.send(req.query['hub.verify_token'])
+    res.send('This is a chatbot.')
 });
 
 app.get('/webhook/', function (req, res) {
@@ -48,7 +47,7 @@ app.listen(app.get('port'), function() {
 function sendTextMessage(sender, text) {
     let messageData = { text:text }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.8/me/messages',
         qs: {access_token:PAGE_ACCESS_TOKEN},
         sender_action:"typing_on",
         method: 'POST',
