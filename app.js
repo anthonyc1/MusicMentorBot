@@ -3,7 +3,8 @@
 const 
     bodyParser = require('body-parser'), 
     express = require('express'),
-    request = require('request');
+    request = require('request'),
+    fs = require('fs');
 
 var
     CallSendAPI = require('./helpers/CallSendAPI'),
@@ -19,8 +20,12 @@ var
 
 let app = express();
 
-const PAGE_ACCESS_TOKEN = process.env.FB_PAGE_ACCESS_TOKEN;
-const VALIDATION_TOKEN = process.env.FB_VALIDATION_TOKEN;
+// const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+// const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
+let configVars = fs.readFileSync('config_vars.json');
+let obj = JSON.parse(configVars);
+const PAGE_ACCESS_TOKEN = obj.PAGE_ACCESS_TOKEN;
+const VERIFY_TOKEN = obj.VERIFY_TOKEN;
 
 app.set('port', (process.env.PORT || 5000))
 app.use(bodyParser.urlencoded({extended: true}))
@@ -30,13 +35,15 @@ app.get('/', function (req, res) {
     res.send('This is a chatbot.')
 });
 
-app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] === VALIDATION_TOKEN) {
+app.get('/webhook', function (req, res) {
+    if (req.query['hub.verify_token'] === VERIFY_TOKEN) {
         console.log("Validating webhook");
-        res.status(200).send(req.query['hub.challenge']);
+       res.status(200).send(req.query['hub.challenge']);
     } else {
-    res.send('Failed validation, wrong token.');
-    res.sendStatus(403);
+      console.log(req.query['hub.verify_token']);
+      console.log(VERIFY_TOKEN);
+       res.send('Failed validation, wrong token.');
+    //res.sendStatus(403);
   }
 });
 
