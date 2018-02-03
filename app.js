@@ -28,7 +28,7 @@ app.use(bodyParser.json())
 
 app.get('/', function (req, res) {
     // res.send('This is a chatbot.')
-    res.send(PAGE_ACCESS_TOKEN)
+    res.send(VALIDATION_TOKEN)
 });
 
 app.get('/webhook/', function (req, res) {
