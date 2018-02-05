@@ -22,6 +22,7 @@ let app = express();
 
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
+const token = PAGE_ACCESS_TOKEN;
 // let configVars = fs.readFileSync('config_vars.json');
 // let obj = JSON.parse(configVars);
 // const PAGE_ACCESS_TOKEN = obj.PAGE_ACCESS_TOKEN;
@@ -65,39 +66,6 @@ function sendTextMessage(sender, text) {
         } 
     })
 }
-
-function webapp(sender) {
-    let messageData = {
-        "attachment": {
-            "type": "template",
-            "payload": {
-                "template_type": "generic",
-                "elements": [{
-                    "title": "Welcome to Music Mentor",
-                    "subtitle": "Visit our companion web app for more interactive learning and fun!",
-                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/MusicMentorIcon.png?raw=true",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://musicmentorapp.herokuapp.com/",
-                        "title": "View Web App"
-                    }],
-                }]
-            }
-        }
-    }
-    request({
-        url: 'https://graph.facebook.com/v2.8/me/messages',
-        qs: {access_token:PAGE_ACCESS_TOKEN},
-        method: 'POST',
-        json: {
-          messaging_type: "RESPONSE",
-            recipient: {id:sender},
-            message: messageData,
-        }
-    }) 
-}
-
-const token = PAGE_ACCESS_TOKEN;
 
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging
