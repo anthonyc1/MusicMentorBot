@@ -390,112 +390,112 @@ app.post('/webhook', function (req, res) {
         }
       //sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
       }
-      // if (event.postback) {
-      //   let text = JSON.stringify(event.postback.payload)
-      // switch (text.slice(1,-1).toLowerCase()){
-      //     case 'hi':
-      //       sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-      //       break;
-      //     //   Setup.addPersistentMenu(sender, token);
-      //     //   Navigation.sendMainMenu(sender, token);
-      //     //   break;
+      if (event.postback) {
+        let text = JSON.stringify(event.postback.payload)
+      switch (text.slice(1,-1).toLowerCase()){
+          case 'hi':
+            sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
+            break;
+            Setup.addPersistentMenu(sender, token);
+            Navigation.sendMainMenu(sender, token);
+            break;
 
-      //     // case 'mainmenu':
-      //     //   sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-      //     //   Navigation.sendMainMenu(sender, token);
-      //     //   break;
+          case 'mainmenu':
+            sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+            Navigation.sendMainMenu(sender, token);
+            break;
 
-      //     // case 'help':
-      //     //   Navigation.help(sender, token);
-      //     //   break;
+          case 'help':
+            Navigation.help(sender, token);
+            break;
 
-      //     // case 'webapp':
-      //     //   Navigation.webapp(sender, token);
-      //     //   break;
+          case 'webapp':
+            Navigation.webapp(sender, token);
+            break;
 
-      //     // case 'startchatting':
-      //     //   Navigation.startChatting(sender, token);
-      //     //   break;
+          case 'startchatting':
+            Navigation.startChatting(sender, token);
+            break;
 
-      //     // case 'mainmenuscales':
-      //     //   Navigation.mainMenuScales(sender, token);
-      //     //   break;
-      //     // //payloads for mainMenuScales function
-      //     // case 'scales':
-      //     //   Navigation.chooseScale(sender, token);
-      //     //   break;
+          case 'mainmenuscales':
+            Navigation.mainMenuScales(sender, token);
+            break;
+          //payloads for mainMenuScales function
+          case 'scales':
+            Navigation.chooseScale(sender, token);
+            break;
 
-      //     // case 'pentatonicscales':
-      //     //   Navigation.choosePentatonicScale(sender, token);
-      //     //   break;
+          case 'pentatonicscales':
+            Navigation.choosePentatonicScale(sender, token);
+            break;
 
-      //     // //payloads for chooseScale function
-      //     // case 'major':
-      //     //   Navigation.chooseMajorScale(sender, token);
-      //     //   break;
+          //payloads for chooseScale function
+          case 'major':
+            Navigation.chooseMajorScale(sender, token);
+            break;
 
-      //     // case 'minor':
-      //     //   Navigation.chooseMinorScale(sender, token);
-      //     //   break;
-      //     // //payloads for choosePentatonicScale function
-      //     // case 'pentamajor':
-      //     //   Navigation.choosePentatonicMajorScale(sender, token);
-      //     //   break;
+          case 'minor':
+            Navigation.chooseMinorScale(sender, token);
+            break;
+          //payloads for choosePentatonicScale function
+          case 'pentamajor':
+            Navigation.choosePentatonicMajorScale(sender, token);
+            break;
 
-      //     // case 'pentaminor':
-      //     //   Navigation.choosePentatonicMinorScale(sender, token);
-      //     //   break;
-      //     // //payloads for chooseMajorScale function
-      //     // case 'range1':
-      //     //   ScaleMenus.sendMajorScale(sender, token);
-      //     //   break;
+          case 'pentaminor':
+            Navigation.choosePentatonicMinorScale(sender, token);
+            break;
+          //payloads for chooseMajorScale function
+          case 'range1':
+            ScaleMenus.sendMajorScale(sender, token);
+            break;
 
-      //     // case 'range2':
-      //     //   ScaleMenus.sendMajorScale2(sender, token);
-      //     //   break;
+          case 'range2':
+            ScaleMenus.sendMajorScale2(sender, token);
+            break;
 
-      //     // case 'range3':
-      //     //   ScaleMenus.sendMajorScale3(sender, token);
-      //     //   break;
-      //     // //payloads for chooseMinorScale function
-      //     // case 'rangeminor1':
-      //     //   ScaleMenus.sendMinorScale(sender, token);
-      //     //   break;
+          case 'range3':
+            ScaleMenus.sendMajorScale3(sender, token);
+            break;
+          //payloads for chooseMinorScale function
+          case 'rangeminor1':
+            ScaleMenus.sendMinorScale(sender, token);
+            break;
 
-      //     // case 'rangeminor2':
-      //     //   ScaleMenus.sendMinorScale2(sender, token);
-      //     //   break;
+          case 'rangeminor2':
+            ScaleMenus.sendMinorScale2(sender, token);
+            break;
 
-      //     // case 'rangeminor3':
-      //     //   ScaleMenus.sendMinorScale3(sender, token);
-      //     //   break;
-      //     // //payloads for choosePentatonicMajor function
-      //     // case 'rangepentatonic1':
-      //     //   ScaleMenus.sendPentatonicMajorScale(sender, token);
-      //     //   break;
+          case 'rangeminor3':
+            ScaleMenus.sendMinorScale3(sender, token);
+            break;
+          //payloads for choosePentatonicMajor function
+          case 'rangepentatonic1':
+            ScaleMenus.sendPentatonicMajorScale(sender, token);
+            break;
 
-      //     // case 'rangepentatonic2':
-      //     //   ScaleMenus.sendPentatonicMajorScale2(sender, token);
-      //     //   break;
+          case 'rangepentatonic2':
+            ScaleMenus.sendPentatonicMajorScale2(sender, token);
+            break;
 
-      //     // case 'rangepentatonic3':
-      //     //   ScaleMenus.ScaleMenus.sendPentatonicMajorScale3(sender, token);
-      //     //   break;
-      //     // //payloads for choosePentatonicMinor function
-      //     // case 'rangepentatonic4':
-      //     //   ScaleMenus.sendPentatonicMinorScale(sender, token);
-      //     //   break;
+          case 'rangepentatonic3':
+            ScaleMenus.ScaleMenus.sendPentatonicMajorScale3(sender, token);
+            break;
+          //payloads for choosePentatonicMinor function
+          case 'rangepentatonic4':
+            ScaleMenus.sendPentatonicMinorScale(sender, token);
+            break;
 
-      //     // case 'rangepentatonic5':
-      //     //   ScaleMenus.sendPentatonicMinorScale2(sender, token);
-      //     //   break;
+          case 'rangepentatonic5':
+            ScaleMenus.sendPentatonicMinorScale2(sender, token);
+            break;
 
-      //     // case 'rangepentatonic6':
-      //     //   ScaleMenus.sendPentatonicMinorScale3(sender, token);
-      //     //   break;
-      //   }
-      // //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
-      // }
+          case 'rangepentatonic6':
+            ScaleMenus.sendPentatonicMinorScale3(sender, token);
+            break;
+        }
+      //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
+      }
     })
     res.status(200).end();
   })
