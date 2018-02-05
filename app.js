@@ -7,16 +7,16 @@ const
     fs = require('fs');
 
 var
-    CallSendAPI = require('./helpers/CallSendAPI'),
-    Gifs = require('./helpers/Gifs'),
-    Jokes = require('./helpers/Jokes'),
-    MajorScales = require('./helpers/MajorScales'),
-    MinorScales = require('./helpers/MinorScales'),
-    Navigation = require('./helpers/Navigation'),
-    PentatonicMajorScales = require('./helpers/PentatonicMajorScales'),
-    PentatonicMinorScales = require('./helpers/PentatonicMinorScales'),
-    ScaleMenus = require('./helpers/ScaleMenus'),
-    Setup = require('./helpers/Setup');
+    CallSendAPI = require('./helpers/CallSendAPI.js'),
+    Gifs = require('./helpers/Gifs.js'),
+    Jokes = require('./helpers/Jokes.js'),
+    MajorScales = require('./helpers/MajorScales.js'),
+    MinorScales = require('./helpers/MinorScales.js'),
+    Navigation = require('./helpers/Navigation.js'),
+    PentatonicMajorScales = require('./helpers/PentatonicMajorScales.js'),
+    PentatonicMinorScales = require('./helpers/PentatonicMinorScales.js'),
+    ScaleMenus = require('./helpers/ScaleMenus.js'),
+    Setup = require('./helpers/Setup.js');
 
 let app = express();
 
@@ -388,7 +388,7 @@ app.post('/webhook/', function (req, res) {
               sendTextMessage(sender, "Oops, didn't catch that. Type something like \"C# pentatonic major\" to view that music scale OR you can do other things by navigating through our menu options!");
               continue;
         }
-      sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
+      //sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
       }
       if (event.postback) {
         let text = JSON.stringify(event.postback.payload)
