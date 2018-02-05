@@ -96,8 +96,8 @@ app.post('/webhook/', function (req, res) {
             //   continue;  
 
             case 'view web app':
-            sendTextMessage(sender, "yo.");
-              //Navigation.data.webapp(sender);
+            //sendTextMessage(sender, "yo.");
+              Navigation.data.webapp(sender);
               continue;
 
             // case 'joke':
