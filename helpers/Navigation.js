@@ -361,23 +361,23 @@ navigation.help = function(sender) {
 navigation.start = function(sender) {
     let messageData = {
     "text":"Hi there music lover! Let's get started, shall we? Pick one:",
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"view scales",
-        "payload":"view scales"
-      },
-      {
-        "content_type":"text",
-        "title":"start chatting",
-        "payload":"start chatting"
-      },
-      {
-        "content_type":"text",
-        "title":"view web app",
-        "payload":"view web app"
-      }
-    ]
+    // "quick_replies":[
+    //   {
+    //     "content_type":"text",
+    //     "title":"view scales",
+    //     "payload":"view scales"
+    //   },
+    //   {
+    //     "content_type":"text",
+    //     "title":"start chatting",
+    //     "payload":"start chatting"
+    //   },
+    //   {
+    //     "content_type":"text",
+    //     "title":"view web app",
+    //     "payload":"view web app"
+    //   }
+    // ]
     }
     request({
         url: 'https://graph.facebook.com/v2.8/me/messages',
