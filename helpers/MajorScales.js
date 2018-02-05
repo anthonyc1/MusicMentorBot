@@ -1,4 +1,6 @@
-let configVars = fs.readFileSync('../config_vars.json');
+fs = require('fs');
+
+let configVars = fs.readFileSync('./config_vars.json');
 let obj = JSON.parse(configVars);
 const PAGE_ACCESS_TOKEN = obj.PAGE_ACCESS_TOKEN;
 exports = module.exports;
