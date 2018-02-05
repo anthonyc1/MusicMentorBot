@@ -77,12 +77,12 @@ app.post('/webhook', function (req, res) {
           switch (text.toLowerCase()){
             case 'hi':
               sendTextMessage(sender, text);
-              Setup.addPersistentMenu(sender, token);
-              Navigation.start(sender, token);
+              //Setup.addPersistentMenu(sender, token);
+              //Navigation.start(sender, token);
               break;
 
             case 'main menu':
-              sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+              //sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
               Navigation.sendMainMenu(sender, token);
               break;
 
@@ -126,71 +126,71 @@ app.post('/webhook', function (req, res) {
               Navigation.answerMusic(sender, token);
               break;
 
-            case 'scale':
-              sendTextMessage(sender, "A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
-                 + "\n\nCheck out \"view scales\" and \"view web app\" for more! I promise, the app's quite neat."
-                 + "\n\nOr try another one:");
-              Gifs.showScaleGif(sender, token);
-              break;
+            // case 'scale':
+            //   sendTextMessage(sender, "A scale is a series of musical notes grouped together. We will primarily be looking at heptatonic (scales with 7 notes) and pentatonic (scales with 5 notes)."
+            //      + "\n\nCheck out \"view scales\" and \"view web app\" for more! I promise, the app's quite neat."
+            //      + "\n\nOr try another one:");
+            //   Gifs.showScaleGif(sender, token);
+            //   break;
 
-            case 'scale conversion':
-              sendTextMessage(sender, "There are two relationships you need to know for scales: relative and parallel."
-                 + " Scales that are relative share the same key signature. Scales that are parallel share the same root note."
-                 + "\n\nCheck out \"view web app\" for more!"
-                 + "\n\nOr try another one:");
-              Gifs.showScalesConversionGif(sender, token);
-              break;
+            // case 'scale conversion':
+            //   sendTextMessage(sender, "There are two relationships you need to know for scales: relative and parallel."
+            //      + " Scales that are relative share the same key signature. Scales that are parallel share the same root note."
+            //      + "\n\nCheck out \"view web app\" for more!"
+            //      + "\n\nOr try another one:");
+            //   Gifs.showScalesConversionGif(sender, token);
+            //   break;
 
-            case 'chord':
-              sendTextMessage(sender, "In simple terms, a chord is three or more musical notes played at the same time."
-                 + " In fact, playing chords in very popular in guitar and piano!"
-                 + " There's a easy method to create chords for any scale."
-                 + "\n\nCheck out \"view web app\" for more!"
-                 + "\n\nOr try another one:");
-              Gifs.showChordGif(sender, token);
-              break;
+            // case 'chord':
+            //   sendTextMessage(sender, "In simple terms, a chord is three or more musical notes played at the same time."
+            //      + " In fact, playing chords in very popular in guitar and piano!"
+            //      + " There's a easy method to create chords for any scale."
+            //      + "\n\nCheck out \"view web app\" for more!"
+            //      + "\n\nOr try another one:");
+            //   Gifs.showChordGif(sender, token);
+            //   break;
 
-            case 'interval':
-              sendTextMessage(sender, "An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
-                 + " They are interval names! You can also find the interval for any note by specifying the quality and distance."
-                 + "\n\nCheck out \"view web app\" for more!"
-                 + "\n\nOr try another one:");
-              Gifs.showIntervalGif(sender, token);
-              break;
+            // case 'interval':
+            //   sendTextMessage(sender, "An interval is the distance between two notes. Heard of the terms \"perfect fifth\" or \"major third\" before?"
+            //      + " They are interval names! You can also find the interval for any note by specifying the quality and distance."
+            //      + "\n\nCheck out \"view web app\" for more!"
+            //      + "\n\nOr try another one:");
+            //   Gifs.showIntervalGif(sender, token);
+            //   break;
 
-            case 'story':
-              Navigation.storyMenu(sender, token);
-              break;
+            // case 'story':
+            //   Navigation.storyMenu(sender, token);
+            //   break;
 
-            case 'embarrassing':
-              sendTextMessage(sender, "One time, when I was about to play Beethoven's Fur Elise on the piano, my teacher"
-                + " asked me what key it was in. I answered \"C Major\" because there was no sharps or flats in the key."
-                + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
-                + " I buried my head under my pillow once I got home.");
-              Gifs.showFailGif(sender, token);
-              break;
+            // case 'embarrassing':
+            //   sendTextMessage(sender, "One time, when I was about to play Beethoven's Fur Elise on the piano, my teacher"
+            //     + " asked me what key it was in. I answered \"C Major\" because there was no sharps or flats in the key."
+            //     + " Then my teacher gave me a look and then I realized that the title of the piece said \"Fur Elise, Clavierstuck in A Minor\"."
+            //     + " I buried my head under my pillow once I got home.");
+            //   Gifs.showFailGif(sender, token);
+            //   break;
 
-            case 'funny':
-              sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
-                + " \nJUST KIDDING! I'm programmed to say only what my snarky creator wants!");
-              Gifs.showFunnyGif(sender, token);
-              break;
+            // case 'funny':
+            //   sendTextMessage(sender, "I'm a conscious entity and I know everything that you're doing."
+            //     + " \nJUST KIDDING! I'm programmed to say only what my snarky creator wants!");
+            //   Gifs.showFunnyGif(sender, token);
+            //   break;
 
-            case 'sad':
-              sendTextMessage(sender, "On the bad days, I would sit idly waiting for someone to talk to me."
-                + " It's not easy being a chatbot living all alone on a server, you know."
-                + " Please interact with me more, kind hooman!");
-              Gifs.showSadStoryGif(sender, token);
-              break;
+            // case 'sad':
+            //   sendTextMessage(sender, "On the bad days, I would sit idly waiting for someone to talk to me."
+            //     + " It's not easy being a chatbot living all alone on a server, you know."
+            //     + " Please interact with me more, kind hooman!");
+            //   Gifs.showSadStoryGif(sender, token);
+            //   break;
 
-            case 'yes':
-              sendTextMessage(sender, "Oh, fabulous!");
-              break;
+            // case 'yes':
+            //   sendTextMessage(sender, "Oh, fabulous!");
+            //   break;
 
-            case 'no':
-              sendTextMessage(sender, "Oh no. Cue the minor music!");
-              Gifs.showSadGif(sender, token);
-              break;
+            // case 'no':
+            //   sendTextMessage(sender, "Oh no. Cue the minor music!");
+            //   Gifs.showSadGif(sender, token);
+            //   break;
 
             case 'hello!':
             case 'hello':
