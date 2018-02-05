@@ -1,4 +1,4 @@
-const token = process.env.PAGE_ACCESS_TOKEN;
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 exports = module.exports;
 
 exports.sendMainMenu = function(sender) {
@@ -319,7 +319,7 @@ exports.webapp = function(sender) {
     }
     request({
         url: 'https://graph.facebook.com/v2.8/me/messages',
-        qs: {access_token:token},
+        qs: {access_token:PAGE_ACCESS_TOKEN},
         method: 'POST',
         json: {
           messaging_type: "RESPONSE",
