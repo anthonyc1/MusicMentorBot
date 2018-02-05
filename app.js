@@ -68,12 +68,17 @@ function sendTextMessage(sender, text) {
 }
 
 app.post('/webhook/', function (req, res) {
-    let messaging_events = req.body.entry[0].messaging
-    for (let i = 0; i < messaging_events.length; i++) {
-      let event = req.body.entry[0].messaging[i]
+  if (req.body.object === 'page') {
+        req.body.entry.forEach(entry => {
+            entry.messaging.forEach(event => {
+                if (event.message && event.message.text) {
+
+    // let messaging_events = req.body.entry[0].messaging
+    // for (let i = 0; i < messaging_events.length; i++) {
+    //   let event = req.body.entry[0].messaging[i]
       let sender = event.sender.id
-      if (event.message && event.message.text) {
-        let text = event.message.text
+    //   if (event.message && event.message.text) {
+        let text = event.message.text;
         switch (text.toLowerCase()){
             case 'hi!':
             case 'hi':
