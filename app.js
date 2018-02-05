@@ -410,8 +410,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
           case 'webapp':
-          sendTextMessage(sender, "yo.");
-            //Navigation.data.webapp(sender);
+            Navigation.data.webapp(sender);
             continue;
 
           // case 'startchatting':
