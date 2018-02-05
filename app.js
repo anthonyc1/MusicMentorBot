@@ -80,7 +80,6 @@ app.post('/webhook/', function (req, res) {
     //   if (event.message && event.message.text) {
         let text = event.message.text;
         switch (text.toLowerCase()){
-            case 'hi!':
             case 'hi':
               sendTextMessage(sender, text);
               break;
@@ -396,114 +395,114 @@ app.post('/webhook/', function (req, res) {
         }
       //sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
       }
-      if (event.postback) {
-        let text = JSON.stringify(event.postback.payload)
-      switch (text.slice(1,-1).toLowerCase()){
-          case 'hi':
-            sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-            break;
-          //   Setup.data.addPersistentMenu(sender);
-          //   Navigation.data.sendMainMenu(sender);
-          //   continue;
+      // if (event.postback) {
+      //   let text = JSON.stringify(event.postback.payload)
+      // switch (text.slice(1,-1).toLowerCase()){
+      //     case 'hi':
+      //       sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
+      //       break;
+      //     //   Setup.data.addPersistentMenu(sender);
+      //     //   Navigation.data.sendMainMenu(sender);
+      //     //   continue;
 
-          // case 'mainmenu':
-          //   sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-          //   Navigation.data.sendMainMenu(sender);
-          //   continue;
+      //     // case 'mainmenu':
+      //     //   sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+      //     //   Navigation.data.sendMainMenu(sender);
+      //     //   continue;
 
-          // case 'help':
-          //   Navigation.data.help(sender);
-          //   continue;
+      //     // case 'help':
+      //     //   Navigation.data.help(sender);
+      //     //   continue;
 
-          // case 'webapp':
-          //   Navigation.webapp(sender, token);
-          //   continue;
+      //     // case 'webapp':
+      //     //   Navigation.webapp(sender, token);
+      //     //   continue;
 
-          // case 'startchatting':
-          //   Navigation.data.startChatting(sender);
-          //   continue;
+      //     // case 'startchatting':
+      //     //   Navigation.data.startChatting(sender);
+      //     //   continue;
 
-          // case 'mainmenuscales':
-          //   Navigation.data.mainMenuScales(sender);
-          //   continue;
-          // //payloads for mainMenuScales function
-          // case 'scales':
-          //   Navigation.data.chooseScale(sender);
-          //   continue;
+      //     // case 'mainmenuscales':
+      //     //   Navigation.data.mainMenuScales(sender);
+      //     //   continue;
+      //     // //payloads for mainMenuScales function
+      //     // case 'scales':
+      //     //   Navigation.data.chooseScale(sender);
+      //     //   continue;
 
-          // case 'pentatonicscales':
-          //   Navigation.data.choosePentatonicScale(sender);
-          //   continue;
+      //     // case 'pentatonicscales':
+      //     //   Navigation.data.choosePentatonicScale(sender);
+      //     //   continue;
 
-          // //payloads for chooseScale function
-          // case 'major':
-          //   Navigation.data.chooseMajorScale(sender);
-          //   continue;
+      //     // //payloads for chooseScale function
+      //     // case 'major':
+      //     //   Navigation.data.chooseMajorScale(sender);
+      //     //   continue;
 
-          // case 'minor':
-          //   Navigation.data.chooseMinorScale(sender);
-          //   continue;
-          // //payloads for choosePentatonicScale function
-          // case 'pentamajor':
-          //   Navigation.data.choosePentatonicMajorScale(sender);
-          //   continue;
+      //     // case 'minor':
+      //     //   Navigation.data.chooseMinorScale(sender);
+      //     //   continue;
+      //     // //payloads for choosePentatonicScale function
+      //     // case 'pentamajor':
+      //     //   Navigation.data.choosePentatonicMajorScale(sender);
+      //     //   continue;
 
-          // case 'pentaminor':
-          //   Navigation.data.choosePentatonicMinorScale(sender);
-          //   continue;
-          // //payloads for chooseMajorScale function
-          // case 'range1':
-          //   ScaleMenus.data.sendMajorScale(sender);
-          //   continue;
+      //     // case 'pentaminor':
+      //     //   Navigation.data.choosePentatonicMinorScale(sender);
+      //     //   continue;
+      //     // //payloads for chooseMajorScale function
+      //     // case 'range1':
+      //     //   ScaleMenus.data.sendMajorScale(sender);
+      //     //   continue;
 
-          // case 'range2':
-          //   ScaleMenus.data.sendMajorScale2(sender);
-          //   continue;
+      //     // case 'range2':
+      //     //   ScaleMenus.data.sendMajorScale2(sender);
+      //     //   continue;
 
-          // case 'range3':
-          //   ScaleMenus.data.sendMajorScale3(sender);
-          //   continue;
-          // //payloads for chooseMinorScale function
-          // case 'rangeminor1':
-          //   ScaleMenus.data.sendMinorScale(sender);
-          //   continue;
+      //     // case 'range3':
+      //     //   ScaleMenus.data.sendMajorScale3(sender);
+      //     //   continue;
+      //     // //payloads for chooseMinorScale function
+      //     // case 'rangeminor1':
+      //     //   ScaleMenus.data.sendMinorScale(sender);
+      //     //   continue;
 
-          // case 'rangeminor2':
-          //   ScaleMenus.data.sendMinorScale2(sender);
-          //   continue;
+      //     // case 'rangeminor2':
+      //     //   ScaleMenus.data.sendMinorScale2(sender);
+      //     //   continue;
 
-          // case 'rangeminor3':
-          //   ScaleMenus.data.sendMinorScale3(sender);
-          //   continue;
-          // //payloads for choosePentatonicMajor function
-          // case 'rangepentatonic1':
-          //   ScaleMenus.data.sendPentatonicMajorScale(sender);
-          //   continue;
+      //     // case 'rangeminor3':
+      //     //   ScaleMenus.data.sendMinorScale3(sender);
+      //     //   continue;
+      //     // //payloads for choosePentatonicMajor function
+      //     // case 'rangepentatonic1':
+      //     //   ScaleMenus.data.sendPentatonicMajorScale(sender);
+      //     //   continue;
 
-          // case 'rangepentatonic2':
-          //   ScaleMenus.data.sendPentatonicMajorScale2(sender);
-          //   continue;
+      //     // case 'rangepentatonic2':
+      //     //   ScaleMenus.data.sendPentatonicMajorScale2(sender);
+      //     //   continue;
 
-          // case 'rangepentatonic3':
-          //   ScaleMenus.data.ScaleMenus.data.sendPentatonicMajorScale3(sender);
-          //   continue;
-          // //payloads for choosePentatonicMinor function
-          // case 'rangepentatonic4':
-          //   ScaleMenus.data.sendPentatonicMinorScale(sender);
-          //   continue;
+      //     // case 'rangepentatonic3':
+      //     //   ScaleMenus.data.ScaleMenus.data.sendPentatonicMajorScale3(sender);
+      //     //   continue;
+      //     // //payloads for choosePentatonicMinor function
+      //     // case 'rangepentatonic4':
+      //     //   ScaleMenus.data.sendPentatonicMinorScale(sender);
+      //     //   continue;
 
-          // case 'rangepentatonic5':
-          //   ScaleMenus.data.sendPentatonicMinorScale2(sender);
-          //   continue;
+      //     // case 'rangepentatonic5':
+      //     //   ScaleMenus.data.sendPentatonicMinorScale2(sender);
+      //     //   continue;
 
-          // case 'rangepentatonic6':
-          //   ScaleMenus.data.sendPentatonicMinorScale3(sender);
-          //   continue;
-        }
-      //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
-      }
+      //     // case 'rangepentatonic6':
+      //     //   ScaleMenus.data.sendPentatonicMinorScale3(sender);
+      //     //   continue;
+      //   }
+      // //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
+      // }
     })
-    res.sendStatus(200)
+    //res.sendStatus(200)
   })
 }
 })
