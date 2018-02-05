@@ -82,8 +82,8 @@ app.post('/webhook/', function (req, res) {
         switch (text.toLowerCase()){
             case 'hi!':
             case 'hi':
-            sendTextMessage(sender, text);
-            continue;
+              sendTextMessage(sender, text);
+              break;
             //   Setup.data.addPersistentMenu(sender);
             //   Navigation.data.start(sender);
             //   continue;
@@ -213,7 +213,7 @@ app.post('/webhook/', function (req, res) {
             //cases for choosing major scales
             case 'c major':
                 MajorScales.sendCMajorScale(sender, token);
-            continue;
+            break;
             // case 'c# major':
             // case 'db major':
             //     MajorScales.data.sendDbMajorScale(sender);
@@ -392,7 +392,7 @@ app.post('/webhook/', function (req, res) {
 
             default:
               sendTextMessage(sender, "Erm... Try this! Type \"C# pentatonic major\" to view that music scale OR you can navigate through the menu options!");
-              continue;
+              break;
         }
       //sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
       }
@@ -401,7 +401,7 @@ app.post('/webhook/', function (req, res) {
       switch (text.slice(1,-1).toLowerCase()){
           case 'hi':
             sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
-            continue;
+            break;
           //   Setup.data.addPersistentMenu(sender);
           //   Navigation.data.sendMainMenu(sender);
           //   continue;
@@ -502,7 +502,8 @@ app.post('/webhook/', function (req, res) {
         }
       //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
       }
-    }
+    })
     res.sendStatus(200)
   })
-
+}
+})
