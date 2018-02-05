@@ -40,13 +40,7 @@ jokes.answerJoke = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 jokes.answerJoke1 = function(sender) {
@@ -83,13 +77,7 @@ jokes.answerJoke1 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 jokes.answerJoke2 = function(sender) {
@@ -126,13 +114,7 @@ jokes.answerJoke2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 jokes.answerJoke3 = function(sender) {
@@ -169,13 +151,7 @@ jokes.answerJoke3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 jokes.answerJoke4 = function(sender) {
@@ -212,13 +188,7 @@ jokes.answerJoke4 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = jokes;

@@ -27,14 +27,8 @@ majorScales.sendCMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
-}
+    };
+};
 
 majorScales.sendDflatMajorScale = function(sender) {
     let messageData = {
@@ -63,13 +57,7 @@ majorScales.sendDflatMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    }
 }
 
 majorScales.sendDMajorScale = function(sender) {
@@ -99,13 +87,7 @@ majorScales.sendDMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendEFlatMajorScale = function(sender) {
@@ -135,13 +117,7 @@ majorScales.sendEFlatMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendEMajorScale = function(sender) {
@@ -171,13 +147,7 @@ majorScales.sendEMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendFMajorScale = function(sender) {
@@ -207,13 +177,7 @@ majorScales.sendFMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendGbMajorScale = function(sender) {
@@ -243,13 +207,7 @@ majorScales.sendGbMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendGMajorScale = function(sender) {
@@ -279,13 +237,7 @@ majorScales.sendGMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendAbMajorScale = function(sender) {
@@ -315,13 +267,7 @@ majorScales.sendAbMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendAMajorScale = function(sender) {
@@ -351,13 +297,7 @@ majorScales.sendAMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendBbMajorScale = function(sender) {
@@ -387,13 +327,7 @@ majorScales.sendBbMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 majorScales.sendBMajorScale = function(sender) {
@@ -423,13 +357,7 @@ majorScales.sendBMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = majorScales;

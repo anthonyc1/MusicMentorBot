@@ -36,13 +36,7 @@ navigation.sendMainMenu = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 navigation.mainMenuScales = function(sender) {
     let messageData = {
@@ -76,13 +70,7 @@ navigation.mainMenuScales = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.chooseScale = function(sender) {
@@ -116,13 +104,7 @@ navigation.chooseScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.choosePentatonicScale = function(sender) {
@@ -156,13 +138,7 @@ navigation.choosePentatonicScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.chooseMajorScale = function(sender) {
@@ -201,13 +177,7 @@ navigation.chooseMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.chooseMinorScale = function(sender) {
@@ -246,13 +216,7 @@ navigation.chooseMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.choosePentatonicMajorScale = function(sender) {
@@ -291,13 +255,7 @@ navigation.choosePentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.choosePentatonicMinorScale = function(sender) {
@@ -336,13 +294,7 @@ navigation.choosePentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.webapp = function(sender) {
@@ -372,13 +324,7 @@ navigation.webapp = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.help = function(sender) {
@@ -409,13 +355,7 @@ navigation.help = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.start = function(sender) {
@@ -447,13 +387,7 @@ navigation.start = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.startChatting = function(sender) {
@@ -485,13 +419,7 @@ navigation.startChatting = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.returnToChatting = function(sender) {
@@ -523,13 +451,7 @@ navigation.returnToChatting = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.answerMusic = function(sender) {
@@ -575,13 +497,7 @@ navigation.answerMusic = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 navigation.storyMenu = function(sender) {
@@ -613,13 +529,7 @@ navigation.storyMenu = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = navigation;

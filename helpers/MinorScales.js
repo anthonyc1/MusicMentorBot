@@ -27,13 +27,7 @@ minorScales.sendCMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendDbMinorScale = function(sender) {
@@ -63,13 +57,7 @@ minorScales.sendDbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendDMinorScale = function(sender) {
@@ -99,13 +87,7 @@ minorScales.sendDMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendEbMinorScale = function(sender) {
@@ -135,13 +117,7 @@ minorScales.sendEbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendEMinorScale = function(sender) {
@@ -171,13 +147,7 @@ minorScales.sendEMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendFMinorScale = function(sender) {
@@ -207,13 +177,7 @@ minorScales.sendFMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendGbMinorScale = function(sender) {
@@ -243,13 +207,7 @@ minorScales.sendGbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendGMinorScale = function(sender) {
@@ -279,13 +237,7 @@ minorScales.sendGMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendAbMinorScale = function(sender) {
@@ -315,13 +267,7 @@ minorScales.sendAbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendAMinorScale = function(sender) {
@@ -351,13 +297,7 @@ minorScales.sendAMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendBbMinorScale = function(sender) {
@@ -387,13 +327,7 @@ minorScales.sendBbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 minorScales.sendBMinorScale = function(sender) {
@@ -423,13 +357,7 @@ minorScales.sendBMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = minorScales;

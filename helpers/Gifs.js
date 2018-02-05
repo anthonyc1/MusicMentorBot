@@ -45,13 +45,7 @@ gifs.showScaleGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showScalesConversionGif = function(sender) {
@@ -99,13 +93,7 @@ gifs.showScalesConversionGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showChordGif = function(sender) {
@@ -153,13 +141,7 @@ gifs.showChordGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showIntervalGif = function(sender) {
@@ -207,13 +189,7 @@ gifs.showIntervalGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showSadGif = function(sender) {
@@ -234,13 +210,7 @@ gifs.showSadGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showFailGif = function(sender) {
@@ -283,13 +253,7 @@ gifs.showFailGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showFunnyGif = function(sender) {
@@ -332,13 +296,7 @@ gifs.showFunnyGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 gifs.showSadStoryGif = function(sender) {
@@ -381,13 +339,7 @@ gifs.showSadStoryGif = function(sender) {
             message: messageData,
         },
         
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = gifs;

@@ -27,13 +27,7 @@ pentatonicMajorScales.sendCPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendDbPentatonicMajorScale = function(sender) {
@@ -63,13 +57,7 @@ pentatonicMajorScales.sendDbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendDPentatonicMajorScale = function(sender) {
@@ -99,13 +87,7 @@ pentatonicMajorScales.sendDPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendEbPentatonicMajorScale = function(sender) {
@@ -135,13 +117,7 @@ pentatonicMajorScales.sendEbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendEPentatonicMajorScale = function(sender) {
@@ -171,13 +147,7 @@ pentatonicMajorScales.sendEPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendFPentatonicMajorScale = function(sender) {
@@ -207,13 +177,7 @@ pentatonicMajorScales.sendFPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendGbPentatonicMajorScale = function(sender) {
@@ -243,13 +207,7 @@ pentatonicMajorScales.sendGbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendGPentatonicMajorScale = function(sender) {
@@ -279,13 +237,7 @@ pentatonicMajorScales.sendGPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendAbPentatonicMajorScale = function(sender) {
@@ -315,13 +267,7 @@ pentatonicMajorScales.sendAbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendAPentatonicMajorScale = function(sender) {
@@ -351,13 +297,7 @@ pentatonicMajorScales.sendAPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendBbPentatonicMajorScale = function(sender) {
@@ -387,13 +327,7 @@ pentatonicMajorScales.sendBbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 pentatonicMajorScales.sendBPentatonicMajorScale = function(sender) {
@@ -423,13 +357,7 @@ pentatonicMajorScales.sendBPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = pentatonicMajorScales;

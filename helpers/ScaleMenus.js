@@ -54,13 +54,7 @@ scaleMenus.sendMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendMajorScale2 = function(sender) {
@@ -117,13 +111,7 @@ scaleMenus.sendMajorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendMajorScale3 = function(sender) {
@@ -180,13 +168,7 @@ scaleMenus.sendMajorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendMinorScale = function(sender) {
@@ -243,13 +225,7 @@ scaleMenus.sendMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendMinorScale2 = function(sender) {
@@ -306,13 +282,7 @@ scaleMenus.sendMinorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendMinorScale3 = function(sender) {
@@ -369,13 +339,7 @@ scaleMenus.sendMinorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendPentatonicMajorScale = function(sender) {
@@ -432,13 +396,7 @@ scaleMenus.sendPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendPentatonicMajorScale2 = function(sender) {
@@ -495,13 +453,7 @@ scaleMenus.sendPentatonicMajorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendPentatonicMajorScale3 = function(sender) {
@@ -558,13 +510,7 @@ scaleMenus.sendPentatonicMajorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendPentatonicMinorScale = function(sender) {
@@ -621,13 +567,7 @@ scaleMenus.sendPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendPentatonicMinorScale2 = function(sender) {
@@ -684,13 +624,7 @@ scaleMenus.sendPentatonicMinorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 scaleMenus.sendPentatonicMinorScale3 = function(sender) {
@@ -747,13 +681,7 @@ scaleMenus.sendPentatonicMinorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }, function(error, response, body) {
-        if (error) {
-            console.log('Error sending messages: ', error)
-        } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-        }
-    })
+    } 
 }
 
 exports.data = scaleMenus;
