@@ -1,11 +1,6 @@
-fs = require('fs');
-
-let configVars = fs.readFileSync('./config_vars.json');
-let obj = JSON.parse(configVars);
-const PAGE_ACCESS_TOKEN = obj.PAGE_ACCESS_TOKEN;
 exports = module.exports;
 
-exports.sendMainMenu = function(sender) {
+exports.sendMainMenu = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -302,7 +297,7 @@ exports.choosePentatonicMinorScale = function(sender) {
     }) 
 }
 
-exports.webapp = function(sender) {
+exports.webapp = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -323,7 +318,7 @@ exports.webapp = function(sender) {
     }
     request({
         url: 'https://graph.facebook.com/v2.8/me/messages',
-        qs: {access_token:PAGE_ACCESS_TOKEN},
+        qs: {access_token:token},
         method: 'POST',
         json: {
           messaging_type: "RESPONSE",

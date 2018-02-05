@@ -97,6 +97,8 @@ function webapp(sender) {
     }) 
 }
 
+const token = PAGE_ACCESS_TOKEN;
+
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging
     for (let i = 0; i < messaging_events.length; i++) {
@@ -237,7 +239,7 @@ app.post('/webhook/', function (req, res) {
 
             //cases for choosing major scales
             case 'c major':
-                MajorScales.sendCMajorScale(sender);
+                MajorScales.sendCMajorScale(sender, token);
             continue;
             // case 'c# major':
             // case 'db major':
@@ -441,7 +443,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
           case 'webapp':
-            webapp(sender);
+            Navigation.webapp(sender, token);
             continue;
 
           // case 'startchatting':
