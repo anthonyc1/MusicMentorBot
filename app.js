@@ -409,9 +409,9 @@ app.post('/webhook/', function (req, res) {
           //   Navigation.data.help(sender);
           //   continue;
 
-          // case 'webapp':
-          //   Navigation.webapp(sender);
-          //   continue;
+          case 'webapp':
+            Navigation.webapp(sender);
+            continue;
 
           // case 'startchatting':
           //   Navigation.data.startChatting(sender);
@@ -495,7 +495,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
         }
-      sendTextMessage(sender, text.slice(1,-1).toLowerCase())
+      //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
       }
     }
     res.sendStatus(200)
