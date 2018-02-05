@@ -1,7 +1,6 @@
-var navigation = {};
 const token = process.env.PAGE_ACCESS_TOKEN;
 
-navigation.sendMainMenu = function(sender) {
+exports.sendMainMenu = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -39,7 +38,7 @@ navigation.sendMainMenu = function(sender) {
         }
     }) 
 }
-navigation.mainMenuScales = function(sender) {
+exports.mainMenuScales = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -74,7 +73,7 @@ navigation.mainMenuScales = function(sender) {
     }) 
 }
 
-navigation.chooseScale = function(sender) {
+exports.chooseScale = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -108,7 +107,7 @@ navigation.chooseScale = function(sender) {
     }) 
 }
 
-navigation.choosePentatonicScale = function(sender) {
+exports.choosePentatonicScale = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -142,7 +141,7 @@ navigation.choosePentatonicScale = function(sender) {
     }) 
 }
 
-navigation.chooseMajorScale = function(sender) {
+exports.chooseMajorScale = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -181,7 +180,7 @@ navigation.chooseMajorScale = function(sender) {
     }) 
 }
 
-navigation.chooseMinorScale = function(sender) {
+exports.chooseMinorScale = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -220,7 +219,7 @@ navigation.chooseMinorScale = function(sender) {
     }) 
 }
 
-navigation.choosePentatonicMajorScale = function(sender) {
+exports.choosePentatonicMajorScale = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -259,7 +258,7 @@ navigation.choosePentatonicMajorScale = function(sender) {
     }) 
 }
 
-navigation.choosePentatonicMinorScale = function(sender) {
+exports.choosePentatonicMinorScale = function(sender) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -298,7 +297,7 @@ navigation.choosePentatonicMinorScale = function(sender) {
     }) 
 }
 
-navigation.webapp = function(sender) {
+exports.webapp = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -329,7 +328,7 @@ navigation.webapp = function(sender) {
     }) 
 }
 
-navigation.help = function(sender) {
+exports.help = function(sender) {
     let messageData = {
     "text":"Hi, there. I'm here to help! Here's what you can do:"
     + " \n\nView music scales using our \"view scales\" menu system OR type any scale name such as \"E major\" to view it."
@@ -360,7 +359,7 @@ navigation.help = function(sender) {
     }) 
 }
 
-navigation.start = function(sender) {
+exports.start = function(sender) {
     let messageData = {
     "text":"Hi there music lover! Let's get started, shall we? Pick one:",
     // "quick_replies":[
@@ -392,7 +391,7 @@ navigation.start = function(sender) {
     }) 
 }
 
-navigation.startChatting = function(sender) {
+exports.startChatting = function(sender) {
     let messageData = {
     "text":"Start by saying something! Here are a few things you can talk about for instance.",
     "quick_replies":[
@@ -424,7 +423,7 @@ navigation.startChatting = function(sender) {
     }) 
 }
 
-navigation.returnToChatting = function(sender) {
+exports.returnToChatting = function(sender) {
     let messageData = {
     "text":"Welcome back! What would you like to talk about next?",
     "quick_replies":[
@@ -456,7 +455,7 @@ navigation.returnToChatting = function(sender) {
     }) 
 }
 
-navigation.answerMusic = function(sender) {
+exports.answerMusic = function(sender) {
     let messageData = {
     "text":"Let me tell you a secret, hooman. I was the teacher's \"bot\" in school. Shhh."
     + " ...Oh, it's teacher's \"pet\"? Is that what the hoomans call it?"
@@ -502,7 +501,7 @@ navigation.answerMusic = function(sender) {
     }) 
 }
 
-navigation.storyMenu = function(sender) {
+exports.storyMenu = function(sender) {
     let messageData = {
     "text":"Yes, I love storytime. What kind of story would you like to hear?",
     "quick_replies":[
@@ -533,5 +532,3 @@ navigation.storyMenu = function(sender) {
         }
     }) 
 }
-
-exports.data = navigation;

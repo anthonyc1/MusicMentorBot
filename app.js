@@ -65,36 +65,6 @@ function sendTextMessage(sender, text) {
         } 
     })
 }
-function webapp(sender) {
-    let messageData = {
-        "attachment": {
-            "type": "template",
-            "payload": {
-                "template_type": "generic",
-                "elements": [{
-                    "title": "Welcome to Music Mentor",
-                    "subtitle": "Visit our companion web app for more interactive learning and fun!",
-                    "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/MusicMentorIcon.png?raw=true",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://musicmentorapp.herokuapp.com/",
-                        "title": "View Web App"
-                    }],
-                }]
-            }
-        }
-    }
-    request({
-        url: 'https://graph.facebook.com/v2.8/me/messages',
-        qs: {access_token:PAGE_ACCESS_TOKEN},
-        method: 'POST',
-        json: {
-          messaging_type: "RESPONSE",
-            recipient: {id:sender},
-            message: messageData,
-        }
-    }) 
-}
 
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging
@@ -127,7 +97,7 @@ app.post('/webhook/', function (req, res) {
 
             case 'view web app':
             //sendTextMessage(sender, "yo.");
-              Navigation.data.webapp(sender);
+              Navigation.webapp(sender);
               continue;
 
             // case 'joke':
@@ -440,7 +410,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
           case 'webapp':
-            webapp(sender);
+            Navigation.webapp(sender);
             continue;
 
           // case 'startchatting':
@@ -525,7 +495,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
         }
-      sendTextMessage(sender, text.slice(1,-1).toLowerCase())
+      //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
       }
     }
     res.sendStatus(200)
