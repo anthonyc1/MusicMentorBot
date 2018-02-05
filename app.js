@@ -206,9 +206,9 @@ app.post('/webhook/', function (req, res) {
             //   continue;
 
             //cases for choosing major scales
-            case 'c major':
-                MajorScales.sendCMajorScale(sender, token);
-            continue;
+            // case 'c major':
+            //     MajorScales.sendCMajorScale(sender, token);
+            // continue;
             // case 'c# major':
             // case 'db major':
             //     MajorScales.data.sendDbMajorScale(sender);
