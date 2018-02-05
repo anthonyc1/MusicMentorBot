@@ -1,4 +1,5 @@
 var navigation = {};
+const token = process.env.PAGE_ACCESS_TOKEN;
 
 navigation.sendMainMenu = function(sender) {
     let messageData = {
@@ -321,6 +322,7 @@ navigation.webapp = function(sender) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
