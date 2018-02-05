@@ -12,7 +12,7 @@ const
     Jokes = require('./helpers/Jokes.js'),
     MajorScales = require('./helpers/MajorScales.js'),
     MinorScales = require('./helpers/MinorScales.js'),
-    Navigation = require('./helpers/Navigation.js'),
+    Navigation = require('~/helpers/Navigation.js'),
     PentatonicMajorScales = require('./helpers/PentatonicMajorScales.js'),
     PentatonicMinorScales = require('./helpers/PentatonicMinorScales.js'),
     ScaleMenus = require('./helpers/ScaleMenus.js'),
