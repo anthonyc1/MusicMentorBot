@@ -92,7 +92,7 @@ function webapp(sender) {
         json: {
           messaging_type: "RESPONSE",
             recipient: {id:sender},
-            message: {"text": "stuff"},
+            message: messageData,
         }
     }) 
 }
@@ -235,10 +235,10 @@ app.post('/webhook/', function (req, res) {
             //   sendTextMessage(sender, "See you later, music lover!");
             //   continue;
 
-            // //cases for choosing major scales
-            // case 'c major':
-            //     MajorScales.data.sendCMajorScale(sender);
-            // continue;
+            //cases for choosing major scales
+            case 'c major':
+                MajorScales.sendCMajorScale(sender);
+            continue;
             // case 'c# major':
             // case 'db major':
             //     MajorScales.data.sendDbMajorScale(sender);

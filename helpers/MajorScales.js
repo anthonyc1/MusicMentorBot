@@ -1,6 +1,7 @@
-var majorScales = {};
+const token = process.env.PAGE_ACCESS_TOKEN;
+exports = module.exports;
 
-majorScales.sendCMajorScale = function(sender) {
+exports.sendCMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -30,7 +31,7 @@ majorScales.sendCMajorScale = function(sender) {
     });
 };
 
-majorScales.sendDflatMajorScale = function(sender) {
+exports.sendDflatMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -60,7 +61,7 @@ majorScales.sendDflatMajorScale = function(sender) {
     })
 }
 
-majorScales.sendDMajorScale = function(sender) {
+exports.sendDMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -90,7 +91,7 @@ majorScales.sendDMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendEFlatMajorScale = function(sender) {
+exports.sendEFlatMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -120,7 +121,7 @@ majorScales.sendEFlatMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendEMajorScale = function(sender) {
+exports.sendEMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -150,7 +151,7 @@ majorScales.sendEMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendFMajorScale = function(sender) {
+exports.sendFMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -180,7 +181,7 @@ majorScales.sendFMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendGbMajorScale = function(sender) {
+exports.sendGbMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -210,7 +211,7 @@ majorScales.sendGbMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendGMajorScale = function(sender) {
+exports.sendGMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -240,7 +241,7 @@ majorScales.sendGMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendAbMajorScale = function(sender) {
+exports.sendAbMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -270,7 +271,7 @@ majorScales.sendAbMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendAMajorScale = function(sender) {
+exports.sendAMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -300,7 +301,7 @@ majorScales.sendAMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendBbMajorScale = function(sender) {
+exports.sendBbMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -330,7 +331,7 @@ majorScales.sendBbMajorScale = function(sender) {
     }) 
 }
 
-majorScales.sendBMajorScale = function(sender) {
+exports.sendBMajorScale = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -359,5 +360,3 @@ majorScales.sendBMajorScale = function(sender) {
         }
     }) 
 }
-
-exports.data = majorScales;
