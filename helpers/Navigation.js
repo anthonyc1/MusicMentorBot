@@ -1,4 +1,5 @@
 exports = module.exports;
+const request = require('request');
 
 exports.sendMainMenu = function(sender, token) {
     let messageData = {
