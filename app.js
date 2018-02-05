@@ -67,7 +67,7 @@ function sendTextMessage(sender, text) {
     })
 }
 
-app.post('/webhook/', function (req, res) {
+app.post('/webhook', function (req, res) {
   if (req.body.object === 'page') {
         req.body.entry.forEach(entry => {
             entry.messaging.forEach(event => {
@@ -81,7 +81,7 @@ app.post('/webhook/', function (req, res) {
         let text = event.message.text;
         switch (text.toLowerCase()){
             case 'hi':
-              sendTextMessage(sender, text);
+              sendTextMessage(sender, token);
               break;
             //   Setup.data.addPersistentMenu(sender);
             //   Navigation.data.start(sender);
@@ -502,7 +502,7 @@ app.post('/webhook/', function (req, res) {
       // //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
       // }
     })
-    //res.sendStatus(200)
+    res.status(200).end();
   })
 }
 })
