@@ -96,7 +96,8 @@ app.post('/webhook/', function (req, res) {
             //   continue;  
 
             case 'view web app':
-              Navigation.data.webapp(sender);
+            sendTextMessage(sender, "yo.");
+              //Navigation.data.webapp(sender);
               continue;
 
             // case 'joke':
@@ -409,7 +410,8 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
           case 'webapp':
-            Navigation.data.webapp(sender);
+          sendTextMessage(sender, "yo.");
+            //Navigation.data.webapp(sender);
             continue;
 
           // case 'startchatting':
