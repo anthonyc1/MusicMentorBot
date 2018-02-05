@@ -385,7 +385,7 @@ app.post('/webhook/', function (req, res) {
             //     continue;
 
             default:
-              sendTextMessage(sender, "Oops, didn't catch that. Type something like \"C# pentatonic major\" to view that music scale OR you can do other things by navigating through our menu options!");
+              sendTextMessage(sender, "Erm... Try this! Type \"C# pentatonic major\" to view that music scale OR you can navigate through the menu options!");
               continue;
         }
       //sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
@@ -495,7 +495,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
         }
-      //sendTextMessage(sender, text.slice(1,-1).toLowerCase())
+      sendTextMessage(sender, text.slice(1,-1).toLowerCase())
       }
     }
     res.sendStatus(200)

@@ -1,4 +1,5 @@
 const token = process.env.PAGE_ACCESS_TOKEN;
+exports = module.exports;
 
 exports.sendMainMenu = function(sender) {
     let messageData = {
@@ -297,7 +298,7 @@ exports.choosePentatonicMinorScale = function(sender) {
     }) 
 }
 
-module.exports.webapp = function(sender) {
+exports.webapp = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
