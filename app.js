@@ -392,7 +392,7 @@ app.post('/webhook/', function (req, res) {
       }
       if (event.postback) {
         let text = JSON.stringify(event.postback.payload)
-      switch (text.toLowerCase()){
+      switch (text.slice(1,-1).toLowerCase()){
           case 'hi':
             sendTextMessage(sender, "Hi! Welcome to Music Mentor Bot! Check out our main menu.");
             continue;
@@ -496,7 +496,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
         }
-      sendTextMessage(sender, text.toLowerCase())
+      sendTextMessage(sender, text.slice(1,-1).toLowerCase())
       }
     }
     res.sendStatus(200)
