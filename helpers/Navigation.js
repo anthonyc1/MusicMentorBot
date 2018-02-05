@@ -324,7 +324,7 @@ navigation.webapp = function(sender) {
         json: {
           messaging_type: "RESPONSE",
             recipient: {id:sender},
-            message: messageData,
+            message: {"text": "stuff"},
         }
     }) 
 }
