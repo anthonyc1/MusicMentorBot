@@ -34,6 +34,7 @@ exports.sendMainMenu = function(sender, token) {
         sender_action:"typing_on",
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -68,6 +69,7 @@ exports.mainMenuScales = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -102,6 +104,7 @@ exports.chooseScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -136,6 +139,7 @@ exports.choosePentatonicScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -175,6 +179,7 @@ exports.chooseMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -214,6 +219,7 @@ exports.chooseMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -253,6 +259,7 @@ exports.choosePentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -292,6 +299,7 @@ exports.choosePentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -354,6 +362,7 @@ exports.help = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -386,6 +395,7 @@ exports.start = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -418,6 +428,7 @@ exports.startChatting = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -450,6 +461,7 @@ exports.returnToChatting = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -496,6 +508,7 @@ exports.answerMusic = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -528,6 +541,7 @@ exports.storyMenu = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }

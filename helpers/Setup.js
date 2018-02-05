@@ -6,7 +6,8 @@ exports.getStarted = function(sender, token){
     url: 'https://graph.facebook.com/v2.8/me/thread_settings',
     qs: { access_token: token },
     method: 'POST',
-    json:{
+    json: {
+          messaging_type: "RESPONSE",
         recipient : {id:sender},
         setting_type : "call_to_actions",
         thread_state : "new_thread",
@@ -24,7 +25,8 @@ exports.addPersistentMenu = function(sender, token){
     url: 'https://graph.facebook.com/v2.8/me/thread_settings',
     qs: { access_token: token },
     method: 'POST',
-    json:{
+    json: {
+          messaging_type: "RESPONSE",
         recipient : {id:sender},
         setting_type : "call_to_actions",
         thread_state : "existing_thread",
