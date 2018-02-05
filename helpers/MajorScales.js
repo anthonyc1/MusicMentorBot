@@ -1,4 +1,6 @@
-const token = process.env.PAGE_ACCESS_TOKEN;
+let configVars = fs.readFileSync('../config_vars.json');
+let obj = JSON.parse(configVars);
+const PAGE_ACCESS_TOKEN = obj.PAGE_ACCESS_TOKEN;
 exports = module.exports;
 
 exports.sendCMajorScale = function(sender) {
@@ -21,8 +23,8 @@ exports.sendCMajorScale = function(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: {access_token:token},
+        url: 'https://graph.facebook.com/v2.8/me/messages',
+        qs: {access_token:PAGE_ACCESS_TOKEN},
         method: 'POST',
         json: {
             recipient: {id:sender},

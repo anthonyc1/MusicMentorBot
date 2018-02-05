@@ -1,4 +1,6 @@
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+let configVars = fs.readFileSync('../config_vars.json');
+let obj = JSON.parse(configVars);
+const PAGE_ACCESS_TOKEN = obj.PAGE_ACCESS_TOKEN;
 exports = module.exports;
 
 exports.sendMainMenu = function(sender) {
@@ -324,7 +326,7 @@ exports.webapp = function(sender) {
         json: {
           messaging_type: "RESPONSE",
             recipient: {id:sender},
-            message: {"text": "stuff"},
+            message: messageData,
         }
     }) 
 }
