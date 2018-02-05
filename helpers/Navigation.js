@@ -297,7 +297,7 @@ exports.choosePentatonicMinorScale = function(sender) {
     }) 
 }
 
-function webapp(sender) {
+module.exports.webapp = function(sender) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -532,5 +532,3 @@ exports.storyMenu = function(sender) {
         }
     }) 
 }
-
-export{ webapp };

@@ -6,15 +6,13 @@ const
     request = require('request'),
     fs = require('fs');
 
-import { webapp } from '~/.helpers/Navigation.js';
-
-var
+const
     CallSendAPI = require('./helpers/CallSendAPI.js'),
     Gifs = require('./helpers/Gifs.js'),
     Jokes = require('./helpers/Jokes.js'),
     MajorScales = require('./helpers/MajorScales.js'),
     MinorScales = require('./helpers/MinorScales.js'),
-    //Navigation = require('./helpers/Navigation.js'),
+    Navigation = require('./helpers/Navigation.js'),
     PentatonicMajorScales = require('./helpers/PentatonicMajorScales.js'),
     PentatonicMinorScales = require('./helpers/PentatonicMinorScales.js'),
     ScaleMenus = require('./helpers/ScaleMenus.js'),
@@ -99,7 +97,7 @@ app.post('/webhook/', function (req, res) {
 
             case 'view web app':
             //sendTextMessage(sender, "yo.");
-              webapp(sender);
+              Navigation.webapp(sender);
               continue;
 
             // case 'joke':
@@ -412,7 +410,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
           case 'webapp':
-            webapp(sender);
+            Navigation.webapp(sender);
             continue;
 
           // case 'startchatting':
