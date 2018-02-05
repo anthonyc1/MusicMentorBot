@@ -497,7 +497,7 @@ app.post('/webhook/', function (req, res) {
           //   continue;
 
         }
-      //sendTextMessage(sender, text.slice(12,-2), PAGE_ACCESS_TOKEN)
+      sendTextMessage(sender, text.slice(12,-2).toLowerCase())
       }
     }
     res.sendStatus(200)
