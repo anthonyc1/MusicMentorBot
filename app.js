@@ -91,7 +91,7 @@ function webapp(sender) {
         json: {
           messaging_type: "RESPONSE",
             recipient: {id:sender},
-            message: {"text": "stuff"},
+            message: messageData,
         }
     }) 
 }
