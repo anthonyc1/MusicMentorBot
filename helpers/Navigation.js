@@ -39,14 +39,14 @@ exports.sendMainMenu = function(sender, token) {
         }
     }) 
 }
-exports.mainMenuScales = function(sender) {
+exports.mainMenuScales = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"NAVIGATE through out menu system by choosing a type of scale to view below:"
-        + "\n\nOr TYPE the scale name below instead! Example: type \"C# major\" or type \"Ab pentatonic minor\".",
+        "text":"NAVIGATE through out menu system"
+        + "\n\nOr TYPE the scale name instead! Ex: type \"C# major\" or \"Ab pentatonic minor\".",
         "buttons":[
           {
             "type":"postback",
@@ -74,7 +74,7 @@ exports.mainMenuScales = function(sender) {
     }) 
 }
 
-exports.chooseScale = function(sender) {
+exports.chooseScale = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -108,7 +108,7 @@ exports.chooseScale = function(sender) {
     }) 
 }
 
-exports.choosePentatonicScale = function(sender) {
+exports.choosePentatonicScale = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -142,7 +142,7 @@ exports.choosePentatonicScale = function(sender) {
     }) 
 }
 
-exports.chooseMajorScale = function(sender) {
+exports.chooseMajorScale = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -181,7 +181,7 @@ exports.chooseMajorScale = function(sender) {
     }) 
 }
 
-exports.chooseMinorScale = function(sender) {
+exports.chooseMinorScale = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -220,7 +220,7 @@ exports.chooseMinorScale = function(sender) {
     }) 
 }
 
-exports.choosePentatonicMajorScale = function(sender) {
+exports.choosePentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -259,7 +259,7 @@ exports.choosePentatonicMajorScale = function(sender) {
     }) 
 }
 
-exports.choosePentatonicMinorScale = function(sender) {
+exports.choosePentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"template",
@@ -306,7 +306,7 @@ exports.webapp = function(sender, token) {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Welcome to Music Mentor",
-                    "subtitle": "Visit our companion web app for more interactive learning and fun!",
+                    "subtitle": "Visit our companion web app:",
                     "image_url": "https://github.com/anthonyc1/music-mentor-bot/blob/master/assets/MusicMentorIcon.png?raw=true",
                     "buttons": [{
                         "type": "web_url",
@@ -329,13 +329,13 @@ exports.webapp = function(sender, token) {
     }) 
 }
 
-exports.help = function(sender) {
+exports.help = function(sender, token) {
     let messageData = {
-    "text":"Hi, there. I'm here to help! Here's what you can do:"
-    + " \n\nView music scales using our \"view scales\" menu system OR type any scale name such as \"E major\" to view it."
-    + " \n\nChoose the \"start chatting\" to chat with our bot. Maybe you'll get a laugh. Maybe you'll learn something. Try it!"
-    + " \n\nCheck out \"view web app\" to see what our companion web application has to offer. I promise it's quite neat!"
-    + " \n\nTo start, check out our menu or just say \"hi\" to our bot! Was that helpful? I'd love your feedback! :)",
+    "text":"Here's what you can do:"
+    + " \n\nClick \"view scales\" OR type a scale name, such as \"E major\", to view it."
+    + " \n\nClick the \"start chatting\" to see chat options."
+    + " \n\nClick \"view web app\" to see our companion web application."
+    + " \n\nWas that helpful? I'd love your feedback! :)",
     "quick_replies":[
       {
         "content_type":"text",
@@ -360,7 +360,7 @@ exports.help = function(sender) {
     }) 
 }
 
-exports.start = function(sender) {
+exports.start = function(sender, token) {
     let messageData = {
     "text":"Hi there music lover! Let's get started, shall we? Pick one:",
     // "quick_replies":[
@@ -392,9 +392,9 @@ exports.start = function(sender) {
     }) 
 }
 
-exports.startChatting = function(sender) {
+exports.startChatting = function(sender, token) {
     let messageData = {
-    "text":"Start by saying something! Here are a few things you can talk about for instance.",
+    "text":"Start by saying something! Here are a few for starters.",
     "quick_replies":[
       {
         "content_type":"text",
@@ -424,7 +424,7 @@ exports.startChatting = function(sender) {
     }) 
 }
 
-exports.returnToChatting = function(sender) {
+exports.returnToChatting = function(sender, token) {
     let messageData = {
     "text":"Welcome back! What would you like to talk about next?",
     "quick_replies":[
@@ -456,7 +456,7 @@ exports.returnToChatting = function(sender) {
     }) 
 }
 
-exports.answerMusic = function(sender) {
+exports.answerMusic = function(sender, token) {
     let messageData = {
     "text":"Let me tell you a secret, hooman. I was the teacher's \"bot\" in school. Shhh."
     + " ...Oh, it's teacher's \"pet\"? Is that what the hoomans call it?"
@@ -502,7 +502,7 @@ exports.answerMusic = function(sender) {
     }) 
 }
 
-exports.storyMenu = function(sender) {
+exports.storyMenu = function(sender, token) {
     let messageData = {
     "text":"Yes, I love storytime. What kind of story would you like to hear?",
     "quick_replies":[

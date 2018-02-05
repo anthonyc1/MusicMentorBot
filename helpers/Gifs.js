@@ -1,6 +1,7 @@
-var gifs = {};
+exports = module.exports;
+const request = require('request');
 
-gifs.showScaleGif = function(sender) {
+exports.showScaleGif = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"image",
@@ -47,7 +48,7 @@ gifs.showScaleGif = function(sender) {
     })
 }
 
-gifs.showScalesConversionGif = function(sender) {
+exports.showScalesConversionGif = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"image",
@@ -94,7 +95,7 @@ gifs.showScalesConversionGif = function(sender) {
     }) 
 }
 
-gifs.showChordGif = function(sender) {
+exports.showChordGif = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"image",
@@ -141,7 +142,7 @@ gifs.showChordGif = function(sender) {
     })
 }
 
-gifs.showIntervalGif = function(sender) {
+exports.showIntervalGif = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"image",
@@ -188,7 +189,7 @@ gifs.showIntervalGif = function(sender) {
     })
 }
 
-gifs.showSadGif = function(sender) {
+exports.showSadGif = function(sender, token) {
     let messageData = { 
         "attachment":{
       "type":"image",
@@ -209,7 +210,7 @@ gifs.showSadGif = function(sender) {
     }) 
 }
 
-gifs.showFailGif = function(sender) {
+exports.showFailGif = function(sender, token) {
     let messageData = {
         "attachment":{
       "type":"image",
@@ -251,7 +252,7 @@ gifs.showFailGif = function(sender) {
     })
 }
 
-gifs.showFunnyGif = function(sender) {
+exports.showFunnyGif = function(sender, token) {
     let messageData = {
     "attachment":{
       "type":"image",
@@ -293,7 +294,7 @@ gifs.showFunnyGif = function(sender) {
     })
 }
 
-gifs.showSadStoryGif = function(sender) {
+exports.showSadStoryGif = function(sender, token) {
     let messageData = {
     "attachment":{
       "type":"image",
@@ -334,5 +335,3 @@ gifs.showSadStoryGif = function(sender) {
         },
     }) 
 }
-
-exports.data = gifs;

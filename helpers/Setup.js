@@ -1,6 +1,7 @@
-var setup = {};
+exports = module.exports;
+const request = require('request');
 
-setup.getStarted = function(sender){
+exports.getStarted = function(sender, token){
  request({
     url: 'https://graph.facebook.com/v2.8/me/thread_settings',
     qs: { access_token: token },
@@ -18,7 +19,7 @@ setup.getStarted = function(sender){
 })
 }
 
-setup.addPersistentMenu = function(sender){
+exports.addPersistentMenu = function(sender, token){
  request({
     url: 'https://graph.facebook.com/v2.8/me/thread_settings',
     qs: { access_token: token },
@@ -52,6 +53,4 @@ setup.addPersistentMenu = function(sender){
     }
 })
 }
-
-exports.data = setup;
 

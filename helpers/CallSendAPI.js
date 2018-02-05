@@ -1,3 +1,6 @@
+exports = module.exports;
+const request = require('request');
+
 callSendAPI = function(messageData) {
   request({
     url: 'https://graph.facebook.com/v2.6/me/messages',

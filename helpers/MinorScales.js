@@ -1,6 +1,7 @@
-var minorScales = {};
+exports = module.exports;
+const request = require('request');
 
-minorScales.sendCMinorScale = function(sender) {
+exports.sendCMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -30,7 +31,7 @@ minorScales.sendCMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendDbMinorScale = function(sender) {
+exports.sendDbMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -60,7 +61,7 @@ minorScales.sendDbMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendDMinorScale = function(sender) {
+exports.sendDMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -90,7 +91,7 @@ minorScales.sendDMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendEbMinorScale = function(sender) {
+exports.sendEbMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -120,7 +121,7 @@ minorScales.sendEbMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendEMinorScale = function(sender) {
+exports.sendEMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -150,7 +151,7 @@ minorScales.sendEMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendFMinorScale = function(sender) {
+exports.sendFMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -180,7 +181,7 @@ minorScales.sendFMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendGbMinorScale = function(sender) {
+exports.sendGbMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -210,7 +211,7 @@ minorScales.sendGbMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendGMinorScale = function(sender) {
+exports.sendGMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -240,7 +241,7 @@ minorScales.sendGMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendAbMinorScale = function(sender) {
+exports.sendAbMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -270,7 +271,7 @@ minorScales.sendAbMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendAMinorScale = function(sender) {
+exports.sendAMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -300,7 +301,7 @@ minorScales.sendAMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendBbMinorScale = function(sender) {
+exports.sendBbMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -330,7 +331,7 @@ minorScales.sendBbMinorScale = function(sender) {
     }) 
 }
 
-minorScales.sendBMinorScale = function(sender) {
+exports.sendBMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -359,5 +360,3 @@ minorScales.sendBMinorScale = function(sender) {
         }
     }) 
 }
-
-exports.data = minorScales;

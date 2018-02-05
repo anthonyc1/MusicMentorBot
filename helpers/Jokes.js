@@ -1,6 +1,7 @@
-var jokes = {};
+exports = module.exports;
+const request = require('request');
 
-jokes.answerJoke = function(sender) {
+exports.answerJoke = function(sender, token) {
     let messageData = {
     "text":"Oh ho ho. My street name is \"the bot with the jokes\", FYI. Check out a few of them below."
     + " I love to share and make hoomans laugh!",
@@ -43,7 +44,7 @@ jokes.answerJoke = function(sender) {
     }) 
 }
 
-jokes.answerJoke1 = function(sender) {
+exports.answerJoke1 = function(sender, token) {
     let messageData = {
     "text":"What's Beethoven's favorite fruit?\nBA-NA-NA-NAAAAA!",
     "quick_replies":[
@@ -80,7 +81,7 @@ jokes.answerJoke1 = function(sender) {
     }) 
 }
 
-jokes.answerJoke2 = function(sender) {
+exports.answerJoke2 = function(sender, token) {
     let messageData = {
     "text":"Why was the musician arrested?\nHe was in TREBLE!",
     "quick_replies":[
@@ -117,7 +118,7 @@ jokes.answerJoke2 = function(sender) {
     }) 
 }
 
-jokes.answerJoke3 = function(sender) {
+exports.answerJoke3 = function(sender, token) {
     let messageData = {
     "text":"Why did Mozart kill his chickens?\nBecause they went BACH BACH BACH!",
     "quick_replies":[
@@ -154,7 +155,7 @@ jokes.answerJoke3 = function(sender) {
     }) 
 }
 
-jokes.answerJoke4 = function(sender) {
+exports.answerJoke4 = function(sender, token) {
     let messageData = {
     "text":"Why shouldn't you let your kids watch symphonies on the television?\nBecause there's too much VIOLINS and SAX on TV!",
     "quick_replies":[
@@ -190,5 +191,3 @@ jokes.answerJoke4 = function(sender) {
         }
     }) 
 }
-
-exports.data = jokes;

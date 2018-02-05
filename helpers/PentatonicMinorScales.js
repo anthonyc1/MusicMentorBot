@@ -1,6 +1,7 @@
-var pentatonicMinorScales = {};
+exports = module.exports;
+const request = require('request');
 
-pentatonicMinorScales.sendCPentatonicMinorScale = function(sender) {
+exports.sendCPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -30,7 +31,7 @@ pentatonicMinorScales.sendCPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendDbPentatonicMinorScale = function(sender) {
+exports.sendDbPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -60,7 +61,7 @@ pentatonicMinorScales.sendDbPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendDPentatonicMinorScale = function(sender) {
+exports.sendDPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -90,7 +91,7 @@ pentatonicMinorScales.sendDPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendEbPentatonicMinorScale = function(sender) {
+exports.sendEbPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -120,7 +121,7 @@ pentatonicMinorScales.sendEbPentatonicMinorScale = function(sender) {
     })
 }
 
-pentatonicMinorScales.sendEPentatonicMinorScale = function(sender) {
+exports.sendEPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -150,7 +151,7 @@ pentatonicMinorScales.sendEPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendFPentatonicMinorScale = function(sender) {
+exports.sendFPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -180,7 +181,7 @@ pentatonicMinorScales.sendFPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendGbPentatonicMinorScale = function(sender) {
+exports.sendGbPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -210,7 +211,7 @@ pentatonicMinorScales.sendGbPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendGPentatonicMinorScale = function(sender) {
+exports.sendGPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -240,7 +241,7 @@ pentatonicMinorScales.sendGPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendAbPentatonicMinorScale = function(sender) {
+exports.sendAbPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -270,7 +271,7 @@ pentatonicMinorScales.sendAbPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendAPentatonicMinorScale = function(sender) {
+exports.sendAPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -300,7 +301,7 @@ pentatonicMinorScales.sendAPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendBbPentatonicMinorScale = function(sender) {
+exports.sendBbPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -330,7 +331,7 @@ pentatonicMinorScales.sendBbPentatonicMinorScale = function(sender) {
     }) 
 }
 
-pentatonicMinorScales.sendBPentatonicMinorScale = function(sender) {
+exports.sendBPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -359,5 +360,3 @@ pentatonicMinorScales.sendBPentatonicMinorScale = function(sender) {
         }
     }) 
 }
-
-exports.data = pentatonicMinorScales;

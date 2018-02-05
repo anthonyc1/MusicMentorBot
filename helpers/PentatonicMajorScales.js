@@ -1,6 +1,7 @@
-var pentatonicMajorScales = {};
+exports = module.exports;
+const request = require('request');
 
-pentatonicMajorScales.sendCPentatonicMajorScale = function(sender) {
+exports.sendCPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -30,7 +31,7 @@ pentatonicMajorScales.sendCPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendDbPentatonicMajorScale = function(sender) {
+exports.sendDbPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -60,7 +61,7 @@ pentatonicMajorScales.sendDbPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendDPentatonicMajorScale = function(sender) {
+exports.sendDPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -90,7 +91,7 @@ pentatonicMajorScales.sendDPentatonicMajorScale = function(sender) {
     })
 }
 
-pentatonicMajorScales.sendEbPentatonicMajorScale = function(sender) {
+exports.sendEbPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -120,7 +121,7 @@ pentatonicMajorScales.sendEbPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendEPentatonicMajorScale = function(sender) {
+exports.sendEPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -150,7 +151,7 @@ pentatonicMajorScales.sendEPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendFPentatonicMajorScale = function(sender) {
+exports.sendFPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -180,7 +181,7 @@ pentatonicMajorScales.sendFPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendGbPentatonicMajorScale = function(sender) {
+exports.sendGbPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -210,7 +211,7 @@ pentatonicMajorScales.sendGbPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendGPentatonicMajorScale = function(sender) {
+exports.sendGPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -240,7 +241,7 @@ pentatonicMajorScales.sendGPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendAbPentatonicMajorScale = function(sender) {
+exports.sendAbPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -270,7 +271,7 @@ pentatonicMajorScales.sendAbPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendAPentatonicMajorScale = function(sender) {
+exports.sendAPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -300,7 +301,7 @@ pentatonicMajorScales.sendAPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendBbPentatonicMajorScale = function(sender) {
+exports.sendBbPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -330,7 +331,7 @@ pentatonicMajorScales.sendBbPentatonicMajorScale = function(sender) {
     }) 
 }
 
-pentatonicMajorScales.sendBPentatonicMajorScale = function(sender) {
+exports.sendBPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -359,5 +360,3 @@ pentatonicMajorScales.sendBPentatonicMajorScale = function(sender) {
         }
     }) 
 }
-
-exports.data = pentatonicMajorScales;

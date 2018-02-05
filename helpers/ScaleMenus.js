@@ -1,6 +1,7 @@
-var scaleMenus = {};
+exports = module.exports;
+const request = require('request');
 
-scaleMenus.sendMajorScale = function(sender) {
+exports.sendMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -57,7 +58,7 @@ scaleMenus.sendMajorScale = function(sender) {
     }) 
 }
 
-scaleMenus.sendMajorScale2 = function(sender) {
+exports.sendMajorScale2 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -114,7 +115,7 @@ scaleMenus.sendMajorScale2 = function(sender) {
     }) 
 }
 
-scaleMenus.sendMajorScale3 = function(sender) {
+exports.sendMajorScale3 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -171,7 +172,7 @@ scaleMenus.sendMajorScale3 = function(sender) {
     })
 }
 
-scaleMenus.sendMinorScale = function(sender) {
+exports.sendMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -228,7 +229,7 @@ scaleMenus.sendMinorScale = function(sender) {
     })
 }
 
-scaleMenus.sendMinorScale2 = function(sender) {
+exports.sendMinorScale2 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -285,7 +286,7 @@ scaleMenus.sendMinorScale2 = function(sender) {
     }) 
 }
 
-scaleMenus.sendMinorScale3 = function(sender) {
+exports.sendMinorScale3 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -342,7 +343,7 @@ scaleMenus.sendMinorScale3 = function(sender) {
     })
 }
 
-scaleMenus.sendPentatonicMajorScale = function(sender) {
+exports.sendPentatonicMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -399,7 +400,7 @@ scaleMenus.sendPentatonicMajorScale = function(sender) {
     })
 }
 
-scaleMenus.sendPentatonicMajorScale2 = function(sender) {
+exports.sendPentatonicMajorScale2 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -456,7 +457,7 @@ scaleMenus.sendPentatonicMajorScale2 = function(sender) {
     }) 
 }
 
-scaleMenus.sendPentatonicMajorScale3 = function(sender) {
+exports.sendPentatonicMajorScale3 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -513,7 +514,7 @@ scaleMenus.sendPentatonicMajorScale3 = function(sender) {
     })
 }
 
-scaleMenus.sendPentatonicMinorScale = function(sender) {
+exports.sendPentatonicMinorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -570,7 +571,7 @@ scaleMenus.sendPentatonicMinorScale = function(sender) {
     }) 
 }
 
-scaleMenus.sendPentatonicMinorScale2 = function(sender) {
+exports.sendPentatonicMinorScale2 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -627,7 +628,7 @@ scaleMenus.sendPentatonicMinorScale2 = function(sender) {
     }) 
 }
 
-scaleMenus.sendPentatonicMinorScale3 = function(sender) {
+exports.sendPentatonicMinorScale3 = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -683,5 +684,3 @@ scaleMenus.sendPentatonicMinorScale3 = function(sender) {
         }
     }) 
 }
-
-exports.data = scaleMenus;
