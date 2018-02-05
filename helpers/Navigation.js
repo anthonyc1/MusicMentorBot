@@ -36,7 +36,7 @@ navigation.sendMainMenu = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 navigation.mainMenuScales = function(sender) {
     let messageData = {
@@ -70,7 +70,7 @@ navigation.mainMenuScales = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.chooseScale = function(sender) {
@@ -104,7 +104,7 @@ navigation.chooseScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.choosePentatonicScale = function(sender) {
@@ -138,7 +138,7 @@ navigation.choosePentatonicScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.chooseMajorScale = function(sender) {
@@ -177,7 +177,7 @@ navigation.chooseMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.chooseMinorScale = function(sender) {
@@ -216,7 +216,7 @@ navigation.chooseMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.choosePentatonicMajorScale = function(sender) {
@@ -255,7 +255,7 @@ navigation.choosePentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.choosePentatonicMinorScale = function(sender) {
@@ -294,7 +294,7 @@ navigation.choosePentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.webapp = function(sender) {
@@ -324,7 +324,7 @@ navigation.webapp = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.help = function(sender) {
@@ -355,7 +355,7 @@ navigation.help = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.start = function(sender) {
@@ -387,7 +387,7 @@ navigation.start = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.startChatting = function(sender) {
@@ -419,7 +419,7 @@ navigation.startChatting = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.returnToChatting = function(sender) {
@@ -451,7 +451,7 @@ navigation.returnToChatting = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.answerMusic = function(sender) {
@@ -497,7 +497,7 @@ navigation.answerMusic = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 navigation.storyMenu = function(sender) {
@@ -529,7 +529,7 @@ navigation.storyMenu = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = navigation;

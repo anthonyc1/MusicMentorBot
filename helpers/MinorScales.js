@@ -27,7 +27,7 @@ minorScales.sendCMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendDbMinorScale = function(sender) {
@@ -57,7 +57,7 @@ minorScales.sendDbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendDMinorScale = function(sender) {
@@ -87,7 +87,7 @@ minorScales.sendDMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendEbMinorScale = function(sender) {
@@ -117,7 +117,7 @@ minorScales.sendEbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendEMinorScale = function(sender) {
@@ -147,7 +147,7 @@ minorScales.sendEMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendFMinorScale = function(sender) {
@@ -177,7 +177,7 @@ minorScales.sendFMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendGbMinorScale = function(sender) {
@@ -207,7 +207,7 @@ minorScales.sendGbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendGMinorScale = function(sender) {
@@ -237,7 +237,7 @@ minorScales.sendGMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendAbMinorScale = function(sender) {
@@ -267,7 +267,7 @@ minorScales.sendAbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendAMinorScale = function(sender) {
@@ -297,7 +297,7 @@ minorScales.sendAMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendBbMinorScale = function(sender) {
@@ -327,7 +327,7 @@ minorScales.sendBbMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 minorScales.sendBMinorScale = function(sender) {
@@ -357,7 +357,7 @@ minorScales.sendBMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = minorScales;

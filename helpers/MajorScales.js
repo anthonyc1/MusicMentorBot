@@ -27,7 +27,7 @@ majorScales.sendCMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    };
+    });
 };
 
 majorScales.sendDflatMajorScale = function(sender) {
@@ -57,7 +57,7 @@ majorScales.sendDflatMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    }
+    })
 }
 
 majorScales.sendDMajorScale = function(sender) {
@@ -87,7 +87,7 @@ majorScales.sendDMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendEFlatMajorScale = function(sender) {
@@ -117,7 +117,7 @@ majorScales.sendEFlatMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendEMajorScale = function(sender) {
@@ -147,7 +147,7 @@ majorScales.sendEMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendFMajorScale = function(sender) {
@@ -177,7 +177,7 @@ majorScales.sendFMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendGbMajorScale = function(sender) {
@@ -207,7 +207,7 @@ majorScales.sendGbMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendGMajorScale = function(sender) {
@@ -237,7 +237,7 @@ majorScales.sendGMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendAbMajorScale = function(sender) {
@@ -267,7 +267,7 @@ majorScales.sendAbMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendAMajorScale = function(sender) {
@@ -297,7 +297,7 @@ majorScales.sendAMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendBbMajorScale = function(sender) {
@@ -327,7 +327,7 @@ majorScales.sendBbMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 majorScales.sendBMajorScale = function(sender) {
@@ -357,7 +357,7 @@ majorScales.sendBMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = majorScales;

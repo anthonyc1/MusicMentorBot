@@ -59,10 +59,11 @@ function sendTextMessage(sender, text) {
         sender_action:"typing_on",
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
-        }, 
-    }
+        } 
+    })
 }
 
 app.post('/webhook/', function (req, res) {

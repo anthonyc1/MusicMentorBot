@@ -27,7 +27,7 @@ pentatonicMinorScales.sendCPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendDbPentatonicMinorScale = function(sender) {
@@ -57,7 +57,7 @@ pentatonicMinorScales.sendDbPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendDPentatonicMinorScale = function(sender) {
@@ -87,7 +87,7 @@ pentatonicMinorScales.sendDPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendEbPentatonicMinorScale = function(sender) {
@@ -117,7 +117,7 @@ pentatonicMinorScales.sendEbPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 pentatonicMinorScales.sendEPentatonicMinorScale = function(sender) {
@@ -147,7 +147,7 @@ pentatonicMinorScales.sendEPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendFPentatonicMinorScale = function(sender) {
@@ -177,7 +177,7 @@ pentatonicMinorScales.sendFPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendGbPentatonicMinorScale = function(sender) {
@@ -207,7 +207,7 @@ pentatonicMinorScales.sendGbPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendGPentatonicMinorScale = function(sender) {
@@ -237,7 +237,7 @@ pentatonicMinorScales.sendGPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendAbPentatonicMinorScale = function(sender) {
@@ -267,7 +267,7 @@ pentatonicMinorScales.sendAbPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendAPentatonicMinorScale = function(sender) {
@@ -297,7 +297,7 @@ pentatonicMinorScales.sendAPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendBbPentatonicMinorScale = function(sender) {
@@ -327,7 +327,7 @@ pentatonicMinorScales.sendBbPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMinorScales.sendBPentatonicMinorScale = function(sender) {
@@ -357,7 +357,7 @@ pentatonicMinorScales.sendBPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = pentatonicMinorScales;

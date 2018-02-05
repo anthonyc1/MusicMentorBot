@@ -27,7 +27,7 @@ pentatonicMajorScales.sendCPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendDbPentatonicMajorScale = function(sender) {
@@ -57,7 +57,7 @@ pentatonicMajorScales.sendDbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendDPentatonicMajorScale = function(sender) {
@@ -87,7 +87,7 @@ pentatonicMajorScales.sendDPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 pentatonicMajorScales.sendEbPentatonicMajorScale = function(sender) {
@@ -117,7 +117,7 @@ pentatonicMajorScales.sendEbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendEPentatonicMajorScale = function(sender) {
@@ -147,7 +147,7 @@ pentatonicMajorScales.sendEPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendFPentatonicMajorScale = function(sender) {
@@ -177,7 +177,7 @@ pentatonicMajorScales.sendFPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendGbPentatonicMajorScale = function(sender) {
@@ -207,7 +207,7 @@ pentatonicMajorScales.sendGbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendGPentatonicMajorScale = function(sender) {
@@ -237,7 +237,7 @@ pentatonicMajorScales.sendGPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendAbPentatonicMajorScale = function(sender) {
@@ -267,7 +267,7 @@ pentatonicMajorScales.sendAbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendAPentatonicMajorScale = function(sender) {
@@ -297,7 +297,7 @@ pentatonicMajorScales.sendAPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendBbPentatonicMajorScale = function(sender) {
@@ -327,7 +327,7 @@ pentatonicMajorScales.sendBbPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 pentatonicMajorScales.sendBPentatonicMajorScale = function(sender) {
@@ -357,7 +357,7 @@ pentatonicMajorScales.sendBPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = pentatonicMajorScales;

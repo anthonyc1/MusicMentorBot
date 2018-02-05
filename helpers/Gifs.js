@@ -43,9 +43,8 @@ gifs.showScaleGif = function(sender) {
         json: {
             recipient: {id:sender},
             message: messageData,
-        },
-        
-    } 
+        },  
+    })
 }
 
 gifs.showScalesConversionGif = function(sender) {
@@ -91,9 +90,8 @@ gifs.showScalesConversionGif = function(sender) {
         json: {
             recipient: {id:sender},
             message: messageData,
-        },
-        
-    } 
+        }, 
+    }) 
 }
 
 gifs.showChordGif = function(sender) {
@@ -140,8 +138,7 @@ gifs.showChordGif = function(sender) {
             recipient: {id:sender},
             message: messageData,
         },
-        
-    } 
+    })
 }
 
 gifs.showIntervalGif = function(sender) {
@@ -187,9 +184,8 @@ gifs.showIntervalGif = function(sender) {
         json: {
             recipient: {id:sender},
             message: messageData,
-        },
-        
-    } 
+        }, 
+    })
 }
 
 gifs.showSadGif = function(sender) {
@@ -210,7 +206,7 @@ gifs.showSadGif = function(sender) {
             message: messageData,
         },
         
-    } 
+    }) 
 }
 
 gifs.showFailGif = function(sender) {
@@ -252,8 +248,7 @@ gifs.showFailGif = function(sender) {
             recipient: {id:sender},
             message: messageData,
         },
-        
-    } 
+    })
 }
 
 gifs.showFunnyGif = function(sender) {
@@ -295,8 +290,7 @@ gifs.showFunnyGif = function(sender) {
             recipient: {id:sender},
             message: messageData,
         },
-        
-    } 
+    })
 }
 
 gifs.showSadStoryGif = function(sender) {
@@ -338,8 +332,7 @@ gifs.showSadStoryGif = function(sender) {
             recipient: {id:sender},
             message: messageData,
         },
-        
-    } 
+    }) 
 }
 
 exports.data = gifs;

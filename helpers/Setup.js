@@ -15,14 +15,6 @@ setup.getStarted = function(sender){
             }
           ]
     }
-
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
-    }
 })
 }
 
@@ -57,14 +49,6 @@ setup.addPersistentMenu = function(sender){
               payload:"help"
             }
           ]
-    }
-
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
     }
 })
 }

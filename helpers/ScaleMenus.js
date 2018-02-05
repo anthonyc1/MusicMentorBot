@@ -54,7 +54,7 @@ scaleMenus.sendMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 scaleMenus.sendMajorScale2 = function(sender) {
@@ -111,7 +111,7 @@ scaleMenus.sendMajorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 scaleMenus.sendMajorScale3 = function(sender) {
@@ -168,7 +168,7 @@ scaleMenus.sendMajorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 scaleMenus.sendMinorScale = function(sender) {
@@ -225,7 +225,7 @@ scaleMenus.sendMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 scaleMenus.sendMinorScale2 = function(sender) {
@@ -282,7 +282,7 @@ scaleMenus.sendMinorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 scaleMenus.sendMinorScale3 = function(sender) {
@@ -339,7 +339,7 @@ scaleMenus.sendMinorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 scaleMenus.sendPentatonicMajorScale = function(sender) {
@@ -396,7 +396,7 @@ scaleMenus.sendPentatonicMajorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 scaleMenus.sendPentatonicMajorScale2 = function(sender) {
@@ -453,7 +453,7 @@ scaleMenus.sendPentatonicMajorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 scaleMenus.sendPentatonicMajorScale3 = function(sender) {
@@ -510,7 +510,7 @@ scaleMenus.sendPentatonicMajorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    })
 }
 
 scaleMenus.sendPentatonicMinorScale = function(sender) {
@@ -567,7 +567,7 @@ scaleMenus.sendPentatonicMinorScale = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 scaleMenus.sendPentatonicMinorScale2 = function(sender) {
@@ -624,7 +624,7 @@ scaleMenus.sendPentatonicMinorScale2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 scaleMenus.sendPentatonicMinorScale3 = function(sender) {
@@ -681,7 +681,7 @@ scaleMenus.sendPentatonicMinorScale3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = scaleMenus;

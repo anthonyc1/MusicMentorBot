@@ -40,7 +40,7 @@ jokes.answerJoke = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 jokes.answerJoke1 = function(sender) {
@@ -77,7 +77,7 @@ jokes.answerJoke1 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 jokes.answerJoke2 = function(sender) {
@@ -114,7 +114,7 @@ jokes.answerJoke2 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 jokes.answerJoke3 = function(sender) {
@@ -151,7 +151,7 @@ jokes.answerJoke3 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 jokes.answerJoke4 = function(sender) {
@@ -188,7 +188,7 @@ jokes.answerJoke4 = function(sender) {
             recipient: {id:sender},
             message: messageData,
         }
-    } 
+    }) 
 }
 
 exports.data = jokes;
