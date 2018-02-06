@@ -79,18 +79,18 @@ app.post('/webhook', function (req, res) {
             case 'hey':
             case 'yo':
               sendTextMessage(sender, "Hii!!");
-              Setup.addPersistentMenu(sender, token);
+              //Setup.addPersistentMenu(sender, token);
               //Navigation.start(sender, token);
               break;
 
-            case 'main menu':
-              sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-              Navigation.sendMainMenu(sender, token);
-              break;
+            // case 'main menu':
+            //   sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+            //   Navigation.sendMainMenu(sender, token);
+            //   break;
 
-            case 'view scales':
-              Navigation.mainMenuScales(sender, token);
-              break; 
+            // case 'view scales':
+            //   Navigation.mainMenuScales(sender, token);
+            //   break; 
 
             case 'start chatting':
               Navigation.startChatting(sender, token);
