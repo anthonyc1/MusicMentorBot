@@ -197,190 +197,190 @@ app.post('/webhook', function (req, res) {
               sendTextMessage(sender, "Why hello hooman! Nice to see you.");
               break;
 
-            // case 'bye!':
-            // case 'bye':
-            //   sendTextMessage(sender, "See you later, music lover!");
-            //   break;
+            case 'bye!':
+            case 'bye':
+              sendTextMessage(sender, "See you later, music lover!");
+              break;
 
-            // //cases for choosing major scales
-            // case 'c major':
-            //     MajorScales.sendCMajorScale(sender, token);
-            // break;
-            // case 'c# major':
-            // case 'db major':
-            //     MajorScales.sendDbMajorScale(sender, token);
-            // break;
-            // case 'd major':
-            //     MajorScales.sendDMajorScale(sender, token);
-            // break;
-            // case 'd# major':
-            // case 'eb major':
-            //     MajorScales.sendEbMajorScale(sender, token);
-            //     break;
+            //cases for choosing major scales
+            case 'c major':
+                MajorScales.sendCMajorScale(sender, token);
+            break;
+            case 'c# major':
+            case 'db major':
+                MajorScales.sendDbMajorScale(sender, token);
+            break;
+            case 'd major':
+                MajorScales.sendDMajorScale(sender, token);
+            break;
+            case 'd# major':
+            case 'eb major':
+                MajorScales.sendEbMajorScale(sender, token);
+                break;
 
-            // case 'e major':
-            //     MajorScales.sendEbMajorScale(sender, token);
-            //     break;
-            // case 'f major':
-            //     MajorScales.sendFMajorScale(sender, token);
-            //     break;
-            // case 'f# major':
-            // case 'gb major':
-            //     MajorScales.sendGbMajorScale(sender, token);
-            //     break;
-            // case 'g major':
-            //     MajorScales.sendGMajorScale(sender, token);
-            //     break;
+            case 'e major':
+                MajorScales.sendEbMajorScale(sender, token);
+                break;
+            case 'f major':
+                MajorScales.sendFMajorScale(sender, token);
+                break;
+            case 'f# major':
+            case 'gb major':
+                MajorScales.sendGbMajorScale(sender, token);
+                break;
+            case 'g major':
+                MajorScales.sendGMajorScale(sender, token);
+                break;
 
-            // case 'g# major':
-            // case 'ab major':
-            //     MajorScales.sendAbMajorScale(sender, token);
-            //     break;
-            // case 'a major':
-            //     MajorScales.sendAMajorScale(sender, token);
-            //     break;
-            // case 'a# major':
-            // case 'bb major':
-            //     MajorScales.sendBbMajorScale(sender, token);
-            //     break;
-            // case 'b major':
-            //     MajorScales.sendBMajorScale(sender, token);
-            //     break;
+            case 'g# major':
+            case 'ab major':
+                MajorScales.sendAbMajorScale(sender, token);
+                break;
+            case 'a major':
+                MajorScales.sendAMajorScale(sender, token);
+                break;
+            case 'a# major':
+            case 'bb major':
+                MajorScales.sendBbMajorScale(sender, token);
+                break;
+            case 'b major':
+                MajorScales.sendBMajorScale(sender, token);
+                break;
 
             //cases for choosing minor scales
             case 'c minor':
                 MinorScales.sendCMinorScale(sender, token);
                 break;
-            // case 'c# minor':
-            // case 'db minor':
-            //     MinorScales.sendDbMinorScale(sender, token);
-            //     break;
-            // case 'd minor':
-            //     MinorScales.sendDMinorScale(sender, token);
-            //     break;
-            // case 'd# minor':
-            // case 'eb minor':
-            //     MinorScales.sendEbMinorScale(sender, token);
-            //     break;
+            case 'c# minor':
+            case 'db minor':
+                MinorScales.sendDbMinorScale(sender, token);
+                break;
+            case 'd minor':
+                MinorScales.sendDMinorScale(sender, token);
+                break;
+            case 'd# minor':
+            case 'eb minor':
+                MinorScales.sendEbMinorScale(sender, token);
+                break;
 
-            // case 'e minor':
-            //     MinorScales.sendEMinorScale(sender, token);
-            //     break;
-            // case 'f minor':
-            //     MinorScales.sendFMinorScale(sender, token);
-            //     break;
-            // case 'f# minor':
-            // case 'gb minor':
-            //     MinorScales.sendGbMinorScale(sender, token);
-            //     break;
-            // case 'g minor':
-            //     MinorScales.sendGMinorScale(sender, token);
-            //     break;
+            case 'e minor':
+                MinorScales.sendEMinorScale(sender, token);
+                break;
+            case 'f minor':
+                MinorScales.sendFMinorScale(sender, token);
+                break;
+            case 'f# minor':
+            case 'gb minor':
+                MinorScales.sendGbMinorScale(sender, token);
+                break;
+            case 'g minor':
+                MinorScales.sendGMinorScale(sender, token);
+                break;
 
-            // case 'g# minor':
-            // case 'ab minor':
-            //     MinorScales.sendAbMinorScale(sender, token);
-            //     break;
-            // case 'a minor':
-            //     MinorScales.sendAMinorScale(sender, token);
-            //     break;
-            // case 'a# minor':
-            // case 'bb minor':
-            //     MinorScales.sendBbMinorScale(sender, token);
-            //     break;
-            // case 'b minor':
-            //     MinorScales.sendBMinorScale(sender, token);
-            //     break;
+            case 'g# minor':
+            case 'ab minor':
+                MinorScales.sendAbMinorScale(sender, token);
+                break;
+            case 'a minor':
+                MinorScales.sendAMinorScale(sender, token);
+                break;
+            case 'a# minor':
+            case 'bb minor':
+                MinorScales.sendBbMinorScale(sender, token);
+                break;
+            case 'b minor':
+                MinorScales.sendBMinorScale(sender, token);
+                break;
 
-            // //cases for choosing pentatonic major scales
-            // case 'c pentatonic major':
-            //     PentatonicMajorScales.sendCPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'c# pentatonic major':
-            // case 'db pentatonic major':
-            //     PentatonicMajorScales.sendDbPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'd pentatonic major':
-            //     PentatonicMajorScales.sendDPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'd# pentatonic major':
-            // case 'eb pentatonic major':
-            //     PentatonicMajorScales.sendEbPentatonicMajorScale(sender, token);
-            //     break;
+            //cases for choosing pentatonic major scales
+            case 'c pentatonic major':
+                PentatonicMajorScales.sendCPentatonicMajorScale(sender, token);
+                break;
+            case 'c# pentatonic major':
+            case 'db pentatonic major':
+                PentatonicMajorScales.sendDbPentatonicMajorScale(sender, token);
+                break;
+            case 'd pentatonic major':
+                PentatonicMajorScales.sendDPentatonicMajorScale(sender, token);
+                break;
+            case 'd# pentatonic major':
+            case 'eb pentatonic major':
+                PentatonicMajorScales.sendEbPentatonicMajorScale(sender, token);
+                break;
 
-            // case 'e pentatonic major':
-            //     PentatonicMajorScales.sendEPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'f pentatonic major':
-            //     PentatonicMajorScales.sendFPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'f# pentatonic major':
-            // case 'gb pentatonic major':
-            //     PentatonicMajorScales.sendGbPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'g pentatonic major':
-            //     PentatonicMajorScales.sendGPentatonicMajorScale(sender, token);
-            //     break;
+            case 'e pentatonic major':
+                PentatonicMajorScales.sendEPentatonicMajorScale(sender, token);
+                break;
+            case 'f pentatonic major':
+                PentatonicMajorScales.sendFPentatonicMajorScale(sender, token);
+                break;
+            case 'f# pentatonic major':
+            case 'gb pentatonic major':
+                PentatonicMajorScales.sendGbPentatonicMajorScale(sender, token);
+                break;
+            case 'g pentatonic major':
+                PentatonicMajorScales.sendGPentatonicMajorScale(sender, token);
+                break;
 
-            // case 'g# pentatonic major':
-            // case 'ab pentatonic major':
-            //     PentatonicMajorScales.sendAbPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'a pentatonic major':
-            //     PentatonicMajorScales.sendAPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'a# pentatonic major':
-            // case 'bb pentatonic major':
-            //     PentatonicMajorScales.sendBbPentatonicMajorScale(sender, token);
-            //     break;
-            // case 'b pentatonic major':
-            //     PentatonicMajorScales.sendBPentatonicMajorScale(sender, token);
-            //     break;
+            case 'g# pentatonic major':
+            case 'ab pentatonic major':
+                PentatonicMajorScales.sendAbPentatonicMajorScale(sender, token);
+                break;
+            case 'a pentatonic major':
+                PentatonicMajorScales.sendAPentatonicMajorScale(sender, token);
+                break;
+            case 'a# pentatonic major':
+            case 'bb pentatonic major':
+                PentatonicMajorScales.sendBbPentatonicMajorScale(sender, token);
+                break;
+            case 'b pentatonic major':
+                PentatonicMajorScales.sendBPentatonicMajorScale(sender, token);
+                break;
 
-            // //cases for choosing pentatonic minor scales
-            // case 'c pentatonic minor':
-            //     PentatonicMinorScales.sendCPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'c# pentatonic minor':
-            // case 'db pentatonic minor':
-            //     PentatonicMinorScales.sendDbPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'd pentatonic minor':
-            //     PentatonicMinorScales.sendDPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'd# pentatonic minor':
-            // case 'eb pentatonic minor':
-            //     PentatonicMinorScales.sendEbPentatonicMinorScale(sender, token);
-            //     break;
+            //cases for choosing pentatonic minor scales
+            case 'c pentatonic minor':
+                PentatonicMinorScales.sendCPentatonicMinorScale(sender, token);
+                break;
+            case 'c# pentatonic minor':
+            case 'db pentatonic minor':
+                PentatonicMinorScales.sendDbPentatonicMinorScale(sender, token);
+                break;
+            case 'd pentatonic minor':
+                PentatonicMinorScales.sendDPentatonicMinorScale(sender, token);
+                break;
+            case 'd# pentatonic minor':
+            case 'eb pentatonic minor':
+                PentatonicMinorScales.sendEbPentatonicMinorScale(sender, token);
+                break;
 
-            // case 'e pentatonic minor':
-            //     PentatonicMinorScales.sendEPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'f pentatonic minor':
-            //     PentatonicMinorScales.sendFPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'f# pentatonic minor':
-            // case 'gb pentatonic minor':
-            //     PentatonicMinorScales.sendGbPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'g pentatonic minor':
-            //     PentatonicMinorScales.sendGPentatonicMinorScale(sender, token);
-            //     break;
+            case 'e pentatonic minor':
+                PentatonicMinorScales.sendEPentatonicMinorScale(sender, token);
+                break;
+            case 'f pentatonic minor':
+                PentatonicMinorScales.sendFPentatonicMinorScale(sender, token);
+                break;
+            case 'f# pentatonic minor':
+            case 'gb pentatonic minor':
+                PentatonicMinorScales.sendGbPentatonicMinorScale(sender, token);
+                break;
+            case 'g pentatonic minor':
+                PentatonicMinorScales.sendGPentatonicMinorScale(sender, token);
+                break;
 
-            // case 'g# pentatonic minor':
-            // case 'ab pentatonic minor':
-            //     PentatonicMinorScales.sendAbPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'a pentatonic minor':
-            //     PentatonicMinorScales.sendAPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'a# pentatonic minor':
-            // case 'bb pentatonic minor':
-            //     PentatonicMinorScales.sendBbPentatonicMinorScale(sender, token);
-            //     break;
-            // case 'b pentatonic minor':
-            //     PentatonicMinorScales.sendBPentatonicMinorScale(sender, token);
-            //     break;
+            case 'g# pentatonic minor':
+            case 'ab pentatonic minor':
+                PentatonicMinorScales.sendAbPentatonicMinorScale(sender, token);
+                break;
+            case 'a pentatonic minor':
+                PentatonicMinorScales.sendAPentatonicMinorScale(sender, token);
+                break;
+            case 'a# pentatonic minor':
+            case 'bb pentatonic minor':
+                PentatonicMinorScales.sendBbPentatonicMinorScale(sender, token);
+                break;
+            case 'b pentatonic minor':
+                PentatonicMinorScales.sendBPentatonicMinorScale(sender, token);
+                break;
 
             default:
               sendTextMessage(sender, "Erm... Try this! Type \"C# pentatonic major\" to view that music scale OR you can navigate through the menu options!");
