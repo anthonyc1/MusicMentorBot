@@ -94,9 +94,9 @@ app.post('/webhook', function (req, res) {
             //   Navigation.startChatting(sender, token);
             //   break;  
 
-            // case 'view web app':
-            //   Navigation.webapp(sender, token);
-            //   break;
+            case 'view web app':
+              Navigation.webapp(sender, token);
+              break;
 
             // case 'joke':
             //   Jokes.answerJoke(sender, token);
