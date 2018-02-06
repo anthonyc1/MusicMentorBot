@@ -78,9 +78,9 @@ app.post('/webhook', function (req, res) {
             case 'hi':
             case 'hey':
             case 'yo':
-              sendTextMessage(sender, text);
+              sendTextMessage(sender, "Hii!!");
               Setup.addPersistentMenu(sender, token);
-              Navigation.start(sender, token);
+              //Navigation.start(sender, token);
               break;
 
             case 'main menu':
@@ -384,9 +384,14 @@ app.post('/webhook', function (req, res) {
                 PentatonicMinorScales.sendBPentatonicMinorScale(sender, token);
                 break;
 
+            case 'help':
+                sendTextMessage(sender, "Try this! Type \"C major\" or \"A pentatonic minor\" to view that music scale OR you can navigate through the menu options!");
+                break;
+
             default:
-              sendTextMessage(sender, "Erm... Try this! Type \"C# pentatonic major\" to view that music scale OR you can navigate through the menu options!");
-              break;
+                sendTextMessage(sender, text);
+                break;
+              
         }
       //sendTextMessage(sender, "I don't know what " + text.slice(11,-1)+ " means. Sorry.")
       }
