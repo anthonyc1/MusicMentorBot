@@ -29,22 +29,22 @@ exports.sendMainMenu = function(sender, token) {
     // }
     // }
     let messageData = {
-    "text":"This is Music Mentor Bot's main menu.\nWhat do you want to do next?",
+    "text":"Hii!! This is Music Mentor Bot's main menu.\nWhat do you want to do next?\nNote: just type \"menu\" if you want to come back.",
     "quick_replies":[
       {
         "content_type":"text",
         "title":"View Scales",
-        "payload":"mainmenuscales"
+        "payload":"view scales"
       },
       {
         "content_type":"text",
         "title":"Start Chatting",
-        "payload":"startchatting"
+        "payload":"start chatting"
       },
       {
         "content_type":"text",
         "title":"View Web App",
-        "payload":"webapp"
+        "payload":"view web app"
       }
     ]
     }
