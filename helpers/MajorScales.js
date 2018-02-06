@@ -25,13 +25,14 @@ exports.sendCMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
     });
 };
 
-exports.sendDflatMajorScale = function(sender, token) {
+exports.sendDbMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -55,6 +56,7 @@ exports.sendDflatMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -85,13 +87,14 @@ exports.sendDMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
     }) 
 }
 
-exports.sendEFlatMajorScale = function(sender, token) {
+exports.sendEbMajorScale = function(sender, token) {
     let messageData = {
         "attachment": {
             "type": "template",
@@ -115,6 +118,7 @@ exports.sendEFlatMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -145,6 +149,7 @@ exports.sendEMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -175,6 +180,7 @@ exports.sendFMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -205,6 +211,7 @@ exports.sendGbMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -235,6 +242,7 @@ exports.sendGMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -265,6 +273,7 @@ exports.sendAbMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -295,6 +304,7 @@ exports.sendAMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -325,6 +335,7 @@ exports.sendBbMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -355,6 +366,7 @@ exports.sendBMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }

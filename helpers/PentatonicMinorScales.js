@@ -25,6 +25,7 @@ exports.sendCPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -55,6 +56,7 @@ exports.sendDbPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -85,6 +87,7 @@ exports.sendDPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -115,6 +118,7 @@ exports.sendEbPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -145,6 +149,7 @@ exports.sendEPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -175,6 +180,7 @@ exports.sendFPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -205,6 +211,7 @@ exports.sendGbPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -235,6 +242,7 @@ exports.sendGPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -265,6 +273,7 @@ exports.sendAbPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -295,6 +304,7 @@ exports.sendAPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -325,6 +335,7 @@ exports.sendBbPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -355,6 +366,7 @@ exports.sendBPentatonicMinorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }

@@ -25,6 +25,7 @@ exports.sendCPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -55,6 +56,7 @@ exports.sendDbPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -85,6 +87,7 @@ exports.sendDPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -115,6 +118,7 @@ exports.sendEbPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -145,6 +149,7 @@ exports.sendEPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -175,6 +180,7 @@ exports.sendFPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -205,6 +211,7 @@ exports.sendGbPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -235,6 +242,7 @@ exports.sendGPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -265,6 +273,7 @@ exports.sendAbPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -295,6 +304,7 @@ exports.sendAPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -325,6 +335,7 @@ exports.sendBbPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }
@@ -355,6 +366,7 @@ exports.sendBPentatonicMajorScale = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }

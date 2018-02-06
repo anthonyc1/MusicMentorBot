@@ -42,6 +42,7 @@ exports.showScaleGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         },  
@@ -89,6 +90,7 @@ exports.showScalesConversionGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }, 
@@ -136,6 +138,7 @@ exports.showChordGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         },
@@ -183,6 +186,7 @@ exports.showIntervalGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         }, 
@@ -203,6 +207,7 @@ exports.showSadGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         },
@@ -246,6 +251,7 @@ exports.showFailGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         },
@@ -288,6 +294,7 @@ exports.showFunnyGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         },
@@ -330,6 +337,7 @@ exports.showSadStoryGif = function(sender, token) {
         qs: {access_token:token},
         method: 'POST',
         json: {
+          messaging_type: "RESPONSE",
             recipient: {id:sender},
             message: messageData,
         },
