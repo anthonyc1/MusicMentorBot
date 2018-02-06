@@ -187,10 +187,10 @@ app.post('/webhook', function (req, res) {
             //   sendTextMessage(sender, "Oh, fabulous!");
             //   break;
 
-            // case 'no':
-            //   sendTextMessage(sender, "Oh no. Cue the minor music!");
-            //   Gifs.showSadGif(sender, token);
-            //   break;
+            case 'no':
+              sendTextMessage(sender, "Oh no. Cue the minor music!");
+              Gifs.showSadGif(sender, token);
+              break;
 
             case 'hello!':
             case 'hello':
