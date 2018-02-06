@@ -76,6 +76,8 @@ app.post('/webhook', function (req, res) {
           let text = event.message.text;
           switch (text.toLowerCase()){
             case 'hi':
+              Navigation.sendMainMenu(sender, token);
+              break;
             case 'hey':
             case 'yo':
               sendTextMessage(sender, "Hii!!");
@@ -83,20 +85,24 @@ app.post('/webhook', function (req, res) {
               //Navigation.start(sender, token);
               break;
 
-            // case 'main menu':
-            //   sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
-            //   Navigation.sendMainMenu(sender, token);
-            //   break;
+            case 'main menu':
+              //sendTextMessage(sender, "This is Music Mentor Bot's main menu.");
+              Navigation.sendMainMenu(sender, token);
+              break;
+
+            case 'mainmenuscales':
+              sendTextMessage(sender, "To view a music scale, simply type its name.\nEx: \"C# major\" or \"A pentatonic minor\"");
+              break;
 
             // case 'view scales':
             //   Navigation.mainMenuScales(sender, token);
             //   break; 
 
-            case 'start chatting':
+            case 'startchatting':
               Navigation.startChatting(sender, token);
               break;  
 
-            case 'view web app':
+            case 'viewwebapp':
               Navigation.webapp(sender, token);
               break;
 

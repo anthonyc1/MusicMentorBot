@@ -2,31 +2,51 @@ exports = module.exports;
 const request = require('request');
 
 exports.sendMainMenu = function(sender, token) {
+    // let messageData = {
+    //     "attachment":{
+    //   "type":"template",
+    //   "payload":{
+    //     "template_type":"button",
+    //     "text":"What do you want to do next?",
+    //     "buttons":[
+    //       {
+    //         "type":"postback",
+    //         "title":"View Scales",
+    //         "payload":"mainmenuscales"
+    //       },
+    //       {
+    //         "type":"postback",
+    //         "title":"Start Chatting",
+    //         "payload":"startchatting"
+    //       },
+    //       {
+    //         "type":"postback",
+    //         "title":"View Web App",
+    //         "payload":"webapp"
+    //       },
+    //     ]
+    //   }
+    // }
+    // }
     let messageData = {
-        "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"What do you want to do next?",
-        "buttons":[
-          {
-            "type":"postback",
-            "title":"View Scales",
-            "payload":"mainmenuscales"
-          },
-          {
-            "type":"postback",
-            "title":"Start Chatting",
-            "payload":"startchatting"
-          },
-          {
-            "type":"postback",
-            "title":"View Web App",
-            "payload":"webapp"
-          },
-        ]
+    "text":"This is Music Mentor Bot's main menu.\nWhat do you want to do next?",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"View Scales",
+        "payload":"mainmenuscales"
+      },
+      {
+        "content_type":"text",
+        "title":"Start Chatting",
+        "payload":"startchatting"
+      },
+      {
+        "content_type":"text",
+        "title":"View Web App",
+        "payload":"webapp"
       }
-    }
+    ]
     }
     request({
         url: 'https://graph.facebook.com/v2.8/me/messages',
@@ -41,28 +61,43 @@ exports.sendMainMenu = function(sender, token) {
     }) 
 }
 exports.mainMenuScales = function(sender, token) {
-    let messageData = {
-        "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"NAVIGATE through out menu system"
-        + "\n\nOr TYPE the scale name instead! Ex: type \"C# major\" or \"Ab pentatonic minor\".",
-        "buttons":[
-          {
-            "type":"postback",
-            "title":"Major/Minor Scales",
-            "payload":"scales"
+    // let messageData = {
+    //     "attachment":{
+    //   "type":"template",
+    //   "payload":{
+    //     "template_type":"button",
+    //     "text":"NAVIGATE through out menu system"
+    //     + "\n\nOr TYPE the scale name instead! Ex: type \"C# major\" or \"Ab pentatonic minor\".",
+    //     "buttons":[
+    //       {
+    //         "type":"postback",
+    //         "title":"Major/Minor Scales",
+    //         "payload":"scales"
             
-          },
-          {
-            "type":"postback",
-            "title":"Pentatonic Scales",
-            "payload":"pentatonicscales"
-          }
-        ]
+    //       },
+    //       {
+    //         "type":"postback",
+    //         "title":"Pentatonic Scales",
+    //         "payload":"pentatonicscales"
+    //       }
+    //     ]
+    //   }
+    // }
+    // }
+    let messageData = {
+    "text":"Navigate here or simply type the name of the scale you want to see.\nEx: \"C# major\"",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Major/Minor Scales",
+        "payload":"scales"
+      },
+      {
+        "content_type":"text",
+        "title":"Pentatonic Scales",
+        "payload":"pentatonicscales"
       }
-    }
+    ]
     }
     request({
         url: 'https://graph.facebook.com/v2.8/me/messages',
